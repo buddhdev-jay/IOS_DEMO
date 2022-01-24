@@ -58,4 +58,11 @@ extension ScrollViewController {
     @IBAction func goToSignUpScreen(_ sender: UIButton) {
         coordinator?.goToSignUpScreen()
     }
+    
+    @IBAction func onClickListUserTableview(_ sender: UIButton) {
+           coordinator?.goToListUserTableView()
+    }
+    @IBAction func onClickListUser(_ sender: UIButton) {
+           coordinator?.goToListUserCollectionview()
+    }
 }
