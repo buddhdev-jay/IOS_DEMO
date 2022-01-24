@@ -23,6 +23,7 @@ class ScrollViewController: UIViewController {
             coordinator = ScrollVCCoordinator(navController)
         }
     }
+    
 }
 // MARK: - Outlet Action
 extension ScrollViewController {
@@ -45,6 +46,7 @@ extension ScrollViewController {
     
     @IBAction func goToSegmentControl(_ sender: UIButton) {
         coordinator?.goToSegmentControl()
+        
     }
     
     @IBAction func goToCollection(_ sender: UIButton) {
@@ -60,9 +62,11 @@ extension ScrollViewController {
     }
     
     @IBAction func onClickListUserTableview(_ sender: UIButton) {
-           coordinator?.goToListUserTableView()
+        coordinator?.goToListUserTableView()
+        
     }
+    
     @IBAction func onClickListUser(_ sender: UIButton) {
-           coordinator?.goToListUserCollectionview()
+        coordinator?.goToListUserCollectionview()
     }
 }
