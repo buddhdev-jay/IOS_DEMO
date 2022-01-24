@@ -8,8 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
     // MARK: - Outlet
+    @IBOutlet weak var btn_gotoautolayout: UIButton!
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var txtView: UITextView!
     override func viewDidLoad() {
@@ -26,9 +26,13 @@ extension ViewController: TextDelegate {
 // MARK: - Outlet Action
 extension ViewController {
     @IBAction func goToAnotherViewcontroller(_ sender: UIButton) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "secondViewController") as! SecondViewController
-        vc.txtDelegate = self
-        self.present(vc, animated: true, completion: nil)
+        if let secondvc = self.storyboard?.instantiateViewController(withIdentifier:Constants.secondVC ) as? SecondViewController{
+            secondvc.txtDelegate = self
+            self.present(secondvc, animated: true, completion: nil)}
+    }
+    @IBAction func goToAutoLayout(_ sender: UIButton) {
+        if let loginSignupvc = self.storyboard?.instantiateViewController(withIdentifier: Constants.loginSignupVc) as? Login_signup_ViewController {
+            self.present(loginSignupvc, animated: true, completion: nil)
+        }
     }
 }
-
