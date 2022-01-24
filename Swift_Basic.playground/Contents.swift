@@ -1,5 +1,9 @@
 import UIKit
 
+var stringarray = ["abc","xyz","pqr"]
+for (index,element) in stringarray.enumerated(){
+    print("\(index) \(element)")
+}
 var namestr : String = "Jay"
 var nameint : Int = Int(namestr) ?? 1
 print(nameint)
@@ -316,8 +320,8 @@ func arithmeticMean(_ numbers: Double...) -> Double {
 }
 arithmeticMean(1, 2, 3, 4, 5)
 //IN-OUT Parameter
-var a=10
-var b=20
+var a = 10
+var b = 20
 func swapTwoInts(_ a: inout Int, _ b: inout Int) {
     let temporaryA = a
     a = b
@@ -326,7 +330,6 @@ func swapTwoInts(_ a: inout Int, _ b: inout Int) {
 swapTwoInts(&a,&b)
 print (a)
 print (b)
-
 //Closure
 let simpleClosure:(String) -> (String) = { name in
     let greeting = "Hello Jay " + "Welcome to Swift"
@@ -334,7 +337,6 @@ let simpleClosure:(String) -> (String) = { name in
 }
 let result1 = simpleClosure("Hello JavaTpoint")
 print(result1)
-
 //Enum
 enum ConnectionStatus
 {

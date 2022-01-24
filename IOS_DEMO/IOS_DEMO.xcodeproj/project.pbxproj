@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+
+		FB18AE3427D7158E00AAFB89 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB18AE3327D7158E00AAFB89 /* Constant.swift */; };
 		FB994CB327A27D32006969A2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB994CB227A27D32006969A2 /* SecondViewController.swift */; };
 		FBD33F99278D44910029EE9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33F98278D44910029EE9A /* AppDelegate.swift */; };
 		FBD33F9B278D44910029EE9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33F9A278D44910029EE9A /* SceneDelegate.swift */; };
@@ -17,6 +19,8 @@
 		FBD33FB0278D44930029EE9A /* IOS_DEMOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33FAF278D44930029EE9A /* IOS_DEMOTests.swift */; };
 		FBD33FBA278D44930029EE9A /* IOS_DEMOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33FB9278D44930029EE9A /* IOS_DEMOUITests.swift */; };
 		FBD33FBC278D44930029EE9A /* IOS_DEMOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33FBB278D44930029EE9A /* IOS_DEMOUITestsLaunchTests.swift */; };
+		FBE9556327C8BA5000DBC991 /* Login_signup_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9556227C8BA5000DBC991 /* Login_signup_ViewController.swift */; };
+		FBFEBE5027CCE60B004EF9AA /* Signup_form_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFEBE4F27CCE60B004EF9AA /* Signup_form_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB18AE3327D7158E00AAFB89 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		FB994CB227A27D32006969A2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		FBD33F95278D44910029EE9A /* IOS_DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_DEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD33F98278D44910029EE9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +56,8 @@
 		FBD33FB5278D44930029EE9A /* IOS_DEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOS_DEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD33FB9278D44930029EE9A /* IOS_DEMOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_DEMOUITests.swift; sourceTree = "<group>"; };
 		FBD33FBB278D44930029EE9A /* IOS_DEMOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_DEMOUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBE9556227C8BA5000DBC991 /* Login_signup_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_signup_ViewController.swift; sourceTree = "<group>"; };
+		FBFEBE4F27CCE60B004EF9AA /* Signup_form_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup_form_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB18AE3227D7156D00AAFB89 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FB18AE3327D7158E00AAFB89 /* Constant.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		FBD33F8C278D44910029EE9A = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +116,17 @@
 		FBD33F97278D44910029EE9A /* IOS_DEMO */ = {
 			isa = PBXGroup;
 			children = (
+				FB18AE3227D7156D00AAFB89 /* Utils */,
 				FBD33F98278D44910029EE9A /* AppDelegate.swift */,
 				FBD33F9A278D44910029EE9A /* SceneDelegate.swift */,
 				FBD33F9C278D44910029EE9A /* ViewController.swift */,
 				FBD33F9E278D44910029EE9A /* Main.storyboard */,
+				FBE9556227C8BA5000DBC991 /* Login_signup_ViewController.swift */,
 				FBD33FA1278D44920029EE9A /* Assets.xcassets */,
 				FBD33FA3278D44920029EE9A /* LaunchScreen.storyboard */,
 				FBD33FA6278D44920029EE9A /* Info.plist */,
 				FB994CB227A27D32006969A2 /* SecondViewController.swift */,
+				FBFEBE4F27CCE60B004EF9AA /* Signup_form_ViewController.swift */,
 			);
 			path = IOS_DEMO;
 			sourceTree = "<group>";
@@ -261,9 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB18AE3427D7158E00AAFB89 /* Constant.swift in Sources */,
+				FBFEBE5027CCE60B004EF9AA /* Signup_form_ViewController.swift in Sources */,
 				FB994CB327A27D32006969A2 /* SecondViewController.swift in Sources */,
 				FBD33F9D278D44910029EE9A /* ViewController.swift in Sources */,
 				FBD33F99278D44910029EE9A /* AppDelegate.swift in Sources */,
+				FBE9556327C8BA5000DBC991 /* Login_signup_ViewController.swift in Sources */,
 				FBD33F9B278D44910029EE9A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
