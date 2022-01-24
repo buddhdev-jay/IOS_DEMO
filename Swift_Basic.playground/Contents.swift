@@ -396,7 +396,7 @@ class Person{
 var person = Person()
 person.name = "John"
 person.age = 23
-debugPrint(person.name + " " + person.age.description)
+print(person.name + " " + person.age.description)
 //Lazy Stored Property
 class DataImporter {
     var filename = "data.txt"
