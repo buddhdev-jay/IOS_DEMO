@@ -30,10 +30,9 @@ class HomeviewController: UIViewController {
         tableView.dataSource =  self
         searchBar.delegate = self
         collectionview.dataSource = self
-        collectionview.delegate = self
         self.navigationController?.title = "Home View"
         filterdData = names
-        for _ in 1...100 {
+        for _ in Constants.ONE...Constants.HUNDRED {
             names += ["JAY","abc","xyz"]
         }
     }
