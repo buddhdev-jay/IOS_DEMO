@@ -8,11 +8,10 @@
 import UIKit
 
 class Signup_Screen_ViewController: UIViewController {
-    
-    // MARK: -  Variables
     var timer: Timer?
-    
     // MARK: - Outlet
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var lblSteppervalue: UILabel!
     @IBOutlet weak var progressView: UIProgressView!
@@ -20,8 +19,6 @@ class Signup_Screen_ViewController: UIViewController {
     @IBOutlet weak var genderSwitch: UISwitch!
     @IBOutlet weak var lblAgeNumber: UILabel!
     @IBOutlet weak var ageSlider: UISlider!
-    
-    // MARK: -  View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -30,7 +27,12 @@ class Signup_Screen_ViewController: UIViewController {
 // MARK: - Outlet Action
 extension Signup_Screen_ViewController{
     @IBAction func displayGender(_ sender: Any) {
-        lblGender.text = genderSwitch.isOn ? Constants.genderMale :Constants.genderFemale
+        if genderSwitch.isOn{
+            lblGender.text = "Male"
+        }else
+        {
+            lblGender.text = "FeMale"
+        }
     }
     @IBAction func displayAge(_ sender: Any) {
         lblAgeNumber.text = "\(Int(ageSlider.value))"
@@ -40,11 +42,14 @@ extension Signup_Screen_ViewController{
     }
     @IBAction func startProgressBar(_ sender: UIButton) {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { timer in
-            let change: Float = Float(Constants.zeroPointOne)
+            let change: Float = 0.1
             self.progressView.progress = self.progressView.progress + (change)
-            if self.progressView.progress >= Float(Constants.onePointZero) {
+            if self.progressView.progress >= 1.0 {
                 self.timer?.invalidate()
             }
         })
     }
+}
+extension Signup_Screen_ViewController : UITextFieldDelegate{
+  
 }

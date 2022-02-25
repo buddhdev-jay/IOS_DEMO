@@ -2,13 +2,12 @@
 //  Constant.swift
 //  IOS_DEMO
 //
-//  Created by Jay Buddhdev on 08/03/22.
+//  Created by Jay Buddhdev on 11/03/22.
 //
 
 import Foundation
 
 struct Constants{
-    
     static let ZERO = 0
     static let secondVC = "secondViewController"
     static let loginSignupVc = "login_signup_ViewController"
@@ -40,5 +39,15 @@ struct Constants{
     static let onePointZero = 1.0
     static let collectionviewcell = "collectionviewcell"
     static let DateFormat = "MM/dd/yyyy"
+    static let imagepickervc = "imagePickerViewController"
+    static let pageViewvc = "pageViewController"
+    static let webviewvc = "webviewViewController"
+    static let pagecontrolvc = "pageControlViewController"
+    static let uisegmentedvc = "uISegmentedViewController"
+    static let collectionvc = "collectionViewController"
+    static let secondVc = "secondVC"
+    static let ThirdVc = "thirdViewController"
+    static let scrollVc = "scrollViewController"
+    static let Mainvc = "viewController"
     
 }
