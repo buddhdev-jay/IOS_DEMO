@@ -9,8 +9,8 @@ import UIKit
 
 class Signup_form_ViewController: UIViewController {
 
+    // MARK: -  View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
 }
