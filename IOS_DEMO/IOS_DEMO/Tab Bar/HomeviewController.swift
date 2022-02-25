@@ -75,7 +75,7 @@ extension HomeviewController{
 }
 
 // MARK: - UITableViewDataSource
-extension HomeviewController:UITableViewDataSource{
+extension HomeviewController:UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return Constants.ONE
@@ -83,20 +83,22 @@ extension HomeviewController:UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         filterdData.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cell,for: indexPath)
         cell.textLabel?.text = filterdData[indexPath.row]
-        cell.backgroundColor = indexPath.row % Constants.TWO == Constants.ZERO ? .gray : .lightText
+        cell.backgroundColor = (indexPath.row % Constants.TWO == Constants.ZERO) ? .gray : .blue
         return cell
     }
+    
 }
-
 // MARK: - UITableViewDelegate
-extension HomeviewController:UITableViewDelegate{
+extension HomeviewController:UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        print("you tapped")
+        print(Constants.tapped)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -106,22 +108,24 @@ extension HomeviewController:UITableViewDelegate{
 
 // MARK: - UISearchBarDelegate
 extension HomeviewController : UISearchBarDelegate{
-    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filterdData = names
         if searchText != "" {
             filterdData = filterdData.filter{$0.lowercased().contains(searchText.lowercased())}
-        }
+            tableView.reloadData()
+        } else {
             tableView.reloadData()
         }
+        
     }
 }
 
 // MARK: - UICollectionViewDataSource
-extension HomeviewController : UICollectionViewDataSource{
+extension HomeviewController : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return numberofItems
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

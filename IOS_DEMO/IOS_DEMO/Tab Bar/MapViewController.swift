@@ -24,14 +24,16 @@ class MapViewController: UIViewController {
         pickerView.delegate = self
         pickerView.dataSource = self
     }
+    
 }
+
 // MARK: - updateMap
-extension MapViewController {
+extension MapViewController{
     
     func updateMap(row : Int,latitude:Double,longitude:Double)
     {
         let location = CLLocationCoordinate2D(latitude: latitude,longitude: longitude)
-        let span = MKCoordinateSpan(latitudeDelta: Constants.ONE, longitudeDelta: Constants.ONE)
+        let span = MKCoordinateSpan(latitudeDelta: CLLocationDegrees(Constants.ONE), longitudeDelta:CLLocationDegrees(Constants.ONE))
         let region = MKCoordinateRegion(center: location, span: span)
         MapView.removeAnnotation(annotation)
         MapView.setRegion(region, animated: true)
@@ -46,6 +48,7 @@ extension MapViewController:UIPickerViewDataSource{
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return Constants.ONE
     }
+    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return city.count
     }

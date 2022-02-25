@@ -8,8 +8,8 @@
 import UIKit
 
 class MainVCCoordinator: Coordinator{
-    // MARK: - Variables
     
+    // MARK: - Variables
     var navController: UINavigationController?
     
     init(_ navigationController: UINavigationController){
@@ -29,4 +29,5 @@ class MainVCCoordinator: Coordinator{
     func finishtoRoot() {
         //To be Implemented LATER
     }
+    
 }
