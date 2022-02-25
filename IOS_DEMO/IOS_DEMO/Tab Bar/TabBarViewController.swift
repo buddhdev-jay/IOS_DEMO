@@ -8,7 +8,7 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-    
+
     // MARK: -  View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,9 +16,9 @@ class TabBarViewController: UITabBarController {
         self.delegate = self
     }
 }
-
 // MARK: - UITabBarControllerDelegate
 extension TabBarViewController: UITabBarControllerDelegate{
+    
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         return true
     }
