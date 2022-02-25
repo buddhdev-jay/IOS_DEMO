@@ -221,7 +221,7 @@ resultOne = nil
 enum DivisionError: Error {
     case dividedByZero
 }
-func division(numerator: Int, denominator: Int) throws {
+func division(numerator: Int, denominator: Int) throws {
     if denominator == 0 {
         throw DivisionError.dividedByZero
     }

@@ -1,5 +1,13 @@
 import UIKit
 
+var stringarray = ["abc","xyz","pqr"]
+for (index,element) in stringarray.enumerated(){
+    print("\(index) \(element)")
+}
+
+
+
+
 var namestr : String = "Jay"
 var nameint : Int = Int(namestr) ?? 1
 print(nameint)
