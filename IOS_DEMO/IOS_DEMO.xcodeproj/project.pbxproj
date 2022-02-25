@@ -17,6 +17,7 @@
 		FBD33FB0278D44930029EE9A /* IOS_DEMOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33FAF278D44930029EE9A /* IOS_DEMOTests.swift */; };
 		FBD33FBA278D44930029EE9A /* IOS_DEMOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33FB9278D44930029EE9A /* IOS_DEMOUITests.swift */; };
 		FBD33FBC278D44930029EE9A /* IOS_DEMOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33FBB278D44930029EE9A /* IOS_DEMOUITestsLaunchTests.swift */; };
+		FBE9556327C8BA5000DBC991 /* Login_signup_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9556227C8BA5000DBC991 /* Login_signup_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FBD33FB5278D44930029EE9A /* IOS_DEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOS_DEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD33FB9278D44930029EE9A /* IOS_DEMOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_DEMOUITests.swift; sourceTree = "<group>"; };
 		FBD33FBB278D44930029EE9A /* IOS_DEMOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_DEMOUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBE9556227C8BA5000DBC991 /* Login_signup_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_signup_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				FBD33F9A278D44910029EE9A /* SceneDelegate.swift */,
 				FBD33F9C278D44910029EE9A /* ViewController.swift */,
 				FBD33F9E278D44910029EE9A /* Main.storyboard */,
+				FBE9556227C8BA5000DBC991 /* Login_signup_ViewController.swift */,
 				FBD33FA1278D44920029EE9A /* Assets.xcassets */,
 				FBD33FA3278D44920029EE9A /* LaunchScreen.storyboard */,
 				FBD33FA6278D44920029EE9A /* Info.plist */,
@@ -264,6 +267,7 @@
 				FB994CB327A27D32006969A2 /* SecondViewController.swift in Sources */,
 				FBD33F9D278D44910029EE9A /* ViewController.swift in Sources */,
 				FBD33F99278D44910029EE9A /* AppDelegate.swift in Sources */,
+				FBE9556327C8BA5000DBC991 /* Login_signup_ViewController.swift in Sources */,
 				FBD33F9B278D44910029EE9A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

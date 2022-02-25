@@ -1,4 +1,15 @@
 import UIKit
+import CoreFoundation
+
+var numbers = [10,20,30,45,6,599,78,60]
+var num = numbers.filter{$0 % 5 == 0}
+for i in numbers {
+    if (i % 5 == 0){
+        num?.append(i)
+    }
+}
+print(<#T##items: Any...##Any#>)
+
 
 //Functions
 //External Parameter Names

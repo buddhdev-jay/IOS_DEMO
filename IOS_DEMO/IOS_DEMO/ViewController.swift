@@ -9,12 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
     // MARK: - Outlet
+    @IBOutlet weak var btn_gotoautolayout: UIButton!
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var txtView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+   
+    
 }
 // MARK: - textDelegate Extension
 extension ViewController: TextDelegate {
@@ -30,5 +34,11 @@ extension ViewController {
         vc.txtDelegate = self
         self.present(vc, animated: true, completion: nil)
     }
+    @IBAction func goToAutoLayout(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "login_signup_ViewController") as! Login_signup_ViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+ 
+    
 }
 
