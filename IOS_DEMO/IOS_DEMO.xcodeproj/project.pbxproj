@@ -18,6 +18,7 @@
 		FBD33FBA278D44930029EE9A /* IOS_DEMOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33FB9278D44930029EE9A /* IOS_DEMOUITests.swift */; };
 		FBD33FBC278D44930029EE9A /* IOS_DEMOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33FBB278D44930029EE9A /* IOS_DEMOUITestsLaunchTests.swift */; };
 		FBE9556327C8BA5000DBC991 /* Login_signup_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9556227C8BA5000DBC991 /* Login_signup_ViewController.swift */; };
+		FBFEBE5027CCE60B004EF9AA /* Signup_form_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFEBE4F27CCE60B004EF9AA /* Signup_form_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		FBD33FB9278D44930029EE9A /* IOS_DEMOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_DEMOUITests.swift; sourceTree = "<group>"; };
 		FBD33FBB278D44930029EE9A /* IOS_DEMOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_DEMOUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FBE9556227C8BA5000DBC991 /* Login_signup_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_signup_ViewController.swift; sourceTree = "<group>"; };
+		FBFEBE4F27CCE60B004EF9AA /* Signup_form_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup_form_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				FBD33FA3278D44920029EE9A /* LaunchScreen.storyboard */,
 				FBD33FA6278D44920029EE9A /* Info.plist */,
 				FB994CB227A27D32006969A2 /* SecondViewController.swift */,
+				FBFEBE4F27CCE60B004EF9AA /* Signup_form_ViewController.swift */,
 			);
 			path = IOS_DEMO;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBFEBE5027CCE60B004EF9AA /* Signup_form_ViewController.swift in Sources */,
 				FB994CB327A27D32006969A2 /* SecondViewController.swift in Sources */,
 				FBD33F9D278D44910029EE9A /* ViewController.swift in Sources */,
 				FBD33F99278D44910029EE9A /* AppDelegate.swift in Sources */,
