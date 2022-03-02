@@ -43,6 +43,15 @@
                                     <action selector="goToAutoLayout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="de9-Ja-6uF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KW-YC-c7s">
+                                <rect key="frame" x="181" y="640" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="goToUIStoryboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y2O-69-aUg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -51,11 +60,20 @@
                         <outlet property="btn1" destination="xh1-Sw-W4R" id="J23-xM-PNU"/>
                         <outlet property="btn_gotoautolayout" destination="Cn0-lF-nlV" id="D2H-LV-jZA"/>
                         <outlet property="txtView" destination="Gii-0Y-YGZ" id="vZ2-3v-6ts"/>
+                        <segue destination="uoB-r1-JnN" kind="presentation" identifier="uistoryboard" id="lw4-Jc-abV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="33.482142857142854"/>
+        </scene>
+        <!--UI_Component_Storyboard-->
+        <scene sceneID="B1n-TT-ja5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UI_Component_Storyboard" id="uoB-r1-JnN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2fV-kl-8de" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="392"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="yrd-EY-fxS">

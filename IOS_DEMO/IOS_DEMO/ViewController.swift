@@ -19,6 +19,9 @@ class ViewController: UIViewController {
     }
    
     
+    @IBAction func goToUIStoryboard(_ sender: Any) {
+        performSegue(withIdentifier: "uistoryboard", sender: self)
+    }
 }
 // MARK: - textDelegate Extension
 extension ViewController: TextDelegate {
