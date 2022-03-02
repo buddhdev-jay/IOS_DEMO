@@ -16,11 +16,12 @@ class ScrollViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    @IBAction func goToSignupScreen(_ sender: UIButton) {
+    @IBAction func goToSignUpScreen(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "signup_Screen_ViewController") as! Signup_Screen_ViewController
         self.present(vc, animated: true, completion: nil)
+        
     }
+    
     /*
     // MARK: - Navigation
 

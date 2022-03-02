@@ -334,7 +334,7 @@
                                     </view>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="OB3-6C-IGx"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstItem="nWj-ss-ZpX" firstAttribute="top" secondItem="Cia-bu-vQO" secondAttribute="bottom" constant="15" id="0fH-3Y-TyW"/>
                                     <constraint firstItem="L7h-rA-E6M" firstAttribute="centerX" secondItem="9ET-Yh-dlR" secondAttribute="centerX" id="0hr-YY-DOb"/>
@@ -422,6 +422,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
