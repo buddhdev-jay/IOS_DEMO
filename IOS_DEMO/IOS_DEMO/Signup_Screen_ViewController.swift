@@ -9,26 +9,31 @@ import UIKit
 
 class Signup_Screen_ViewController: UIViewController {
 
-    @IBOutlet weak var ageLabel: UILabel!
+    // MARK: - Outlet
+    @IBOutlet weak var lblGender: UILabel!
+    @IBOutlet weak var genderSwitch: UISwitch!
+    @IBOutlet weak var lblAgeNumber: UILabel!
     @IBOutlet weak var ageSlider: UISlider!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
+    
+}
 
-    @IBAction func sliderValueChanged(_ sender: Any) {
-        ageLabel.text = "\(ageSlider.value)"
+// MARK: - Outlet Action
+extension Signup_Screen_ViewController{
+    @IBAction func displayGender(_ sender: Any) {
+        if genderSwitch.isOn{
+            lblGender.text = "Male"
+        }else
+        {
+            lblGender.text = "FeMale"
+        }
+        
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func displayAge(_ sender: Any) {
+        lblAgeNumber.text = "\(Int(ageSlider.value))"
     }
-    */
-
 }
