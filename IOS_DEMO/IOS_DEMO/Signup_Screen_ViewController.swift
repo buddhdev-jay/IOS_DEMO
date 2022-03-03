@@ -8,8 +8,9 @@
 import UIKit
 
 class Signup_Screen_ViewController: UIViewController {
-
+    var timer: Timer?
     // MARK: - Outlet
+    @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var lblGender: UILabel!
     @IBOutlet weak var genderSwitch: UISwitch!
     @IBOutlet weak var lblAgeNumber: UILabel!
@@ -18,6 +19,15 @@ class Signup_Screen_ViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBAction func startProgressBar(_ sender: UIButton) {
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { timer in
+                let change: Float = 0.1
+                self.progressView.progress = self.progressView.progress + (change)
+                if self.progressView.progress >= 1.0 {
+                    self.timer?.invalidate()
+                }
+            })
+    }
     
 }
 

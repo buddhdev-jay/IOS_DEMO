@@ -20,6 +20,9 @@
 		FBD33FB0278D44930029EE9A /* IOS_DEMOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33FAF278D44930029EE9A /* IOS_DEMOTests.swift */; };
 		FBD33FBA278D44930029EE9A /* IOS_DEMOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33FB9278D44930029EE9A /* IOS_DEMOUITests.swift */; };
 		FBD33FBC278D44930029EE9A /* IOS_DEMOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33FBB278D44930029EE9A /* IOS_DEMOUITestsLaunchTests.swift */; };
+		FBDD98D727D0CE7B00F40E28 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDD98D627D0CE7B00F40E28 /* TableViewController.swift */; };
+		FBDD98DA27D0DF4F00F40E28 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDD98D827D0DF4F00F40E28 /* TableViewCell.swift */; };
+		FBDD98DB27D0DF4F00F40E28 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDD98D927D0DF4F00F40E28 /* TableViewCell.xib */; };
 		FBE9556327C8BA5000DBC991 /* Login_signup_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9556227C8BA5000DBC991 /* Login_signup_ViewController.swift */; };
 		FBFEBE5027CCE60B004EF9AA /* Signup_form_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFEBE4F27CCE60B004EF9AA /* Signup_form_ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +62,9 @@
 		FBD33FB5278D44930029EE9A /* IOS_DEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOS_DEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD33FB9278D44930029EE9A /* IOS_DEMOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_DEMOUITests.swift; sourceTree = "<group>"; };
 		FBD33FBB278D44930029EE9A /* IOS_DEMOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_DEMOUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBDD98D627D0CE7B00F40E28 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FBDD98D827D0DF4F00F40E28 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FBDD98D927D0DF4F00F40E28 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		FBE9556227C8BA5000DBC991 /* Login_signup_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_signup_ViewController.swift; sourceTree = "<group>"; };
 		FBFEBE4F27CCE60B004EF9AA /* Signup_form_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup_form_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +130,9 @@
 				FB2B74C127CF6887002AFCB0 /* UI_Component_Storyboard.storyboard */,
 				FB2B74C327CF7A96002AFCB0 /* Signup_Screen_ViewController.swift */,
 				FB2B74C527CF932A002AFCB0 /* ScrollViewController.swift */,
+				FBDD98D627D0CE7B00F40E28 /* TableViewController.swift */,
+				FBDD98D827D0DF4F00F40E28 /* TableViewCell.swift */,
+				FBDD98D927D0DF4F00F40E28 /* TableViewCell.xib */,
 			);
 			path = IOS_DEMO;
 			sourceTree = "<group>";
@@ -250,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBD33FA5278D44920029EE9A /* LaunchScreen.storyboard in Resources */,
+				FBDD98DB27D0DF4F00F40E28 /* TableViewCell.xib in Resources */,
 				FB2B74C227CF6887002AFCB0 /* UI_Component_Storyboard.storyboard in Resources */,
 				FBD33FA2278D44920029EE9A /* Assets.xcassets in Resources */,
 				FBD33FA0278D44910029EE9A /* Main.storyboard in Resources */,
@@ -282,8 +292,10 @@
 				FBD33F9D278D44910029EE9A /* ViewController.swift in Sources */,
 				FB2B74C627CF932A002AFCB0 /* ScrollViewController.swift in Sources */,
 				FBD33F99278D44910029EE9A /* AppDelegate.swift in Sources */,
+				FBDD98DA27D0DF4F00F40E28 /* TableViewCell.swift in Sources */,
 				FBE9556327C8BA5000DBC991 /* Login_signup_ViewController.swift in Sources */,
 				FB2B74C427CF7A96002AFCB0 /* Signup_Screen_ViewController.swift in Sources */,
+				FBDD98D727D0CE7B00F40E28 /* TableViewController.swift in Sources */,
 				FBD33F9B278D44910029EE9A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
