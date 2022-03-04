@@ -39,5 +39,11 @@ extension TableViewController:UITableViewDataSource{
         }
         return UITableViewCell()
     }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Header"
+    }
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return "Footer "
+    }
     
 }

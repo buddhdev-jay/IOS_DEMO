@@ -9,6 +9,8 @@ import UIKit
 
 class Signup_Screen_ViewController: UIViewController {
     var timer: Timer?
+    @IBOutlet weak var stepper: UIStepper!
+    @IBOutlet weak var lblSteppervalue: UILabel!
     // MARK: - Outlet
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var lblGender: UILabel!
@@ -19,6 +21,9 @@ class Signup_Screen_ViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBAction func stepperValue(_ sender: UIStepper) {
+        lblSteppervalue.text = (stepper.value).description
+    }
     @IBAction func startProgressBar(_ sender: UIButton) {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { timer in
                 let change: Float = 0.1
