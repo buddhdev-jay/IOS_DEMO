@@ -8,15 +8,15 @@
 import UIKit
 
 class UISegmentedViewController: UIViewController {
-
+    
+    // MARK: - Outlet
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
-
+}
+// MARK: - Outlet Action
+extension UISegmentedViewController {
     @IBAction func imageChange(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex{
         case 0:
@@ -28,3 +28,5 @@ class UISegmentedViewController: UIViewController {
         }
     }
 }
+
+

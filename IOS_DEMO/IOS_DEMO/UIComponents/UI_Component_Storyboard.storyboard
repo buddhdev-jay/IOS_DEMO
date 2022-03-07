@@ -27,7 +27,7 @@
                                                 <rect key="frame" x="10" y="10" width="394" height="1324"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7K-ZK-bWx">
-                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="150"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="150" id="vl6-6V-4CJ"/>
                                                         </constraints>
@@ -37,8 +37,8 @@
                                                             <action selector="goToSignUpScreen:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ZLj-aa-2j0"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Zr-42-gnI">
-                                                        <rect key="frame" x="0.0" y="39" width="394" height="31"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Zr-42-gnI">
+                                                        <rect key="frame" x="0.0" y="158" width="394" height="215"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Tableview">
                                                             <color key="baseBackgroundColor" systemColor="systemRedColor"/>
@@ -48,7 +48,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x91-ID-vuP">
-                                                        <rect key="frame" x="0.0" y="78" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="381" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Go To Collection "/>
                                                         <connections>
@@ -56,15 +56,40 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMO-SL-wCf">
-                                                        <rect key="frame" x="0.0" y="117" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="420" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Go To SegmentControl"/>
                                                         <connections>
                                                             <action selector="goToSegmentControl:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rcV-Jo-VMy"/>
                                                         </connections>
                                                     </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bQ-ap-9Mo">
+                                                        <rect key="frame" x="0.0" y="459" width="394" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="PageControl"/>
+                                                        <connections>
+                                                            <action selector="goToPageControl:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2Eg-f9-gzf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9b-Zg-kxN">
+                                                        <rect key="frame" x="0.0" y="498" width="394" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="PageviewControl"/>
+                                                        <connections>
+                                                            <action selector="goToPageView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fK0-7n-ori"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fr1-g4-cuZ">
+                                                        <rect key="frame" x="0.0" y="537" width="394" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Go To Webview"/>
+                                                        <connections>
+                                                            <action selector="goToWebview:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pw4-zS-nWj"/>
+                                                        </connections>
+                                                    </button>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="GXC-ee-ql7">
-                                                        <rect key="frame" x="0.0" y="156" width="394" height="34"/>
+                                                        <rect key="frame" x="0.0" y="576" width="394" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" systemColor="linkColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -74,173 +99,103 @@
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="94Q-9f-iVe">
-                                                        <rect key="frame" x="0.0" y="198" width="394" height="34"/>
+                                                        <rect key="frame" x="0.0" y="618" width="394" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kWQ-a5-cS4">
-                                                        <rect key="frame" x="0.0" y="240" width="394" height="34"/>
+                                                        <rect key="frame" x="0.0" y="660" width="394" height="34"/>
                                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="56a-dL-aZ6">
-                                                        <rect key="frame" x="0.0" y="282" width="394" height="34"/>
+                                                        <rect key="frame" x="0.0" y="702" width="394" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="e9D-bT-ZQa">
-                                                        <rect key="frame" x="0.0" y="324" width="394" height="34"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="Pem-Y9-YlU">
-                                                        <rect key="frame" x="0.0" y="366" width="394" height="34"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="fs5-Wd-OKB">
-                                                        <rect key="frame" x="0.0" y="408" width="394" height="34"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="k6o-gd-vgf">
-                                                        <rect key="frame" x="0.0" y="450" width="394" height="34"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="vTA-8F-hH9">
-                                                        <rect key="frame" x="0.0" y="492" width="394" height="34"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="qcm-1r-bMY">
-                                                        <rect key="frame" x="0.0" y="534" width="394" height="34"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="4Vd-I6-mAc">
-                                                        <rect key="frame" x="0.0" y="576" width="394" height="34"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="a7d-ae-XaK">
-                                                        <rect key="frame" x="0.0" y="618" width="394" height="34"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="Amt-kn-NZH">
-                                                        <rect key="frame" x="0.0" y="660" width="394" height="34"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="0hL-BJ-GVB">
-                                                        <rect key="frame" x="0.0" y="702" width="394" height="34"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="ZkP-YE-HNH">
                                                         <rect key="frame" x="0.0" y="744" width="394" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="fKS-OP-TTN">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="Pem-Y9-YlU">
                                                         <rect key="frame" x="0.0" y="786" width="394" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="Iqt-Bm-ZCT">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="fs5-Wd-OKB">
                                                         <rect key="frame" x="0.0" y="828" width="394" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="aZa-4u-L4n">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="vTA-8F-hH9">
                                                         <rect key="frame" x="0.0" y="870" width="394" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="wUo-O9-K6g">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="Amt-kn-NZH">
                                                         <rect key="frame" x="0.0" y="912" width="394" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="HQm-eQ-SfY">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="0hL-BJ-GVB">
                                                         <rect key="frame" x="0.0" y="954" width="394" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="fKS-OP-TTN">
+                                                        <rect key="frame" x="0.0" y="996" width="394" height="34"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="qsC-jW-26l">
-                                                        <rect key="frame" x="0.0" y="996" width="394" height="34"/>
+                                                        <rect key="frame" x="0.0" y="1038" width="394" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="382-kz-Swy">
-                                                        <rect key="frame" x="0.0" y="1038" width="394" height="34"/>
+                                                        <rect key="frame" x="0.0" y="1080" width="394" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" systemColor="tintColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="9sf-rJ-y2C">
-                                                        <rect key="frame" x="0.0" y="1080" width="394" height="34"/>
+                                                        <rect key="frame" x="0.0" y="1122" width="394" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="YY0-oH-r6I">
-                                                        <rect key="frame" x="0.0" y="1122" width="394" height="34"/>
+                                                        <rect key="frame" x="0.0" y="1164" width="394" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="KLy-II-YOZ">
-                                                        <rect key="frame" x="0.0" y="1164" width="394" height="34"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="EL9-Bs-Bhl">
                                                         <rect key="frame" x="0.0" y="1206" width="394" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -298,6 +253,9 @@
                         <outlet property="btnTableView" destination="GXC-ee-ql7" id="KT6-4B-Fcz"/>
                         <segue destination="7ya-E4-6bl" kind="presentation" identifier="goToCollectionView" modalPresentationStyle="fullScreen" id="gnb-KD-lOj"/>
                         <segue destination="dZl-W9-cpV" kind="presentation" identifier="goToSegmentControl" id="a13-9K-kMa"/>
+                        <segue destination="YfV-CR-GVQ" kind="presentation" identifier="goToPageControl" id="T76-eV-2Xf"/>
+                        <segue destination="ADj-sW-sbT" kind="presentation" identifier="goToPageviewControl" modalPresentationStyle="fullScreen" id="Ht8-TY-WBg"/>
+                        <segue destination="Bxc-8e-Du4" kind="presentation" identifier="goToWebview" id="gLc-vw-Tt6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -491,15 +449,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TVA-zI-P4s">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TVA-zI-P4s">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="eCg-9Q-gYR">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eCg-9Q-gYR" id="4ma-qI-2z1">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWW-It-8R9">
@@ -595,6 +552,81 @@
             </objects>
             <point key="canvasLocation" x="2061" y="51"/>
         </scene>
+        <!--Webview View Controller-->
+        <scene sceneID="emP-lZ-hhp">
+            <objects>
+                <viewController storyboardIdentifier="webviewViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bxc-8e-Du4" customClass="WebviewViewController" customModule="IOS_DEMO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v6u-rq-iaT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" showsSearchResultsButton="YES" showsBookmarkButton="YES" showsCancelButton="YES" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q5g-Bl-gzW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="axE-5k-71Z"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                            <searchBar contentMode="redraw" ambiguous="YES" searchBarStyle="minimal" showsSearchResultsButton="YES" showsBookmarkButton="YES" showsCancelButton="YES" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mtP-q3-GBa">
+                                <rect key="frame" x="0.0" y="372" width="414" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="oAt-AF-DiI"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfG-eU-9Zq">
+                                <rect key="frame" x="0.0" y="98" width="414" height="456"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wmh-LM-je1" userLabel="Web View 2">
+                                <rect key="frame" x="0.0" y="604" width="414" height="570"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TOG-BS-ohY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q5g-Bl-gzW" firstAttribute="top" secondItem="TOG-BS-ohY" secondAttribute="top" id="2Id-SP-j3a"/>
+                            <constraint firstAttribute="bottom" secondItem="Wmh-LM-je1" secondAttribute="bottom" id="AQv-wA-Ysd"/>
+                            <constraint firstItem="Q5g-Bl-gzW" firstAttribute="trailing" secondItem="zfG-eU-9Zq" secondAttribute="trailing" id="FY3-AJ-Dwy"/>
+                            <constraint firstItem="Wmh-LM-je1" firstAttribute="height" secondItem="TOG-BS-ohY" secondAttribute="height" multiplier="0.5" id="JdG-Pl-B56"/>
+                            <constraint firstItem="zfG-eU-9Zq" firstAttribute="top" secondItem="Q5g-Bl-gzW" secondAttribute="bottom" id="L0v-0o-JdD"/>
+                            <constraint firstItem="Wmh-LM-je1" firstAttribute="top" secondItem="zfG-eU-9Zq" secondAttribute="bottom" constant="50" id="LBd-C6-KB4"/>
+                            <constraint firstItem="Wmh-LM-je1" firstAttribute="leading" secondItem="TOG-BS-ohY" secondAttribute="leading" id="O0F-Dy-erD"/>
+                            <constraint firstItem="TOG-BS-ohY" firstAttribute="trailing" secondItem="Wmh-LM-je1" secondAttribute="trailing" id="SJS-9f-3by"/>
+                            <constraint firstItem="TOG-BS-ohY" firstAttribute="trailing" secondItem="zfG-eU-9Zq" secondAttribute="trailing" id="Xn4-JA-r29"/>
+                            <constraint firstItem="zfG-eU-9Zq" firstAttribute="leading" secondItem="TOG-BS-ohY" secondAttribute="leading" id="alt-0K-bsf"/>
+                            <constraint firstItem="Q5g-Bl-gzW" firstAttribute="leading" secondItem="zfG-eU-9Zq" secondAttribute="leading" id="rOu-im-SeO"/>
+                            <constraint firstItem="zfG-eU-9Zq" firstAttribute="height" secondItem="TOG-BS-ohY" secondAttribute="height" multiplier="0.4" id="uid-81-mSh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchBarOne" destination="Q5g-Bl-gzW" id="4cO-BI-ovW"/>
+                        <outlet property="searchBartwo" destination="mtP-q3-GBa" id="9MF-eh-kyg"/>
+                        <outlet property="webView" destination="zfG-eU-9Zq" id="4ru-3y-MTd"/>
+                        <outlet property="webViewTwo" destination="Wmh-LM-je1" id="iIL-Ot-3qw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0N2-Gk-4ND" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-252.17391304347828" y="906.69642857142856"/>
+        </scene>
         <!--Segmented View Controller-->
         <scene sceneID="UOL-3H-O4D">
             <objects>
@@ -642,6 +674,62 @@
             </objects>
             <point key="canvasLocation" x="470" y="909"/>
         </scene>
+        <!--Page Control View Controller-->
+        <scene sceneID="TAa-cA-iOj">
+            <objects>
+                <viewController storyboardIdentifier="pageControlViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YfV-CR-GVQ" customClass="PageControlViewController" customModule="IOS_DEMO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VAo-Wc-twU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="bWT-vq-awS">
+                                <rect key="frame" x="57" y="496" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="1ST-tW-x1A"/>
+                                    <constraint firstAttribute="width" constant="300" id="y0L-nB-KLa"/>
+                                </constraints>
+                                <color key="currentPageIndicatorTintColor" systemColor="linkColor"/>
+                                <connections>
+                                    <action selector="changePage:" destination="YfV-CR-GVQ" eventType="valueChanged" id="PsB-iw-lRY"/>
+                                </connections>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPw-R0-Cve">
+                                <rect key="frame" x="186" y="169" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EyN-U1-W7M"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EyN-U1-W7M" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dPw-R0-Cve" secondAttribute="trailing" constant="186" id="1fV-gY-SyK"/>
+                            <constraint firstItem="bWT-vq-awS" firstAttribute="leading" secondItem="EyN-U1-W7M" secondAttribute="leading" constant="57" id="3va-tX-Oj0"/>
+                            <constraint firstItem="EyN-U1-W7M" firstAttribute="trailing" secondItem="bWT-vq-awS" secondAttribute="trailing" constant="57" id="EgY-X2-afN"/>
+                            <constraint firstItem="dPw-R0-Cve" firstAttribute="centerX" secondItem="VAo-Wc-twU" secondAttribute="centerX" id="Frn-0F-RtV"/>
+                            <constraint firstItem="dPw-R0-Cve" firstAttribute="top" secondItem="EyN-U1-W7M" secondAttribute="top" constant="169" id="G9U-rP-ThM"/>
+                            <constraint firstItem="bWT-vq-awS" firstAttribute="top" secondItem="dPw-R0-Cve" secondAttribute="bottom" constant="306" id="J15-eQ-VmE"/>
+                            <constraint firstItem="dPw-R0-Cve" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EyN-U1-W7M" secondAttribute="leading" constant="186" id="Ovo-N3-m3G"/>
+                            <constraint firstItem="bWT-vq-awS" firstAttribute="centerX" secondItem="VAo-Wc-twU" secondAttribute="centerX" id="zed-ki-9G3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblPagename" destination="dPw-R0-Cve" id="36l-De-3co"/>
+                        <outlet property="pageControl" destination="bWT-vq-awS" id="czJ-2c-Cjt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8m-ya-Zxl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1193" y="909"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="qju-a2-fyv">
+            <objects>
+                <pageViewController storyboardIdentifier="pageViewController" autoresizesArchivedViewToFullSize="NO" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" pageSpacing="4" navigationOrientation="horizontal" spineLocation="min" id="ADj-sW-sbT" customClass="PageViewController" customModule="IOS_DEMO" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wV9-8A-chk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2061" y="909"/>
+        </scene>
     </scenes>
     <resources>
         <image name="img_eye_icon" width="240" height="240"/>
@@ -669,9 +757,6 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

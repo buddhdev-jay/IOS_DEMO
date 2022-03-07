@@ -9,17 +9,24 @@ import UIKit
 
 class CollectionViewController: UIViewController {
     
+    // MARK: - Outlet
     @IBOutlet weak var collectionView: UICollectionView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
     }
     
 }
+
+// MARK: - Outlet Action
 extension CollectionViewController:UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 25
+        if section == 0{
+            return 25
+        }else  {
+            return 50
+        }
+        
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as?  CollectionViewCell {
@@ -27,5 +34,8 @@ extension CollectionViewController:UICollectionViewDelegate,UICollectionViewData
             return cell
         }
         return UICollectionViewCell()
+    }
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
     }
 }

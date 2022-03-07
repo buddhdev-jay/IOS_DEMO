@@ -14,6 +14,9 @@
 		FB2B74C427CF7A96002AFCB0 /* Signup_Screen_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B74C327CF7A96002AFCB0 /* Signup_Screen_ViewController.swift */; };
 		FB2B74C627CF932A002AFCB0 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B74C527CF932A002AFCB0 /* ScrollViewController.swift */; };
 		FB994CB327A27D32006969A2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB994CB227A27D32006969A2 /* SecondViewController.swift */; };
+		FBB3344727D5F77B00EBA1C8 /* PageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3344627D5F77B00EBA1C8 /* PageControlViewController.swift */; };
+		FBB3344927D5FFE300EBA1C8 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3344827D5FFE300EBA1C8 /* PageViewController.swift */; };
+		FBB3344B27D6157D00EBA1C8 /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3344A27D6157D00EBA1C8 /* WebviewViewController.swift */; };
 		FBD33F99278D44910029EE9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33F98278D44910029EE9A /* AppDelegate.swift */; };
 		FBD33F9B278D44910029EE9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33F9A278D44910029EE9A /* SceneDelegate.swift */; };
 		FBD33F9D278D44910029EE9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33F9C278D44910029EE9A /* ViewController.swift */; };
@@ -55,6 +58,9 @@
 		FB2B74C327CF7A96002AFCB0 /* Signup_Screen_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup_Screen_ViewController.swift; sourceTree = "<group>"; };
 		FB2B74C527CF932A002AFCB0 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		FB994CB227A27D32006969A2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FBB3344627D5F77B00EBA1C8 /* PageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlViewController.swift; sourceTree = "<group>"; };
+		FBB3344827D5FFE300EBA1C8 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		FBB3344A27D6157D00EBA1C8 /* WebviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewViewController.swift; sourceTree = "<group>"; };
 		FBD33F95278D44910029EE9A /* IOS_DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_DEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD33F98278D44910029EE9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD33F9A278D44910029EE9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +123,9 @@
 				FB2B74C327CF7A96002AFCB0 /* Signup_Screen_ViewController.swift */,
 				FB2B74C527CF932A002AFCB0 /* ScrollViewController.swift */,
 				FB1F92ED27D232B800B8C4EC /* UISegmentedViewController.swift */,
+				FBB3344627D5F77B00EBA1C8 /* PageControlViewController.swift */,
+				FBB3344827D5FFE300EBA1C8 /* PageViewController.swift */,
+				FBB3344A27D6157D00EBA1C8 /* WebviewViewController.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -323,8 +332,10 @@
 				FBFEBE5027CCE60B004EF9AA /* Signup_form_ViewController.swift in Sources */,
 				FB994CB327A27D32006969A2 /* SecondViewController.swift in Sources */,
 				FB1F92EA27D20A4800B8C4EC /* CollectionViewCell.swift in Sources */,
+				FBB3344727D5F77B00EBA1C8 /* PageControlViewController.swift in Sources */,
 				FBD33F9D278D44910029EE9A /* ViewController.swift in Sources */,
 				FB2B74C627CF932A002AFCB0 /* ScrollViewController.swift in Sources */,
+				FBB3344927D5FFE300EBA1C8 /* PageViewController.swift in Sources */,
 				FBD33F99278D44910029EE9A /* AppDelegate.swift in Sources */,
 				FB1F92EE27D232B800B8C4EC /* UISegmentedViewController.swift in Sources */,
 				FBDD98DA27D0DF4F00F40E28 /* TableViewCell.swift in Sources */,
@@ -332,6 +343,7 @@
 				FB2B74C427CF7A96002AFCB0 /* Signup_Screen_ViewController.swift in Sources */,
 				FBDD98D727D0CE7B00F40E28 /* TableViewController.swift in Sources */,
 				FBD33F9B278D44910029EE9A /* SceneDelegate.swift in Sources */,
+				FBB3344B27D6157D00EBA1C8 /* WebviewViewController.swift in Sources */,
 				FB1F92E827D2017E00B8C4EC /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
