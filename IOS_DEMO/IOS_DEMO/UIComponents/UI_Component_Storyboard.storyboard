@@ -9,6 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--TabBar-->
+        <scene sceneID="Hn0-eT-RDE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabBar" id="LRi-pn-1Ve" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hXk-uq-Zgb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HmQ-Jd-wqe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-571" y="157"/>
+        </scene>
         <!--Scroll View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
@@ -38,7 +48,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Zr-42-gnI">
-                                                        <rect key="frame" x="0.0" y="158" width="394" height="215"/>
+                                                        <rect key="frame" x="0.0" y="158" width="394" height="176"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Tableview">
                                                             <color key="baseBackgroundColor" systemColor="systemRedColor"/>
@@ -48,7 +58,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x91-ID-vuP">
-                                                        <rect key="frame" x="0.0" y="381" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="342" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Go To Collection "/>
                                                         <connections>
@@ -56,7 +66,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMO-SL-wCf">
-                                                        <rect key="frame" x="0.0" y="420" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="381" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Go To SegmentControl"/>
                                                         <connections>
@@ -64,7 +74,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bQ-ap-9Mo">
-                                                        <rect key="frame" x="0.0" y="459" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="420" width="394" height="31"/>
                                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="PageControl"/>
@@ -73,7 +83,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9b-Zg-kxN">
-                                                        <rect key="frame" x="0.0" y="498" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="459" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="PageviewControl"/>
                                                         <connections>
@@ -81,11 +91,19 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fr1-g4-cuZ">
-                                                        <rect key="frame" x="0.0" y="537" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="498" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Go To Webview"/>
                                                         <connections>
                                                             <action selector="goToWebview:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pw4-zS-nWj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5O-cL-Q4C">
+                                                        <rect key="frame" x="0.0" y="537" width="394" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Go To Tab Bar"/>
+                                                        <connections>
+                                                            <segue destination="LRi-pn-1Ve" kind="show" id="qXR-S5-izM"/>
                                                         </connections>
                                                     </button>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="GXC-ee-ql7">
@@ -451,9 +469,13 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TVA-zI-P4s">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <activityIndicatorView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" id="mr9-J2-C4C">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </activityIndicatorView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="eCg-9Q-gYR">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="88.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eCg-9Q-gYR" id="4ma-qI-2z1">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -483,6 +505,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityindicator" destination="mr9-J2-C4C" id="lBb-xf-Fu1"/>
                         <outlet property="tableView" destination="TVA-zI-P4s" id="UZ8-Pc-kTT"/>
                     </connections>
                 </viewController>

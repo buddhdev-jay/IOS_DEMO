@@ -11,6 +11,7 @@ class TableViewController: UIViewController {
     
     // MARK: - Outlet
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var activityindicator: UIActivityIndicatorView!
     var names = ["JAY","abc","xyz"]
     var sectionOne = 2
     var sectionTwo = 1
@@ -25,10 +26,12 @@ class TableViewController: UIViewController {
         for _ in 1...100 {
             names += ["JAY","abc","xyz"]
         }
+        self.activityindicator.startAnimating()
         sectionOne = 100
         sectionTwo = 25
             self.tableView.reloadData()
             refreshControl.endRefreshing()
+        self.activityindicator.stopAnimating()
         }
     override func viewDidLoad() {
         super.viewDidLoad()

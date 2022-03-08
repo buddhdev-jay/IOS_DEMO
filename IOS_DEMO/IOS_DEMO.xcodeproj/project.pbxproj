@@ -17,6 +17,9 @@
 		FBB3344727D5F77B00EBA1C8 /* PageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3344627D5F77B00EBA1C8 /* PageControlViewController.swift */; };
 		FBB3344927D5FFE300EBA1C8 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3344827D5FFE300EBA1C8 /* PageViewController.swift */; };
 		FBB3344B27D6157D00EBA1C8 /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3344A27D6157D00EBA1C8 /* WebviewViewController.swift */; };
+		FBBEEC2F27D74ED9005B0586 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBEEC2E27D74ED9005B0586 /* TabBar.storyboard */; };
+		FBBEEC3127D75112005B0586 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEEC3027D75112005B0586 /* TabBarViewController.swift */; };
+		FBBEEC3327D763EA005B0586 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBEEC3227D763EA005B0586 /* MapViewController.swift */; };
 		FBD33F99278D44910029EE9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33F98278D44910029EE9A /* AppDelegate.swift */; };
 		FBD33F9B278D44910029EE9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33F9A278D44910029EE9A /* SceneDelegate.swift */; };
 		FBD33F9D278D44910029EE9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD33F9C278D44910029EE9A /* ViewController.swift */; };
@@ -61,6 +64,9 @@
 		FBB3344627D5F77B00EBA1C8 /* PageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlViewController.swift; sourceTree = "<group>"; };
 		FBB3344827D5FFE300EBA1C8 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		FBB3344A27D6157D00EBA1C8 /* WebviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewViewController.swift; sourceTree = "<group>"; };
+		FBBEEC2E27D74ED9005B0586 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		FBBEEC3027D75112005B0586 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		FBBEEC3227D763EA005B0586 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FBD33F95278D44910029EE9A /* IOS_DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_DEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD33F98278D44910029EE9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD33F9A278D44910029EE9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +145,16 @@
 			path = UICollectionView;
 			sourceTree = "<group>";
 		};
+		FBBEEC2D27D74EBA005B0586 /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				FBBEEC2E27D74ED9005B0586 /* TabBar.storyboard */,
+				FBBEEC3027D75112005B0586 /* TabBarViewController.swift */,
+				FBBEEC3227D763EA005B0586 /* MapViewController.swift */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
 		FBD33F8C278D44910029EE9A = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +178,7 @@
 		FBD33F97278D44910029EE9A /* IOS_DEMO */ = {
 			isa = PBXGroup;
 			children = (
+				FBBEEC2D27D74EBA005B0586 /* Tab Bar */,
 				FB1F92E627D1F0A300B8C4EC /* UICollectionView */,
 				FB1F92E527D1E65100B8C4EC /* UIComponents */,
 				FB1F92E427D1E62200B8C4EC /* TableViewController */,
@@ -304,6 +321,7 @@
 				FBDD98DB27D0DF4F00F40E28 /* TableViewCell.xib in Resources */,
 				FB2B74C227CF6887002AFCB0 /* UI_Component_Storyboard.storyboard in Resources */,
 				FBD33FA2278D44920029EE9A /* Assets.xcassets in Resources */,
+				FBBEEC2F27D74ED9005B0586 /* TabBar.storyboard in Resources */,
 				FBD33FA0278D44910029EE9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,9 +356,11 @@
 				FBB3344927D5FFE300EBA1C8 /* PageViewController.swift in Sources */,
 				FBD33F99278D44910029EE9A /* AppDelegate.swift in Sources */,
 				FB1F92EE27D232B800B8C4EC /* UISegmentedViewController.swift in Sources */,
+				FBBEEC3127D75112005B0586 /* TabBarViewController.swift in Sources */,
 				FBDD98DA27D0DF4F00F40E28 /* TableViewCell.swift in Sources */,
 				FBE9556327C8BA5000DBC991 /* Login_signup_ViewController.swift in Sources */,
 				FB2B74C427CF7A96002AFCB0 /* Signup_Screen_ViewController.swift in Sources */,
+				FBBEEC3327D763EA005B0586 /* MapViewController.swift in Sources */,
 				FBDD98D727D0CE7B00F40E28 /* TableViewController.swift in Sources */,
 				FBD33F9B278D44910029EE9A /* SceneDelegate.swift in Sources */,
 				FBB3344B27D6157D00EBA1C8 /* WebviewViewController.swift in Sources */,

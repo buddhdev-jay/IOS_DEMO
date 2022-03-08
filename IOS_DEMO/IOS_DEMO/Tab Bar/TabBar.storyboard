@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J4o-ey-LLG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="sRL-BP-tto">
+            <objects>
+                <viewController id="UZq-Pc-382" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JdM-kb-eV5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YQa-en-0g0"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="RA7-HP-uLQ">
+                        <imageReference key="selectedImage" image="homekit" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zQv-e3-Cfj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="493" y="387"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="AiN-yg-mdV">
+            <objects>
+                <viewController storyboardIdentifier="mapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KFH-A6-5hp" customClass="MapViewController" customModule="IOS_DEMO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yXP-Ip-lur">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BmB-LJ-1Te">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                            </pickerView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Teh-be-01l">
+                                <rect key="frame" x="0.0" y="231" width="414" height="582"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vpB-Hc-fij"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BmB-LJ-1Te" secondAttribute="trailing" id="6cm-uX-fCa"/>
+                            <constraint firstItem="Teh-be-01l" firstAttribute="top" secondItem="BmB-LJ-1Te" secondAttribute="bottom" constant="15" id="O9d-6O-93z"/>
+                            <constraint firstItem="Teh-be-01l" firstAttribute="leading" secondItem="vpB-Hc-fij" secondAttribute="leading" id="Sq0-59-fwz"/>
+                            <constraint firstItem="BmB-LJ-1Te" firstAttribute="top" secondItem="yXP-Ip-lur" secondAttribute="top" id="TlQ-h5-KQf"/>
+                            <constraint firstItem="vpB-Hc-fij" firstAttribute="bottom" secondItem="Teh-be-01l" secondAttribute="bottom" id="Xub-PQ-ndj"/>
+                            <constraint firstItem="vpB-Hc-fij" firstAttribute="trailing" secondItem="Teh-be-01l" secondAttribute="trailing" id="w2P-DB-mlB"/>
+                            <constraint firstItem="BmB-LJ-1Te" firstAttribute="leading" secondItem="vpB-Hc-fij" secondAttribute="leading" id="xCv-lk-dLc"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" badgeValue="25" id="n4Y-ym-er2">
+                        <imageReference key="image" image="map.circle" catalog="system" symbolScale="default"/>
+                        <color key="badgeColor" systemColor="systemPinkColor"/>
+                        <imageReference key="selectedImage" image="map" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="MapView" destination="Teh-be-01l" id="FfJ-Gp-m8v"/>
+                        <outlet property="pickerView" destination="BmB-LJ-1Te" id="byj-bu-T8C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vDD-aJ-3Zw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="492.75362318840581" y="-220.3125"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="im3-09-ibt">
+            <objects>
+                <tabBarController id="J4o-ey-LLG" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="SrP-g5-34o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemPinkColor"/>
+                        <imageReference key="selectionIndicatorImage" image="square.and.arrow.up" catalog="system" symbolScale="default"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="KFH-A6-5hp" kind="relationship" relationship="viewControllers" id="su6-xc-HQf"/>
+                        <segue destination="UZq-Pc-382" kind="relationship" relationship="viewControllers" id="h6I-wz-S4s"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M97-ko-alG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-395" y="85"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <image name="map.circle" catalog="system" width="128" height="121"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
