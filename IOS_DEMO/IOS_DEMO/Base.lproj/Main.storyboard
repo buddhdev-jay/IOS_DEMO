@@ -34,20 +34,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cn0-lF-nlV">
-                                <rect key="frame" x="141" y="546" width="146" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cn0-lF-nlV">
+                                <rect key="frame" x="141" y="586" width="146" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="AutoLayout"/>
                                 <connections>
                                     <action selector="goToAutoLayout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="de9-Ja-6uF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KW-YC-c7s">
-                                <rect key="frame" x="181" y="640" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KW-YC-c7s">
+                                <rect key="frame" x="170" y="726" width="124" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Ui Components"/>
                                 <connections>
                                     <action selector="goToUIStoryboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y2O-69-aUg"/>
                                 </connections>
@@ -55,6 +53,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cn0-lF-nlV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="3UD-OI-zNn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0KW-YC-c7s" secondAttribute="bottom" constant="105" id="8DQ-KR-QIq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0KW-YC-c7s" secondAttribute="trailing" constant="120" id="G6Z-Js-XGR"/>
+                            <constraint firstItem="0KW-YC-c7s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="YC8-dc-UIB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cn0-lF-nlV" secondAttribute="trailing" constant="127" id="pGM-LQ-75O"/>
+                            <constraint firstItem="0KW-YC-c7s" firstAttribute="top" secondItem="Cn0-lF-nlV" secondAttribute="bottom" constant="109" id="rpz-Qz-keP"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="btn1" destination="xh1-Sw-W4R" id="J23-xM-PNU"/>

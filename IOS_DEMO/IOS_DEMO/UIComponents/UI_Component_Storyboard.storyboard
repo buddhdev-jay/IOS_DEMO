@@ -560,22 +560,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" showsSearchResultsButton="YES" showsBookmarkButton="YES" showsCancelButton="YES" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q5g-Bl-gzW">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="axE-5k-71Z"/>
-                                </constraints>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" showsSearchResultsButton="YES" showsBookmarkButton="YES" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q5g-Bl-gzW">
+                                <rect key="frame" x="0.0" y="10" width="414" height="51"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go"/>
                                 <scopeButtonTitles>
                                     <string>Title</string>
                                     <string>Title</string>
                                 </scopeButtonTitles>
                             </searchBar>
-                            <searchBar contentMode="redraw" ambiguous="YES" searchBarStyle="minimal" showsSearchResultsButton="YES" showsBookmarkButton="YES" showsCancelButton="YES" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mtP-q3-GBa">
-                                <rect key="frame" x="0.0" y="372" width="414" height="98"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="oAt-AF-DiI"/>
-                                </constraints>
+                            <searchBar tag="1" contentMode="redraw" searchBarStyle="minimal" showsSearchResultsButton="YES" showsBookmarkButton="YES" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mtP-q3-GBa">
+                                <rect key="frame" x="0.0" y="76" width="414" height="51"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go"/>
                                 <scopeButtonTitles>
                                     <string>Title</string>
@@ -583,15 +577,15 @@
                                 </scopeButtonTitles>
                             </searchBar>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfG-eU-9Zq">
-                                <rect key="frame" x="0.0" y="98" width="414" height="456"/>
+                                <rect key="frame" x="0.0" y="142" width="414" height="337"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wmh-LM-je1" userLabel="Web View 2">
-                                <rect key="frame" x="0.0" y="604" width="414" height="570"/>
+                            <wkWebView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wmh-LM-je1" userLabel="Web View 2">
+                                <rect key="frame" x="0.0" y="494" width="414" height="336.5"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -602,18 +596,20 @@
                         <viewLayoutGuide key="safeArea" id="TOG-BS-ohY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Q5g-Bl-gzW" firstAttribute="top" secondItem="TOG-BS-ohY" secondAttribute="top" id="2Id-SP-j3a"/>
-                            <constraint firstAttribute="bottom" secondItem="Wmh-LM-je1" secondAttribute="bottom" id="AQv-wA-Ysd"/>
-                            <constraint firstItem="Q5g-Bl-gzW" firstAttribute="trailing" secondItem="zfG-eU-9Zq" secondAttribute="trailing" id="FY3-AJ-Dwy"/>
-                            <constraint firstItem="Wmh-LM-je1" firstAttribute="height" secondItem="TOG-BS-ohY" secondAttribute="height" multiplier="0.5" id="JdG-Pl-B56"/>
-                            <constraint firstItem="zfG-eU-9Zq" firstAttribute="top" secondItem="Q5g-Bl-gzW" secondAttribute="bottom" id="L0v-0o-JdD"/>
-                            <constraint firstItem="Wmh-LM-je1" firstAttribute="top" secondItem="zfG-eU-9Zq" secondAttribute="bottom" constant="50" id="LBd-C6-KB4"/>
-                            <constraint firstItem="Wmh-LM-je1" firstAttribute="leading" secondItem="TOG-BS-ohY" secondAttribute="leading" id="O0F-Dy-erD"/>
-                            <constraint firstItem="TOG-BS-ohY" firstAttribute="trailing" secondItem="Wmh-LM-je1" secondAttribute="trailing" id="SJS-9f-3by"/>
-                            <constraint firstItem="TOG-BS-ohY" firstAttribute="trailing" secondItem="zfG-eU-9Zq" secondAttribute="trailing" id="Xn4-JA-r29"/>
-                            <constraint firstItem="zfG-eU-9Zq" firstAttribute="leading" secondItem="TOG-BS-ohY" secondAttribute="leading" id="alt-0K-bsf"/>
-                            <constraint firstItem="Q5g-Bl-gzW" firstAttribute="leading" secondItem="zfG-eU-9Zq" secondAttribute="leading" id="rOu-im-SeO"/>
-                            <constraint firstItem="zfG-eU-9Zq" firstAttribute="height" secondItem="TOG-BS-ohY" secondAttribute="height" multiplier="0.4" id="uid-81-mSh"/>
+                            <constraint firstItem="Q5g-Bl-gzW" firstAttribute="leading" secondItem="TOG-BS-ohY" secondAttribute="leading" id="5Qm-C4-YvM"/>
+                            <constraint firstItem="Wmh-LM-je1" firstAttribute="height" secondItem="zfG-eU-9Zq" secondAttribute="height" id="88t-ki-iQV"/>
+                            <constraint firstItem="zfG-eU-9Zq" firstAttribute="height" secondItem="v6u-rq-iaT" secondAttribute="height" multiplier="0.4" id="9CY-ml-JJt"/>
+                            <constraint firstItem="zfG-eU-9Zq" firstAttribute="leading" secondItem="TOG-BS-ohY" secondAttribute="leading" id="A4K-5W-jJx"/>
+                            <constraint firstItem="Wmh-LM-je1" firstAttribute="leading" secondItem="TOG-BS-ohY" secondAttribute="leading" id="Gct-2Y-l9U"/>
+                            <constraint firstItem="mtP-q3-GBa" firstAttribute="top" secondItem="Q5g-Bl-gzW" secondAttribute="bottom" constant="15" id="J1Z-SG-JYL"/>
+                            <constraint firstItem="Q5g-Bl-gzW" firstAttribute="top" secondItem="TOG-BS-ohY" secondAttribute="top" constant="10" id="V3p-er-1hs"/>
+                            <constraint firstItem="mtP-q3-GBa" firstAttribute="leading" secondItem="TOG-BS-ohY" secondAttribute="leading" id="VyB-Zc-1g5"/>
+                            <constraint firstItem="Wmh-LM-je1" firstAttribute="top" secondItem="zfG-eU-9Zq" secondAttribute="bottom" constant="15" id="aXQ-BJ-Fca"/>
+                            <constraint firstItem="zfG-eU-9Zq" firstAttribute="top" secondItem="mtP-q3-GBa" secondAttribute="bottom" constant="15" id="dS0-1N-hSe"/>
+                            <constraint firstItem="Wmh-LM-je1" firstAttribute="trailing" secondItem="TOG-BS-ohY" secondAttribute="trailing" id="eQx-iH-51d"/>
+                            <constraint firstItem="Q5g-Bl-gzW" firstAttribute="trailing" secondItem="TOG-BS-ohY" secondAttribute="trailing" id="eTb-sJ-t2D"/>
+                            <constraint firstItem="mtP-q3-GBa" firstAttribute="trailing" secondItem="TOG-BS-ohY" secondAttribute="trailing" id="fnt-J8-bIw"/>
+                            <constraint firstItem="zfG-eU-9Zq" firstAttribute="trailing" secondItem="TOG-BS-ohY" secondAttribute="trailing" id="qnr-AK-Qs6"/>
                         </constraints>
                     </view>
                     <connections>
