@@ -39,14 +39,37 @@ class WebviewViewController: UIViewController {
         guard let url = URL(string: "https://www.bing.com/search?q=" + searchString) else { return }
         let urlRequest = URLRequest(url: url)
         webViewTwo.load(urlRequest)
-    
+        
         
     }
 }
 // MARK: - UISearchBarDelegate
 extension WebviewViewController :UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        if searchBar == searchBarOne {
+        switch searchBar {
+        case searchBarOne :
+            let urlString = searchBar.text?.lowercased()
+            if let text = urlString {
+                if text.starts(with: "http://") {
+                    loadUrl(urlString!)
+                } else if (text.hasPrefix("www")) || (text.hasSuffix(".com")){
+                    loadUrl("http://\(urlString!)")
+                }else {
+                    searchTextOnGoogle(urlString!)
+                }
+            }
+        case searchBartwo :
+            let urlString = searchBar.text?.lowercased()
+            if let text = urlString {
+                if text.starts(with: "http://") {
+                    loadUrl(urlString!)
+                } else if (text.hasPrefix("www")) || (text.hasSuffix(".com")){
+                    loadUrl("http://\(urlString!)")
+                }else {
+                    searchTextOnGoogle(urlString!)
+                }
+            }
+        default :
             let urlString = searchBar.text?.lowercased()
             if let text = urlString {
                 if text.starts(with: "http://") {
@@ -58,21 +81,6 @@ extension WebviewViewController :UISearchBarDelegate {
                 }
             }
         }
-        if searchBar == searchBartwo {
-            let urlString = searchBar.text?.lowercased()
-            if let text = urlString {
-                if text.starts(with: "http://") {
-                    loadUrl(urlString!)
-                } else if (text.hasPrefix("www")) || (text.hasSuffix(".com")){
-                    loadUrl("http://\(urlString!)")
-                }else {
-                    searchTextOnBing(urlString!)
-                }
-            }
-        }
-        
-        
-        
     }
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         loadUrl("https://www.facebook.com")

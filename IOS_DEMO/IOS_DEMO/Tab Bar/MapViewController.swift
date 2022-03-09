@@ -22,6 +22,10 @@ class MapViewController: UIViewController {
       
         
     }
+   
+}
+// MARK: - updateMap
+extension MapViewController{
     func updateMap(row : Int,latitude:Double,longitude:Double)
     {
         let location = CLLocationCoordinate2D(latitude: latitude,
@@ -34,7 +38,7 @@ class MapViewController: UIViewController {
         MapView.addAnnotation(annotation)
     }
 }
-
+// MARK: - UIPickerViewDataSource
 extension MapViewController:UIPickerViewDataSource{
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -44,6 +48,7 @@ extension MapViewController:UIPickerViewDataSource{
         return city.count
     }
 }
+// MARK: - UIPickerViewDelegate
 extension MapViewController:UIPickerViewDelegate{
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return city[row]

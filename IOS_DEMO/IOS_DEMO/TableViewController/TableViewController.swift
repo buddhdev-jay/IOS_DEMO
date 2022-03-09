@@ -9,7 +9,7 @@ import UIKit
 
 class TableViewController: UIViewController {
     
-    // MARK: - Outlet
+    // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityindicator: UIActivityIndicatorView!
     var names = ["JAY","abc","xyz"]
