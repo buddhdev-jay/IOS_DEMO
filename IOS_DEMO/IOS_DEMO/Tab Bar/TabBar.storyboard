@@ -77,6 +77,11 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" systemColor="systemPinkColor"/>
                         <imageReference key="selectionIndicatorImage" image="square.and.arrow.up" catalog="system" symbolScale="default"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" systemColor="systemPinkColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="KFH-A6-5hp" kind="relationship" relationship="viewControllers" id="su6-xc-HQf"/>

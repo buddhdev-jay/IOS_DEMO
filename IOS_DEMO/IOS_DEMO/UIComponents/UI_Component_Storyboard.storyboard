@@ -19,6 +19,70 @@
             </objects>
             <point key="canvasLocation" x="-571" y="157"/>
         </scene>
+        <!--Image Picker View Controller-->
+        <scene sceneID="myU-11-KWX">
+            <objects>
+                <viewController storyboardIdentifier="imagePickerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c7Z-SW-z5l" customClass="imagePickerViewController" customModule="IOS_DEMO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qvD-ll-KGp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="xVX-Qa-RTu">
+                                <rect key="frame" x="0.0" y="463" width="414" height="216"/>
+                                <connections>
+                                    <action selector="dateChanged:" destination="c7Z-SW-z5l" eventType="valueChanged" id="iTh-jf-dQg"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JX6-qg-HUo">
+                                <rect key="frame" x="190" y="699" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SNt-NC-F0c">
+                                <rect key="frame" x="94" y="50" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="BU4-mm-SJR"/>
+                                    <constraint firstAttribute="height" constant="240" id="giQ-ar-ThL"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Oj-mc-xNl">
+                                <rect key="frame" x="94" y="360" width="207" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Selct Image from Gallery"/>
+                                <connections>
+                                    <action selector="pickImage:" destination="c7Z-SW-z5l" eventType="touchUpInside" id="hta-sa-LE0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qwu-R0-xMO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SNt-NC-F0c" firstAttribute="leading" secondItem="Qwu-R0-xMO" secondAttribute="leading" constant="94" id="BpG-Ro-hNh"/>
+                            <constraint firstItem="JX6-qg-HUo" firstAttribute="centerX" secondItem="qvD-ll-KGp" secondAttribute="centerX" id="LHr-Ip-ua7"/>
+                            <constraint firstItem="xVX-Qa-RTu" firstAttribute="leading" secondItem="Qwu-R0-xMO" secondAttribute="leading" id="PMU-JT-F69"/>
+                            <constraint firstItem="7Oj-mc-xNl" firstAttribute="top" secondItem="SNt-NC-F0c" secondAttribute="bottom" constant="70" id="QUV-In-6dM"/>
+                            <constraint firstItem="JX6-qg-HUo" firstAttribute="top" secondItem="xVX-Qa-RTu" secondAttribute="bottom" constant="20" id="SAM-ke-zQJ"/>
+                            <constraint firstItem="xVX-Qa-RTu" firstAttribute="top" secondItem="Qwu-R0-xMO" secondAttribute="top" constant="463" id="UXd-WA-5te"/>
+                            <constraint firstItem="Qwu-R0-xMO" firstAttribute="trailing" secondItem="SNt-NC-F0c" secondAttribute="trailing" constant="80" id="bHx-ml-MAi"/>
+                            <constraint firstItem="xVX-Qa-RTu" firstAttribute="centerX" secondItem="qvD-ll-KGp" secondAttribute="centerX" id="hQG-s2-JcZ"/>
+                            <constraint firstItem="SNt-NC-F0c" firstAttribute="top" secondItem="Qwu-R0-xMO" secondAttribute="top" constant="50" id="nVP-8w-ezE"/>
+                            <constraint firstItem="7Oj-mc-xNl" firstAttribute="leading" secondItem="SNt-NC-F0c" secondAttribute="leading" id="wXi-7L-qUs"/>
+                            <constraint firstItem="7Oj-mc-xNl" firstAttribute="width" secondItem="qvD-ll-KGp" secondAttribute="width" multiplier="0.5" id="waw-fA-FkF"/>
+                            <constraint firstItem="Qwu-R0-xMO" firstAttribute="trailing" secondItem="xVX-Qa-RTu" secondAttribute="trailing" id="yaV-P8-S7U"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnSelectImage" destination="7Oj-mc-xNl" id="eO2-Bc-8VJ"/>
+                        <outlet property="datePicker" destination="xVX-Qa-RTu" id="3VO-HQ-Tg7"/>
+                        <outlet property="imageView" destination="SNt-NC-F0c" id="pKV-Ji-fWi"/>
+                        <outlet property="lblDate" destination="JX6-qg-HUo" id="dSx-Lz-1mW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P4D-as-9DH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1146.376811594203" y="434.59821428571428"/>
+        </scene>
         <!--Scroll View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
@@ -48,7 +112,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Zr-42-gnI">
-                                                        <rect key="frame" x="0.0" y="158" width="394" height="176"/>
+                                                        <rect key="frame" x="0.0" y="158" width="394" height="137"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Tableview">
                                                             <color key="baseBackgroundColor" systemColor="systemRedColor"/>
@@ -58,7 +122,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x91-ID-vuP">
-                                                        <rect key="frame" x="0.0" y="342" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="303" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Go To Collection "/>
                                                         <connections>
@@ -66,7 +130,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMO-SL-wCf">
-                                                        <rect key="frame" x="0.0" y="381" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="342" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Go To SegmentControl"/>
                                                         <connections>
@@ -74,7 +138,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bQ-ap-9Mo">
-                                                        <rect key="frame" x="0.0" y="420" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="381" width="394" height="31"/>
                                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="PageControl"/>
@@ -83,7 +147,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9b-Zg-kxN">
-                                                        <rect key="frame" x="0.0" y="459" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="420" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="PageviewControl"/>
                                                         <connections>
@@ -91,7 +155,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fr1-g4-cuZ">
-                                                        <rect key="frame" x="0.0" y="498" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="459" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Go To Webview"/>
                                                         <connections>
@@ -99,11 +163,19 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5O-cL-Q4C">
-                                                        <rect key="frame" x="0.0" y="537" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="498" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Go To Tab Bar"/>
                                                         <connections>
                                                             <segue destination="LRi-pn-1Ve" kind="show" id="qXR-S5-izM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jQ-yV-dUb">
+                                                        <rect key="frame" x="0.0" y="537" width="394" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Go To ImagePicker"/>
+                                                        <connections>
+                                                            <action selector="onImagePickerClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="EPT-hm-euG"/>
                                                         </connections>
                                                     </button>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="GXC-ee-ql7">
@@ -274,6 +346,7 @@
                         <segue destination="YfV-CR-GVQ" kind="presentation" identifier="goToPageControl" id="T76-eV-2Xf"/>
                         <segue destination="ADj-sW-sbT" kind="presentation" identifier="goToPageviewControl" modalPresentationStyle="fullScreen" id="Ht8-TY-WBg"/>
                         <segue destination="Bxc-8e-Du4" kind="presentation" identifier="goToWebview" id="gLc-vw-Tt6"/>
+                        <segue destination="c7Z-SW-z5l" kind="presentation" identifier="goToImagePickerViewController" id="szF-Ek-SV8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

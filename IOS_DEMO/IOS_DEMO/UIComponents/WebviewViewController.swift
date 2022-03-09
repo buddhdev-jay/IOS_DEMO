@@ -21,6 +21,11 @@ class WebviewViewController: UIViewController {
         searchBartwo.delegate = self
         loadUrl("https://www.google.com")
     }
+   
+}
+// MARK: - Webview searching
+extension WebviewViewController{
+    
     func loadUrl(_ urlString: String) {
         guard let url = URL(string: urlString) else { return }
         let urlRequest = URLRequest(url: url)
@@ -39,8 +44,6 @@ class WebviewViewController: UIViewController {
         guard let url = URL(string: "https://www.bing.com/search?q=" + searchString) else { return }
         let urlRequest = URLRequest(url: url)
         webViewTwo.load(urlRequest)
-        
-        
     }
 }
 // MARK: - UISearchBarDelegate

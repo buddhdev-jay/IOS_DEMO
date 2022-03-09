@@ -15,10 +15,13 @@ class ScrollViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
 }
 // MARK: - Outlet Action
 extension ScrollViewController {
+    @IBAction func onImagePickerClick(_ sender: Any) {
+        performSegue(withIdentifier: "goToImagePickerViewController", sender: self)
+    }
     @IBAction func goToPageView(_ sender: UIButton) {
         performSegue(withIdentifier: "goToPageviewControl", sender: self)
     }

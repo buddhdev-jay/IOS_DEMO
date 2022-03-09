@@ -10,10 +10,13 @@ import MapKit
 
 class MapViewController: UIViewController {
 
+    // MARK: - Outlet
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var MapView: MKMapView!
     
+    // MARK: - variables
     var city = ["select City","Ahmedabad","Rajkot"]
+    var annotation = MKPointAnnotation()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,13 +31,14 @@ class MapViewController: UIViewController {
 extension MapViewController{
     func updateMap(row : Int,latitude:Double,longitude:Double)
     {
+       
         let location = CLLocationCoordinate2D(latitude: latitude,
                 longitude: longitude)
         let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
             let region = MKCoordinateRegion(center: location, span: span)
+        MapView.removeAnnotation(annotation)
         MapView.setRegion(region, animated: true)
-        let annotation = MKPointAnnotation()
-           annotation.coordinate = location
+        annotation.coordinate = location
         MapView.addAnnotation(annotation)
     }
 }
