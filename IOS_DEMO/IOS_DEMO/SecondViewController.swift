@@ -11,11 +11,11 @@ protocol TextDelegate : AnyObject{
     func sendText(text : String)
 }
 class SecondViewController: UIViewController {
-    
+
     // MARK: - Outlet
     @IBOutlet weak var txtFlied: UITextField!
+    // MARK: - variable
     weak var txtDelegate : TextDelegate?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -23,7 +23,7 @@ class SecondViewController: UIViewController {
 // MARK: - Outlet Action
 extension SecondViewController {
     @IBAction func goToSecondViewController(_ sender: UIButton) {
-        txtDelegate?.sendText(text: txtFlied.text ?? "Hello")
+        txtDelegate?.sendText(text: txtFlied.text ?? Constants.hello)
         dismiss(animated:true, completion: nil)
     }
 }
