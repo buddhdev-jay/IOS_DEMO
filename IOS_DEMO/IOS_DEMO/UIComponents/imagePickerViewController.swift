@@ -18,14 +18,14 @@ class imagePickerViewController: UIViewController {
     let dateFormatter = DateFormatter()
     override func viewDidLoad() {
         super.viewDidLoad()
-        dateFormatter.dateFormat = "MM/dd/yyyy"       
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        imageView.layer.cornerRadius = 75
     }
 
 }
 // MARK: - Outlet Actions
 extension imagePickerViewController{
     @IBAction func dateChanged(_ sender: UIDatePicker) {
-        
         lblDate.text = dateFormatter.string(from: sender.date)
     }
 
