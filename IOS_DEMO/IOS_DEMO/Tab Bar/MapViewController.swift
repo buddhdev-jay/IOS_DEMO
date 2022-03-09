@@ -52,7 +52,7 @@ extension MapViewController:UIPickerViewDelegate{
         switch row {
         case 1: updateMap(row: row,latitude: 23.0225,longitude: 72.5714)
         case 2: updateMap(row: row,latitude: 22.3039,longitude: 70.8022)
-        default:updateMap(row: row,latitude: 23.0225,longitude: 72.5714)
+        default: updateMap(row: row,latitude: 23.0225,longitude: 72.5714)
         }
       
     }
