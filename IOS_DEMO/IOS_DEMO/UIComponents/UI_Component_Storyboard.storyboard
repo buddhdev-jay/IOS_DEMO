@@ -519,10 +519,12 @@
                     </view>
                     <connections>
                         <outlet property="ageSlider" destination="WNs-zo-YFf" id="RnK-gg-U7b"/>
+                        <outlet property="emailTextField" destination="iqo-vY-Db5" id="rVC-Gh-Tw2"/>
                         <outlet property="genderSwitch" destination="UND-xn-rax" id="wQm-Ue-C9o"/>
                         <outlet property="lblAgeNumber" destination="uIY-FF-Xom" id="2WF-8F-U5j"/>
                         <outlet property="lblGender" destination="AE9-nq-HAh" id="t4d-0F-ync"/>
                         <outlet property="lblSteppervalue" destination="6qA-bW-2Wb" id="POR-yY-1jL"/>
+                        <outlet property="passwordField" destination="8Fp-SN-yB1" id="4Sc-1f-zdP"/>
                         <outlet property="progressView" destination="gJD-jC-fN1" id="IsX-WB-nyq"/>
                         <outlet property="stepper" destination="d8h-Mi-S3F" id="7aq-1L-t85"/>
                     </connections>

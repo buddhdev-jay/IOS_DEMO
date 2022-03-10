@@ -10,6 +10,8 @@ import UIKit
 class Signup_Screen_ViewController: UIViewController {
     var timer: Timer?
     // MARK: - Outlet
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var lblSteppervalue: UILabel!
     @IBOutlet weak var progressView: UIProgressView!
@@ -47,4 +49,7 @@ extension Signup_Screen_ViewController{
             }
         })
     }
+}
+extension Signup_Screen_ViewController : UITextFieldDelegate{
+  
 }

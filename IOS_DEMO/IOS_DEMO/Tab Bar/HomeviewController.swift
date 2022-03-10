@@ -16,7 +16,7 @@ class HomeviewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var switchbtn: UISwitch!
     @IBOutlet weak var stackView: UIStackView!
-    // MARK: - Variables 
+    // MARK: - Variables
     var names = ["JAY","abc","xyz","JAY","abc","xyz"]
     var filterdData : [String] = []
     var searching = false
@@ -34,17 +34,6 @@ class HomeviewController: UIViewController {
             names += ["JAY","abc","xyz"]
         }
     }
-   
-    @IBAction func changeOrientation(_ sender: UISwitch) {
-        stackView.axis = sender.isOn ? .vertical : .horizontal
-    }
-
-    
-    @IBAction func stepperValueChange(_ sender: UIStepper) {
-        numberofItems = Int(sender.value)
-        collectionview.reloadData()
-    }
-    
 }
 // MARK: - Outlet Actions
 extension HomeviewController{
@@ -67,10 +56,16 @@ extension HomeviewController{
             stackView.isHidden = false
         default:
             break
-        
+            
         }
     }
-    
+    @IBAction func changeOrientation(_ sender: UISwitch) {
+        stackView.axis = sender.isOn ? .vertical : .horizontal
+    }
+    @IBAction func stepperValueChange(_ sender: UIStepper) {
+        numberofItems = Int(sender.value)
+        collectionview.reloadData()
+    }
 }
 // MARK: - UITableViewDataSource
 extension HomeviewController:UITableViewDataSource{
@@ -79,19 +74,19 @@ extension HomeviewController:UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         filterdData.count
-     
+        
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath)
         cell.textLabel?.text = filterdData[indexPath.row]
-            if indexPath.row % 2 == 0{
-                cell.backgroundColor = .gray
-            }else
-            {
-                cell.backgroundColor = .lightText
-            }
-            return cell
-       
+        if indexPath.row % 2 == 0{
+            cell.backgroundColor = .gray
+        }else
+        {
+            cell.backgroundColor = .lightText
+        }
+        return cell
+        
     }
     
 }
@@ -115,13 +110,13 @@ extension HomeviewController : UISearchBarDelegate{
         }else{
             tableView.reloadData()
         }
-       
+        
     }
 }
 // MARK: - UICollectionViewDataSource
 extension HomeviewController : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-       return numberofItems
+        return numberofItems
         
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

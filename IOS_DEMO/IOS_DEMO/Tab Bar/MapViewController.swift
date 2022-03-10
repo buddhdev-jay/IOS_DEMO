@@ -9,7 +9,7 @@ import UIKit
 import MapKit
 
 class MapViewController: UIViewController {
-
+    
     // MARK: - Outlet
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var MapView: MKMapView!
@@ -19,23 +19,18 @@ class MapViewController: UIViewController {
     var annotation = MKPointAnnotation()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         pickerView.delegate = self
         pickerView.dataSource = self
-      
-        
     }
-   
+    
 }
 // MARK: - updateMap
 extension MapViewController{
     func updateMap(row : Int,latitude:Double,longitude:Double)
     {
-       
-        let location = CLLocationCoordinate2D(latitude: latitude,
-                longitude: longitude)
+        let location = CLLocationCoordinate2D(latitude: latitude,longitude: longitude)
         let span = MKCoordinateSpan(latitudeDelta: 1, longitudeDelta:1)
-            let region = MKCoordinateRegion(center: location, span: span)
+        let region = MKCoordinateRegion(center: location, span: span)
         MapView.removeAnnotation(annotation)
         MapView.setRegion(region, animated: true)
         annotation.coordinate = location
@@ -44,7 +39,7 @@ extension MapViewController{
 }
 // MARK: - UIPickerViewDataSource
 extension MapViewController:UIPickerViewDataSource{
-
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -63,6 +58,6 @@ extension MapViewController:UIPickerViewDelegate{
         case 2: updateMap(row: row,latitude: 22.3039,longitude: 70.8022)
         default: updateMap(row: row,latitude: 23.0225,longitude: 72.5714)
         }
-      
+        
     }
 }
