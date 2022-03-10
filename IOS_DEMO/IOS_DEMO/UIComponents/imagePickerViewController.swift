@@ -20,6 +20,7 @@ class imagePickerViewController: UIViewController {
         super.viewDidLoad()
         dateFormatter.dateFormat = "MM/dd/yyyy"
         imageView.layer.cornerRadius = 75
+        self.title = "Image Picker"
     }
 
 }

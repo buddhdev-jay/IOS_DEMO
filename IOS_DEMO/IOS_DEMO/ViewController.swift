@@ -35,11 +35,11 @@ extension ViewController {
     @IBAction func goToAnotherViewcontroller(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "secondViewController") as! SecondViewController
         vc.txtDelegate = self
-        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func goToAutoLayout(_ sender: UIButton) {
         let LoginSignupVc = self.storyboard?.instantiateViewController(withIdentifier: "login_signup_ViewController") as! Login_signup_ViewController
-        self.present(LoginSignupVc, animated: true, completion: nil)
+        self.navigationController?.present(LoginSignupVc, animated: true, completion: nil)
     }
  
     

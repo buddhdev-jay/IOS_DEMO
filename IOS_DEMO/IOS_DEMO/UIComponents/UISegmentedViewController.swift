@@ -13,6 +13,7 @@ class UISegmentedViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Ui Segment Control"
     }
 }
 // MARK: - Outlet Action

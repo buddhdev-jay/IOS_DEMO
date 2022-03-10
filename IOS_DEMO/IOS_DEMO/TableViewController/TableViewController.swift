@@ -12,6 +12,7 @@ class TableViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityindicator: UIActivityIndicatorView!
+    // MARK: - Variables 
     var names = ["JAY","abc","xyz"]
     var sectionOne = 2
     var sectionTwo = 1

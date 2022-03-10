@@ -20,8 +20,14 @@ class WebviewViewController: UIViewController {
         searchBarOne.delegate = self
         searchBartwo.delegate = self
         loadUrl("https://www.google.com")
+        self.title = "Web View"
     }
    
+    @IBAction func goBackward(_ sender: UIBarButtonItem) {
+        if webView.canGoBack {
+            webView.goBack()
+        }
+    }
 }
 // MARK: - Webview searching
 extension WebviewViewController{

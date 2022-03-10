@@ -34,7 +34,7 @@ extension MapViewController{
        
         let location = CLLocationCoordinate2D(latitude: latitude,
                 longitude: longitude)
-        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        let span = MKCoordinateSpan(latitudeDelta: 1, longitudeDelta:1)
             let region = MKCoordinateRegion(center: location, span: span)
         MapView.removeAnnotation(annotation)
         MapView.setRegion(region, animated: true)

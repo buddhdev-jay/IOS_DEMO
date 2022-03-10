@@ -14,7 +14,7 @@ class PageControlViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Page Controller"
     }
     
 }

@@ -14,25 +14,40 @@ class ScrollViewController: UIViewController {
     @IBOutlet weak var btnSignupScreen: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
 }
 // MARK: - Outlet Action
 extension ScrollViewController {
     @IBAction func onImagePickerClick(_ sender: Any) {
-        performSegue(withIdentifier: "goToImagePickerViewController", sender: self)
+        if let imagepickervc = self.storyboard?.instantiateViewController(withIdentifier: "imagePickerViewController") as? imagePickerViewController {
+            self.navigationController?.pushViewController(imagepickervc, animated: true)
+        }
+    
     }
     @IBAction func goToPageView(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToPageviewControl", sender: self)
+        if let pageViewvc = self.storyboard?.instantiateViewController(withIdentifier: "pageViewController") as? PageViewController {
+            self.navigationController?.pushViewController(pageViewvc, animated: true)
+        }
     }
     @IBAction func goToWebview(_ sender: Any) {
-        performSegue(withIdentifier: "goToWebview", sender: self)
+        if let Webviewvc = self.storyboard?.instantiateViewController(withIdentifier: "webviewViewController") as? WebviewViewController {
+            self.navigationController?.pushViewController(Webviewvc, animated: true)
+        }
+      
     }
     @IBAction func goToPageControl(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToPageControl", sender: self)
+        if let pagecontrolvc = self.storyboard?.instantiateViewController(withIdentifier: "pageControlViewController") as? PageControlViewController {
+            self.navigationController?.pushViewController(pagecontrolvc, animated: true)
+        }
     }
     @IBAction func goToSegmentControl(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToSegmentControl", sender: self)
+       
+        if let uisegmentedvc = self.storyboard?.instantiateViewController(withIdentifier: "uISegmentedViewController") as? UISegmentedViewController {
+            self.navigationController?.pushViewController(uisegmentedvc, animated: true)
+        }
+       
     }
     @IBAction func goToCollection(_ sender: UIButton) {
         performSegue(withIdentifier: "goToCollectionView", sender: self)
