@@ -21,6 +21,9 @@ struct Constants{
     static let collectionvc = "collectionViewController"
     static let tableViewVc = "tableViewController"
     static let signupScreenVc = "signup_Screen_ViewController"
+    static let secondVc = "secondVC"
+    static let ThirdVc = "thirdViewController"
+   
     static let FIFTY = 50
     static let TWENETYFIVE = 25
     static let TWO = 2
