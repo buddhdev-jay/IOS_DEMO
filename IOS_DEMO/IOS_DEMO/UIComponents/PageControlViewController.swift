@@ -24,11 +24,11 @@ extension PageControlViewController{
     @IBAction func changePage(_ sender: UIPageControl) {
         lblPagename.text = "Page \(sender.currentPage + 1)"
         switch sender.currentPage {
-        case 0:
+        case Constants.ZERO:
             sender.backgroundColor = UIColor.black
-        case 1:
+        case Constants.ONE:
             sender.backgroundColor = UIColor.gray
-        case 2:
+        case Constants.TWO:
             sender.backgroundColor = UIColor.orange
         default:
             sender.backgroundColor = UIColor.brown

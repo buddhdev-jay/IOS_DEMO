@@ -18,7 +18,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HmQ-Jd-wqe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-571" y="157"/>
+            <point key="canvasLocation" x="749" y="471"/>
         </scene>
         <!--Image Picker View Controller-->
         <scene sceneID="myU-11-KWX">
@@ -590,7 +590,7 @@
         <!--Collection View Controller-->
         <scene sceneID="h5M-gl-JnI">
             <objects>
-                <viewController storyboardIdentifier="CollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7ya-E4-6bl" customClass="CollectionViewController" customModule="IOS_DEMO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="collectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7ya-E4-6bl" customClass="CollectionViewController" customModule="IOS_DEMO" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vgM-JL-Ndk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -11,7 +11,7 @@ class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.selectedIndex = 2
+        self.selectedIndex = Constants.TWO
         self.delegate = self
     }
 }

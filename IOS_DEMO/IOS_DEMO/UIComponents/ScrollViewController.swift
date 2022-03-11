@@ -8,56 +8,56 @@
 import UIKit
 
 class ScrollViewController: UIViewController {
-
+    
     // MARK: - Outlet
     @IBOutlet weak var btnTableView: UITextField!
     @IBOutlet weak var btnSignupScreen: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
-
+    
 }
 // MARK: - Outlet Action
 extension ScrollViewController {
     @IBAction func onImagePickerClick(_ sender: Any) {
-        if let imagepickervc = self.storyboard?.instantiateViewController(withIdentifier: "imagePickerViewController") as? imagePickerViewController {
+        if let imagepickervc = self.storyboard?.instantiateViewController(withIdentifier:Constants.imagepickervc ) as? imagePickerViewController {
             self.navigationController?.pushViewController(imagepickervc, animated: true)
         }
-    
+        
     }
     @IBAction func goToPageView(_ sender: UIButton) {
-        if let pageViewvc = self.storyboard?.instantiateViewController(withIdentifier: "pageViewController") as? PageViewController {
+        if let pageViewvc = self.storyboard?.instantiateViewController(withIdentifier:Constants.pageViewvc ) as? PageViewController {
             self.navigationController?.pushViewController(pageViewvc, animated: true)
         }
     }
     @IBAction func goToWebview(_ sender: Any) {
-        if let Webviewvc = self.storyboard?.instantiateViewController(withIdentifier: "webviewViewController") as? WebviewViewController {
-            self.navigationController?.pushViewController(Webviewvc, animated: true)
+        if let webviewvc = self.storyboard?.instantiateViewController(withIdentifier: Constants.webviewvc) as? WebviewViewController {
+            self.navigationController?.pushViewController(webviewvc, animated: true)
         }
-      
+        
     }
     @IBAction func goToPageControl(_ sender: UIButton) {
-        if let pagecontrolvc = self.storyboard?.instantiateViewController(withIdentifier: "pageControlViewController") as? PageControlViewController {
+        if let pagecontrolvc = self.storyboard?.instantiateViewController(withIdentifier: Constants.pagecontrolvc) as? PageControlViewController {
             self.navigationController?.pushViewController(pagecontrolvc, animated: true)
         }
     }
     @IBAction func goToSegmentControl(_ sender: UIButton) {
-       
-        if let uisegmentedvc = self.storyboard?.instantiateViewController(withIdentifier: "uISegmentedViewController") as? UISegmentedViewController {
+        if let uisegmentedvc = self.storyboard?.instantiateViewController(withIdentifier: Constants.uisegmentedvc) as? UISegmentedViewController {
             self.navigationController?.pushViewController(uisegmentedvc, animated: true)
         }
-       
+        
     }
     @IBAction func goToCollection(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToCollectionView", sender: self)
+        if let collectionvc = self.storyboard?.instantiateViewController(withIdentifier: Constants.collectionvc) as?  CollectionViewController {
+            self.navigationController?.pushViewController(collectionvc, animated: true)
+        }
     }
     @IBAction func goToTableView(_ sender: UIButton) {
-        let TableViewVc = self.storyboard?.instantiateViewController(withIdentifier: "tableViewController") as! TableViewController
+        let TableViewVc = self.storyboard?.instantiateViewController(withIdentifier:Constants.tableViewVc ) as! TableViewController
         self.present(TableViewVc, animated: true, completion: nil)
     }
     @IBAction func goToSignUpScreen(_ sender: UIButton) {
-        let SignupScreenVc = self.storyboard?.instantiateViewController(withIdentifier: "signup_Screen_ViewController") as! Signup_Screen_ViewController
+        let SignupScreenVc = self.storyboard?.instantiateViewController(withIdentifier:Constants.signupScreenVc ) as! Signup_Screen_ViewController
         self.present(SignupScreenVc, animated: true, completion: nil)
     }
 }

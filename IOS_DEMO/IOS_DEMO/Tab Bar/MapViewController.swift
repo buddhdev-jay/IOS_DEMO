@@ -41,7 +41,7 @@ extension MapViewController{
 extension MapViewController:UIPickerViewDataSource{
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
+        return Constants.ONE
     }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return city.count
@@ -54,10 +54,9 @@ extension MapViewController:UIPickerViewDelegate{
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         switch row {
-        case 1: updateMap(row: row,latitude: 23.0225,longitude: 72.5714)
-        case 2: updateMap(row: row,latitude: 22.3039,longitude: 70.8022)
+        case Constants.ONE: updateMap(row: row,latitude: 23.0225,longitude: 72.5714)
+        case Constants.TWO: updateMap(row: row,latitude: 22.3039,longitude: 70.8022)
         default: updateMap(row: row,latitude: 23.0225,longitude: 72.5714)
         }
-        
     }
 }

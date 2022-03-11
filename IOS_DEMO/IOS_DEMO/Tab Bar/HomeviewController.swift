@@ -39,17 +39,17 @@ class HomeviewController: UIViewController {
 extension HomeviewController{
     @IBAction func segmentChange(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex{
-        case 0:
+        case Constants.ZERO:
             stepper.isHidden = true
             tableView.isHidden = false
             collectionview.isHidden = true
             stackView.isHidden = true
-        case 1:
+        case Constants.ONE:
             stepper.isHidden = false
             tableView.isHidden = true
             collectionview.isHidden = false
             stackView.isHidden = true
-        case 2:
+        case Constants.TWO:
             stepper.isHidden = true
             tableView.isHidden = true
             collectionview.isHidden = true
@@ -70,7 +70,7 @@ extension HomeviewController{
 // MARK: - UITableViewDataSource
 extension HomeviewController:UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return Constants.ONE
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         filterdData.count
@@ -79,14 +79,13 @@ extension HomeviewController:UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath)
         cell.textLabel?.text = filterdData[indexPath.row]
-        if indexPath.row % 2 == 0{
+        if indexPath.row % Constants.TWO == Constants.ZERO{
             cell.backgroundColor = .gray
         }else
         {
             cell.backgroundColor = .lightText
         }
         return cell
-        
     }
     
 }

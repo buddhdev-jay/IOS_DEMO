@@ -21,12 +21,11 @@ class CollectionViewController: UIViewController {
 // MARK: - Outlet Action
 extension CollectionViewController:UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0{
-            return 25
+        if section == Constants.ZERO {
+            return Constants.TWENETYFIVE
         }else  {
-            return 50
+            return Constants.FIFTY
         }
-        
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as?  CollectionViewCell {
@@ -36,6 +35,6 @@ extension CollectionViewController:UICollectionViewDelegate,UICollectionViewData
         return UICollectionViewCell()
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
+        return Constants.TWO
     }
 }

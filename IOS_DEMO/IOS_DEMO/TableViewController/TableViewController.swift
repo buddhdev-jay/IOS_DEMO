@@ -14,8 +14,8 @@ class TableViewController: UIViewController {
     @IBOutlet weak var activityindicator: UIActivityIndicatorView!
     // MARK: - Variables 
     var names = ["JAY","abc","xyz"]
-    var sectionOne = 2
-    var sectionTwo = 1
+    var sectionOne = Constants.TWO
+    var sectionTwo = Constants.ONE
     
     lazy var refreshControl: UIRefreshControl = {
             let refreshControl = UIRefreshControl()
@@ -28,8 +28,8 @@ class TableViewController: UIViewController {
             names += ["JAY","abc","xyz"]
         }
         self.activityindicator.startAnimating()
-        sectionOne = 100
-        sectionTwo = 25
+        sectionOne = Constants.FIFTY
+        sectionTwo = Constants.TWENETYFIVE
             self.tableView.reloadData()
             refreshControl.endRefreshing()
         self.activityindicator.stopAnimating()
@@ -57,10 +57,10 @@ extension TableViewController:UITableViewDelegate{
 // MARK: - UITableViewDataSource
 extension TableViewController:UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return Constants.TWO
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
+        if section == Constants.ZERO {
             return sectionTwo
         }else{
             return sectionOne
@@ -81,7 +81,7 @@ extension TableViewController:UITableViewDataSource {
         return UITableViewCell()
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 50
+        return Constants.FIFTY
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Section \(section)"

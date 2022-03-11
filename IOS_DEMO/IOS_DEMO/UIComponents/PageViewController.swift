@@ -29,8 +29,8 @@ class PageViewController: UIPageViewController {
 extension PageViewController:UIPageViewControllerDataSource{
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let index = vcList.lastIndex(of: viewController) else { return nil }
-                let previousIndex = index - 1
-                guard previousIndex >= 0 else {return nil}
+        let previousIndex = index - Constants.ONE
+        guard previousIndex >= Constants.ZERO else {return nil}
                 guard previousIndex < vcList.count else {return nil}
                 return vcList[previousIndex]
     
@@ -38,8 +38,8 @@ extension PageViewController:UIPageViewControllerDataSource{
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         guard let index = vcList.lastIndex(of: viewController) else { return nil }
-                let previousIndex = index + 1
-                guard previousIndex >= 0 else {return nil}
+        let previousIndex = index + Constants.ONE
+                guard previousIndex >= Constants.ZERO else {return nil}
                 guard previousIndex < vcList.count else {return nil}
                 return vcList[previousIndex]
     }

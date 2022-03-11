@@ -20,9 +20,9 @@ class UISegmentedViewController: UIViewController {
 extension UISegmentedViewController {
     @IBAction func imageChange(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex{
-        case 0:
+        case Constants.ZERO:
             imageView.image = UIImage(named: "img_eye_icon")
-        case 1:
+        case Constants.ONE:
             imageView.image = UIImage(named: "img_google")
         default:
             imageView.image = UIImage(named: "img_google")
