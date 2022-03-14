@@ -17,6 +17,7 @@
 		FB2B74C427CF7A96002AFCB0 /* Signup_Screen_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B74C327CF7A96002AFCB0 /* Signup_Screen_ViewController.swift */; };
 		FB2B74C627CF932A002AFCB0 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B74C527CF932A002AFCB0 /* ScrollViewController.swift */; };
 		FB54104327D886C500EB8861 /* imagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB54104227D886C500EB8861 /* imagePickerViewController.swift */; };
+		FB86CE5027DF3BDB00AA0FEE /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB86CE4F27DF3BDB00AA0FEE /* FourthViewController.swift */; };
 		FB8C31D527D9E93800B0EB60 /* HomeviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C31D427D9E93800B0EB60 /* HomeviewController.swift */; };
 		FB8C31D727D9E99F00B0EB60 /* StackviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C31D627D9E99F00B0EB60 /* StackviewController.swift */; };
 		FB90D3AA27DB560B00942406 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90D3A927DB560B00942406 /* ThirdViewController.swift */; };
@@ -72,6 +73,7 @@
 		FB2B74C327CF7A96002AFCB0 /* Signup_Screen_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup_Screen_ViewController.swift; sourceTree = "<group>"; };
 		FB2B74C527CF932A002AFCB0 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		FB54104227D886C500EB8861 /* imagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagePickerViewController.swift; sourceTree = "<group>"; };
+		FB86CE4F27DF3BDB00AA0FEE /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		FB8C31D427D9E93800B0EB60 /* HomeviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeviewController.swift; sourceTree = "<group>"; };
 		FB8C31D627D9E99F00B0EB60 /* StackviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackviewController.swift; sourceTree = "<group>"; };
 		FB90D3A927DB560B00942406 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				FB22FBB627DB49970073EB03 /* FirstViewController.swift */,
 				FB22FBB827DB49D60073EB03 /* SecondVC.swift */,
 				FB90D3A927DB560B00942406 /* ThirdViewController.swift */,
+				FB86CE4F27DF3BDB00AA0FEE /* FourthViewController.swift */,
 			);
 			path = NavigationController;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				FB2B74C427CF7A96002AFCB0 /* Signup_Screen_ViewController.swift in Sources */,
 				FBBEEC3327D763EA005B0586 /* MapViewController.swift in Sources */,
 				FBDD98D727D0CE7B00F40E28 /* TableViewController.swift in Sources */,
+				FB86CE5027DF3BDB00AA0FEE /* FourthViewController.swift in Sources */,
 				FBD33F9B278D44910029EE9A /* SceneDelegate.swift in Sources */,
 				FB54104327D886C500EB8861 /* imagePickerViewController.swift in Sources */,
 				FBA1076327DB059800351332 /* Constant.swift in Sources */,

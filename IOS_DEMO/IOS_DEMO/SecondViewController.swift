@@ -23,7 +23,7 @@ class SecondViewController: UIViewController {
 // MARK: - Outlet Action
 extension SecondViewController {
     @IBAction func goToSecondViewController(_ sender: UIButton) {
-        txtDelegate?.sendText(text: txtFlied.text ?? "Hello")
+        txtDelegate?.sendText(text: txtFlied.text ?? Constants.hello)
         dismiss(animated:true, completion: nil)
     }
 }

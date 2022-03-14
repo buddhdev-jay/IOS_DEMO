@@ -26,15 +26,26 @@
                                     <action selector="onClickofSecondVCbtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kew-ei-jcM"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SG7-eI-maI">
+                                <rect key="frame" x="41.5" y="227.5" width="331" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                         <constraints>
+                            <constraint firstItem="RVN-vQ-8ZA" firstAttribute="top" secondItem="SG7-eI-maI" secondAttribute="bottom" constant="150" id="6E1-GL-Ty1"/>
                             <constraint firstItem="RVN-vQ-8ZA" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="L00-MM-i7Z"/>
+                            <constraint firstItem="SG7-eI-maI" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="bnE-Ut-peA"/>
                             <constraint firstItem="RVN-vQ-8ZA" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="nDE-Qz-ckj"/>
+                            <constraint firstItem="SG7-eI-maI" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="rvv-zB-85Z"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iVo-1k-oEv"/>
+                    <connections>
+                        <outlet property="TxtField" destination="SG7-eI-maI" id="Vpd-PV-jrh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,14 +70,36 @@
                                     <action selector="onClickofThirdvc:" destination="d3t-Xu-OK6" eventType="touchUpInside" id="cqt-Cp-gkT"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QG3-mH-Ahr">
+                                <rect key="frame" x="41.5" y="239" width="331" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4K-z0-slv">
+                                <rect key="frame" x="41.5" y="352" width="331" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go Back"/>
+                                <connections>
+                                    <action selector="goBack:" destination="d3t-Xu-OK6" eventType="touchUpInside" id="Qsc-qU-ek7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rf7-z7-uLU"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
+                            <constraint firstItem="x4K-z0-slv" firstAttribute="centerX" secondItem="QaG-Xt-n4K" secondAttribute="centerX" id="1n5-0A-vhO"/>
                             <constraint firstItem="YKj-iH-Jqk" firstAttribute="centerY" secondItem="QaG-Xt-n4K" secondAttribute="centerY" id="BlQ-B7-7UL"/>
+                            <constraint firstItem="YKj-iH-Jqk" firstAttribute="top" secondItem="x4K-z0-slv" secondAttribute="bottom" constant="40" id="FfS-yC-kSC"/>
+                            <constraint firstItem="QG3-mH-Ahr" firstAttribute="width" secondItem="QaG-Xt-n4K" secondAttribute="width" multiplier="0.8" id="PV5-Uj-RtI"/>
+                            <constraint firstItem="x4K-z0-slv" firstAttribute="width" secondItem="QaG-Xt-n4K" secondAttribute="width" multiplier="0.8" id="hbZ-GW-JhI"/>
                             <constraint firstItem="YKj-iH-Jqk" firstAttribute="centerX" secondItem="QaG-Xt-n4K" secondAttribute="centerX" id="lHq-H7-acu"/>
+                            <constraint firstItem="YKj-iH-Jqk" firstAttribute="top" secondItem="QG3-mH-Ahr" secondAttribute="bottom" constant="150" id="v3N-Na-I6J"/>
+                            <constraint firstItem="QG3-mH-Ahr" firstAttribute="centerX" secondItem="QaG-Xt-n4K" secondAttribute="centerX" id="xYb-KF-yrB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtFlied" destination="QG3-mH-Ahr" id="C10-uc-RA6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="05b-FX-lHN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -115,6 +148,21 @@
                 <exit id="GkA-57-o5l" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2381" y="48"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="ENl-td-pJx">
+            <objects>
+                <viewController storyboardIdentifier="FourthViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sUV-vd-ig9" customClass="FourthViewController" customModule="IOS_DEMO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s6x-X3-xgH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cqC-ox-lma"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="COc-rU-xqc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3080" y="48"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bf8-Ic-QNP">

@@ -404,6 +404,10 @@
                         <viewLayoutGuide key="safeArea" id="p3J-sa-LEm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="BTO-Z8-yI3" id="LKn-7z-MtH"/>
+                        <outlet property="nameField" destination="UjS-Fs-hZu" id="opC-OF-pPO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BSO-d6-Tnh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
