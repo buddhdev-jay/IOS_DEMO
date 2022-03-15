@@ -15,8 +15,12 @@ class ThirdViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+}
+
+// MARK: - Outlet Action
+extension ThirdViewController{
     @IBAction func onClickbackVc(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
-    
 }
