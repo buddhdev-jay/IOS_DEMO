@@ -12,6 +12,7 @@ struct Constants{
     static let secondVC = "secondViewController"
     static let loginSignupVc = "login_signup_ViewController"
     static let hello = "Hello"
+    static let vc = "viewController"
     static let signupFormVc = "signup_form_ViewController"
     static let imagepickervc = "imagePickerViewController"
     static let pageViewvc = "pageViewController"
@@ -23,7 +24,7 @@ struct Constants{
     static let signupScreenVc = "signup_Screen_ViewController"
     static let secondVc = "secondVC"
     static let ThirdVc = "thirdViewController"
-   
+    static let scrollVc = "scrollViewController"
     static let FIFTY = 50
     static let TWENETYFIVE = 25
     static let TWO = 2

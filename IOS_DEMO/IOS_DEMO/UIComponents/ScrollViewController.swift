@@ -12,8 +12,12 @@ class ScrollViewController: UIViewController {
     // MARK: - Outlet
     @IBOutlet weak var btnTableView: UITextField!
     @IBOutlet weak var btnSignupScreen: UITextField!
+    var coordinator : ScrollVCCoordinator?
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let navController = self.navigationController{
+            coordinator = ScrollVCCoordinator(navController)
+        }
     }
     
 }
@@ -26,9 +30,10 @@ extension ScrollViewController {
         
     }
     @IBAction func goToPageView(_ sender: UIButton) {
-        if let pageViewvc = self.storyboard?.instantiateViewController(withIdentifier:Constants.pageViewvc ) as? PageViewController {
-            self.navigationController?.pushViewController(pageViewvc, animated: true)
-        }
+//        if let pageViewvc = self.storyboard?.instantiateViewController(withIdentifier:Constants.pageViewvc ) as? PageViewController {
+//            self.navigationController?.pushViewController(pageViewvc, animated: true)
+//        }
+        coordinator?.goToPageView()
     }
     @IBAction func goToWebview(_ sender: Any) {
         if let webviewvc = self.storyboard?.instantiateViewController(withIdentifier: Constants.webviewvc) as? WebviewViewController {

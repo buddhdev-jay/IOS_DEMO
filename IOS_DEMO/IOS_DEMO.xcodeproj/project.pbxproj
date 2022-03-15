@@ -17,6 +17,11 @@
 		FB2B74C427CF7A96002AFCB0 /* Signup_Screen_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B74C327CF7A96002AFCB0 /* Signup_Screen_ViewController.swift */; };
 		FB2B74C627CF932A002AFCB0 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B74C527CF932A002AFCB0 /* ScrollViewController.swift */; };
 		FB54104327D886C500EB8861 /* imagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB54104227D886C500EB8861 /* imagePickerViewController.swift */; };
+		FB7D637527E094E600D6867A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D637427E094E600D6867A /* Coordinator.swift */; };
+		FB7D637727E0954200D6867A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D637627E0954200D6867A /* AppCoordinator.swift */; };
+		FB7D637927E095E600D6867A /* MainVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D637827E095E600D6867A /* MainVCCoordinator.swift */; };
+		FB7D637B27E0994300D6867A /* ScrollVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D637A27E0994300D6867A /* ScrollVCCoordinator.swift */; };
+		FB7D637D27E09AC700D6867A /* PageVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D637C27E09AC700D6867A /* PageVCCoordinator.swift */; };
 		FB86CE5027DF3BDB00AA0FEE /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB86CE4F27DF3BDB00AA0FEE /* FourthViewController.swift */; };
 		FB8C31D527D9E93800B0EB60 /* HomeviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C31D427D9E93800B0EB60 /* HomeviewController.swift */; };
 		FB8C31D727D9E99F00B0EB60 /* StackviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C31D627D9E99F00B0EB60 /* StackviewController.swift */; };
@@ -73,6 +78,11 @@
 		FB2B74C327CF7A96002AFCB0 /* Signup_Screen_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup_Screen_ViewController.swift; sourceTree = "<group>"; };
 		FB2B74C527CF932A002AFCB0 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		FB54104227D886C500EB8861 /* imagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagePickerViewController.swift; sourceTree = "<group>"; };
+		FB7D637427E094E600D6867A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		FB7D637627E0954200D6867A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FB7D637827E095E600D6867A /* MainVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCCoordinator.swift; sourceTree = "<group>"; };
+		FB7D637A27E0994300D6867A /* ScrollVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollVCCoordinator.swift; sourceTree = "<group>"; };
+		FB7D637C27E09AC700D6867A /* PageVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVCCoordinator.swift; sourceTree = "<group>"; };
 		FB86CE4F27DF3BDB00AA0FEE /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		FB8C31D427D9E93800B0EB60 /* HomeviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeviewController.swift; sourceTree = "<group>"; };
 		FB8C31D627D9E99F00B0EB60 /* StackviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackviewController.swift; sourceTree = "<group>"; };
@@ -176,6 +186,18 @@
 			path = NavigationController;
 			sourceTree = "<group>";
 		};
+		FB7D637327E094B100D6867A /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D637427E094E600D6867A /* Coordinator.swift */,
+				FB7D637627E0954200D6867A /* AppCoordinator.swift */,
+				FB7D637827E095E600D6867A /* MainVCCoordinator.swift */,
+				FB7D637A27E0994300D6867A /* ScrollVCCoordinator.swift */,
+				FB7D637C27E09AC700D6867A /* PageVCCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		FBA1076127DB057A00351332 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +241,7 @@
 		FBD33F97278D44910029EE9A /* IOS_DEMO */ = {
 			isa = PBXGroup;
 			children = (
+				FB7D637327E094B100D6867A /* Coordinator */,
 				FB22FBB327DB444C0073EB03 /* NavigationController */,
 				FBA1076127DB057A00351332 /* Utils */,
 				FBBEEC2D27D74EBA005B0586 /* Tab Bar */,
@@ -397,19 +420,24 @@
 				FB1F92EA27D20A4800B8C4EC /* CollectionViewCell.swift in Sources */,
 				FBB3344727D5F77B00EBA1C8 /* PageControlViewController.swift in Sources */,
 				FBD33F9D278D44910029EE9A /* ViewController.swift in Sources */,
+				FB7D637B27E0994300D6867A /* ScrollVCCoordinator.swift in Sources */,
 				FB8C31D727D9E99F00B0EB60 /* StackviewController.swift in Sources */,
 				FB2B74C627CF932A002AFCB0 /* ScrollViewController.swift in Sources */,
+				FB7D637527E094E600D6867A /* Coordinator.swift in Sources */,
 				FBB3344927D5FFE300EBA1C8 /* PageViewController.swift in Sources */,
 				FBD33F99278D44910029EE9A /* AppDelegate.swift in Sources */,
 				FB1F92EE27D232B800B8C4EC /* UISegmentedViewController.swift in Sources */,
 				FBBEEC3127D75112005B0586 /* TabBarViewController.swift in Sources */,
 				FBDD98DA27D0DF4F00F40E28 /* TableViewCell.swift in Sources */,
 				FB8C31D527D9E93800B0EB60 /* HomeviewController.swift in Sources */,
+				FB7D637D27E09AC700D6867A /* PageVCCoordinator.swift in Sources */,
 				FBE9556327C8BA5000DBC991 /* Login_signup_ViewController.swift in Sources */,
 				FB2B74C427CF7A96002AFCB0 /* Signup_Screen_ViewController.swift in Sources */,
 				FBBEEC3327D763EA005B0586 /* MapViewController.swift in Sources */,
 				FBDD98D727D0CE7B00F40E28 /* TableViewController.swift in Sources */,
 				FB86CE5027DF3BDB00AA0FEE /* FourthViewController.swift in Sources */,
+				FB7D637927E095E600D6867A /* MainVCCoordinator.swift in Sources */,
+				FB7D637727E0954200D6867A /* AppCoordinator.swift in Sources */,
 				FBD33F9B278D44910029EE9A /* SceneDelegate.swift in Sources */,
 				FB54104327D886C500EB8861 /* imagePickerViewController.swift in Sources */,
 				FBA1076327DB059800351332 /* Constant.swift in Sources */,
