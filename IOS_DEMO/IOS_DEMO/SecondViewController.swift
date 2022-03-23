@@ -20,6 +20,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
     }
 }
+
 // MARK: - Outlet Action
 extension SecondViewController {
     @IBAction func goToSecondViewController(_ sender: UIButton) {

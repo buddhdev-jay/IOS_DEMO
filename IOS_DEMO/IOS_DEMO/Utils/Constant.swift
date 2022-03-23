@@ -29,5 +29,6 @@ struct Constants{
     static let TWENETYFIVE = 25
     static let TWO = 2
     static let ONE = 1
+    static let BASE_URL = "https://reqres.in/"
     
 }

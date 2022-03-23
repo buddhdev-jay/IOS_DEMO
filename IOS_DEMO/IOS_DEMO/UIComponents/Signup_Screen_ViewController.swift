@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 class Signup_Screen_ViewController: UIViewController {
     var timer: Timer?
@@ -48,6 +49,23 @@ extension Signup_Screen_ViewController{
                 self.timer?.invalidate()
             }
         })
+        let context:LAContext = LAContext()
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,error: nil){
+            context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason:"Need Your Login", reply: {(wascorrect,error) in
+                if wascorrect
+                    {
+                    print("correct")
+                }else
+                {
+                    print("in correct")
+                }
+                
+            })
+        }
+        else
+        {
+            print("not able to access ")
+        }
     }
 }
 extension Signup_Screen_ViewController : UITextFieldDelegate{

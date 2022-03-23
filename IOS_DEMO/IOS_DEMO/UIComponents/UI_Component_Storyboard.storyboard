@@ -10,6 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--WebServiceStoryboard-->
+        <scene sceneID="GEA-hi-9xY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WebServiceStoryboard" id="gsS-rg-a1Q" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbC-4a-hKp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="451" y="378"/>
+        </scene>
         <!--TabBar-->
         <scene sceneID="Hn0-eT-RDE">
             <objects>
@@ -123,7 +131,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Zr-42-gnI">
-                                                        <rect key="frame" x="0.0" y="158" width="394" height="98"/>
+                                                        <rect key="frame" x="0.0" y="158" width="394" height="59"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Tableview">
                                                             <color key="baseBackgroundColor" systemColor="systemRedColor"/>
@@ -133,7 +141,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x91-ID-vuP">
-                                                        <rect key="frame" x="0.0" y="264" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="225" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Go To Collection "/>
                                                         <connections>
@@ -141,7 +149,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMO-SL-wCf">
-                                                        <rect key="frame" x="0.0" y="303" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="264" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Go To SegmentControl"/>
                                                         <connections>
@@ -149,7 +157,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bQ-ap-9Mo">
-                                                        <rect key="frame" x="0.0" y="342" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="303" width="394" height="31"/>
                                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="PageControl"/>
@@ -158,7 +166,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9b-Zg-kxN">
-                                                        <rect key="frame" x="0.0" y="381" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="342" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="PageviewControl"/>
                                                         <connections>
@@ -166,7 +174,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fr1-g4-cuZ">
-                                                        <rect key="frame" x="0.0" y="420" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="381" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Go To Webview"/>
                                                         <connections>
@@ -174,7 +182,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5O-cL-Q4C">
-                                                        <rect key="frame" x="0.0" y="459" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="420" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Go To Tab Bar"/>
                                                         <connections>
@@ -182,7 +190,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jQ-yV-dUb">
-                                                        <rect key="frame" x="0.0" y="498" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="459" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Go To ImagePicker"/>
                                                         <connections>
@@ -190,11 +198,19 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AD1-Qk-vd8">
-                                                        <rect key="frame" x="0.0" y="537" width="394" height="31"/>
+                                                        <rect key="frame" x="0.0" y="498" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Go To Navigation Controller"/>
                                                         <connections>
                                                             <segue destination="wGk-Kh-Cbd" kind="show" id="7qy-kM-dfm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TV-JJ-EuG">
+                                                        <rect key="frame" x="0.0" y="537" width="394" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="WebService"/>
+                                                        <connections>
+                                                            <segue destination="gsS-rg-a1Q" kind="presentation" id="kkT-zV-EBZ"/>
                                                         </connections>
                                                     </button>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="GXC-ee-ql7">
