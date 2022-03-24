@@ -208,9 +208,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TV-JJ-EuG">
                                                         <rect key="frame" x="0.0" y="537" width="394" height="31"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="WebService"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="UserListCollectionView"/>
                                                         <connections>
-                                                            <segue destination="gsS-rg-a1Q" kind="presentation" id="kkT-zV-EBZ"/>
+                                                            <action selector="onClickListUser:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GBC-4R-8XW"/>
                                                         </connections>
                                                     </button>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="GXC-ee-ql7">

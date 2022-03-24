@@ -21,6 +21,9 @@ class ScrollViewController: UIViewController {
             coordinator = ScrollVCCoordinator(navController)
         }
     }
+    @IBAction func onClickListUser(_ sender: UIButton) {
+        coordinator?.goToListUserCollectionview()
+    }
     
 }
 // MARK: - Outlet Action

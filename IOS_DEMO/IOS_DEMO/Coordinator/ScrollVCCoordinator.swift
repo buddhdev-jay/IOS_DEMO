@@ -31,4 +31,9 @@ class ScrollVCCoordinator : Coordinator{
             pageVc.start()
         }
     }
+    func goToListUserCollectionview(){
+        if let collectionViewVC = UIStoryboard(name: "WebServiceStoryboard", bundle: nil).instantiateViewController(withIdentifier: Constants.collectionApiVc) as? CollectionApiViewController{
+            navController?.pushViewController(collectionViewVC, animated: true)
+    }
+    }
 }
