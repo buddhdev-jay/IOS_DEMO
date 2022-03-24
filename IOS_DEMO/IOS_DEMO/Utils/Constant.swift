@@ -30,5 +30,6 @@ struct Constants{
     static let TWO = 2
     static let ONE = 1
     static let BASE_URL = "https://reqres.in/"
+    static let loginVc = "loginViewController"
     
 }

@@ -13,8 +13,9 @@ class MainVCCoordinator: Coordinator{
         navController = navigationController
     }
     func start() {
-        if let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: Constants.vc) as? ViewController{
-            navController?.pushViewController(mainVC, animated: true)
+        if let webserviceVC = UIStoryboard(name: "WebServiceStoryboard", bundle: nil).instantiateViewController(withIdentifier: Constants.loginVc) as? LoginViewController{
+            webserviceVC.coordinator = self
+            navController?.pushViewController(webserviceVC, animated: true)
         }
     }
     
@@ -25,6 +26,10 @@ class MainVCCoordinator: Coordinator{
     func finishtoRoot() {
         
     }
-    
+    func goToMainStoryboard(){
+        if let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: Constants.vc) as? ViewController{
+            navController?.pushViewController(mainVC, animated: true)
+        }
+    }
     
 }
