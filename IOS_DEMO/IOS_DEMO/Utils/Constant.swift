@@ -32,5 +32,6 @@ struct Constants{
     static let BASE_URL = "https://reqres.in/"
     static let loginVc = "loginViewController"
     static let collectionApiVc = "collectionApiViewController"
+    static let tableApiVc = "uITableviewAPIConstroller"
     
 }

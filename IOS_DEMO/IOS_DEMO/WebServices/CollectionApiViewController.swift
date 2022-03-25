@@ -108,10 +108,22 @@ extension CollectionApiViewController : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ApiCollectionview", for: indexPath) as?  CollectionViewApiCell {
+            
             let people = peopleArray[indexPath.row]
-            cell.txtEmailCollectionview.text = people.email
-            cell.txtLastNameCollectionview.text = people.last_name
-            cell.txtFirstNameCollectionview.text = people.first_name
+            if let url = URL(string: people.avatar ?? "") {
+                            DispatchQueue.global().async {
+                                let data = try? Data(contentsOf: url)
+                                DispatchQueue.main.async {
+                                    cell.imgCollectionview.image = UIImage(data: data!)
+                                    cell.txtEmailCollectionview.text = people.email
+                                    cell.txtLastNameCollectionview.text = people.last_name
+                                    cell.txtFirstNameCollectionview.text = people.first_name
+
+                                }
+
+                            }
+
+                        }
             return cell
         }
         return UICollectionViewCell()

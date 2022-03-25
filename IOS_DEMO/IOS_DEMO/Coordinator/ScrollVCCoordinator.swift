@@ -36,4 +36,10 @@ class ScrollVCCoordinator : Coordinator{
             navController?.pushViewController(collectionViewVC, animated: true)
     }
     }
+    func goToListUserTableView(){
+        if let tableViewVC = UIStoryboard(name: "WebServiceStoryboard", bundle: nil).instantiateViewController(withIdentifier: Constants.tableApiVc) as? UITableviewAPIConstroller{
+            navController?.pushViewController(tableViewVC, animated: true)
+    }
+        
+    }
 }

@@ -21,6 +21,10 @@ class ScrollViewController: UIViewController {
             coordinator = ScrollVCCoordinator(navController)
         }
     }
+    @IBAction func onClickListUserTableview(_ sender: UIButton) {
+        coordinator?.goToListUserTableView()
+        
+    }
     @IBAction func onClickListUser(_ sender: UIButton) {
         coordinator?.goToListUserCollectionview()
     }
