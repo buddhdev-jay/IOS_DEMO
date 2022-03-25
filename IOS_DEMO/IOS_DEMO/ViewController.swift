@@ -8,10 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
     // MARK: - Outlet
     @IBOutlet weak var btn_gotoautolayout: UIButton!
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var txtView: UITextView!
+    // MARK: -  View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -25,14 +28,21 @@ extension ViewController: TextDelegate {
 
 // MARK: - Outlet Action
 extension ViewController {
+    
     @IBAction func goToAnotherViewcontroller(_ sender: UIButton) {
-        if let secondvc = self.storyboard?.instantiateViewController(withIdentifier:Constants.secondVC ) as? SecondViewController{
-            secondvc.txtDelegate = self
-            self.present(secondvc, animated: true, completion: nil)}
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: Constants.secondVC) as! SecondViewController
+        vc.txtDelegate = self
+        self.present(vc, animated: true, completion: nil)
     }
+    
     @IBAction func goToAutoLayout(_ sender: UIButton) {
-        if let loginSignupvc = self.storyboard?.instantiateViewController(withIdentifier: Constants.loginSignupVc) as? Login_signup_ViewController {
-            self.present(loginSignupvc, animated: true, completion: nil)
-        }
+        let LoginSignupVc = self.storyboard?.instantiateViewController(withIdentifier: Constants.loginSignupVc) as! Login_signup_ViewController
+        self.present(LoginSignupVc, animated: true, completion: nil)
     }
+    
+    @IBAction func goToUIStoryboard(_ sender: Any) {
+        performSegue(withIdentifier: Constants.uiStoryboard, sender: self)
+    }
+    
 }
+

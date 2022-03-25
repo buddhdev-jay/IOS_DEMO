@@ -5,6 +5,7 @@ var numbers = [10,20,30,45,6,599,78,60]
 var num = numbers.filter{ $0 % 5 == 0}
 print(num)
 
+
 //Functions
 //External Parameter Names
 func pow(firstArg a: Int, secondArg b: Int) -> Int {
@@ -226,9 +227,7 @@ resultOne = nil
 enum DivisionError: Error {
     case dividedByZero
 }
-
 func division(numerator: Int, denominator: Int) throws {
-
     if denominator == 0 {
         throw DivisionError.dividedByZero
     }
