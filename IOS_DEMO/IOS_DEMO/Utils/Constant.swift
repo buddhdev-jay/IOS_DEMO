@@ -33,5 +33,7 @@ struct Constants{
     static let loginVc = "loginViewController"
     static let collectionApiVc = "collectionApiViewController"
     static let tableApiVc = "uITableviewAPIConstroller"
+    static let singleUserVc = "singleUserViewController"
+    static let addUserVc = "addUserViewController"
     
 }

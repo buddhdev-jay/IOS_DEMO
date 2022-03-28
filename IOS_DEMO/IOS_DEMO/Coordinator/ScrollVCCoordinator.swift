@@ -38,8 +38,20 @@ class ScrollVCCoordinator : Coordinator{
     }
     func goToListUserTableView(){
         if let tableViewVC = UIStoryboard(name: "WebServiceStoryboard", bundle: nil).instantiateViewController(withIdentifier: Constants.tableApiVc) as? UITableviewAPIConstroller{
+            tableViewVC.coordinator = self
             navController?.pushViewController(tableViewVC, animated: true)
     }
         
+    }
+    func goToSingleUser(index:Int){
+        if let singleuserVC = UIStoryboard(name: "WebServiceStoryboard", bundle: nil).instantiateViewController(withIdentifier: Constants.singleUserVc) as? SingleUserViewController{
+            singleuserVC.itemIndex = index
+            navController?.pushViewController(singleuserVC, animated: true)
+    }
+    }
+    func goToCreateUser(){
+        if let addUserVC = UIStoryboard(name: "WebServiceStoryboard", bundle: nil).instantiateViewController(withIdentifier: Constants.addUserVc) as? AddUserViewController{
+            navController?.pushViewController(addUserVC, animated: true)
+    }
     }
 }
