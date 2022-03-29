@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var btn_gotoautolayout: UIButton!
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var txtView: UITextView!
+    
     // MARK: -  View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,7 @@ extension ViewController: TextDelegate {
 
 // MARK: - Outlet Action
 extension ViewController {
+
     
     @IBAction func goToAnotherViewcontroller(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: Constants.secondVC) as! SecondViewController

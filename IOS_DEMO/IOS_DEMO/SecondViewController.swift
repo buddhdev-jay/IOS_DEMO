@@ -12,10 +12,12 @@ protocol TextDelegate : AnyObject{
 }
 class SecondViewController: UIViewController {
 
+
     // MARK: - Outlet
     @IBOutlet weak var txtFlied: UITextField!
     // MARK: - variable
     weak var txtDelegate : TextDelegate?
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
