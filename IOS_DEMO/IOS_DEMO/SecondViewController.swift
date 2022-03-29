@@ -10,16 +10,21 @@ import UIKit
 protocol TextDelegate : AnyObject{
     func sendText(text : String)
 }
+
 class SecondViewController: UIViewController {
 
     // MARK: - Outlet
     @IBOutlet weak var txtFlied: UITextField!
+    
     // MARK: - variable
     weak var txtDelegate : TextDelegate?
+
+    // MARK: -  View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
+
 // MARK: - Outlet Action
 extension SecondViewController {
     @IBAction func goToSecondViewController(_ sender: UIButton) {
