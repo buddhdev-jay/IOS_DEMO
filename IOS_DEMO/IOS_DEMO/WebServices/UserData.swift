@@ -24,3 +24,4 @@ struct SingleUserResponse: Codable {
     let data: SingleUserData
     let support: SingleUserSupport
 }
+

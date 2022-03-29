@@ -34,7 +34,7 @@ class UITableviewAPIConstroller: UIViewController {
     
     // MARK: - Outlet
     @IBOutlet weak var tableView: UITableView!
-
+    
     @IBOutlet weak var floatingButton: UIButton!
     // MARK: - Variables
     private var peopleArray = [PersonData]()
@@ -54,7 +54,7 @@ class UITableviewAPIConstroller: UIViewController {
     func getData() {
         if let url = URL(string: "https://reqres.in/api/users?page=2"){
             AF.request(url,method: .get,parameters: nil,encoding: URLEncoding.default,headers: nil,interceptor: nil,requestModifier: nil).response{ (response) in
-                switch response.result.value {
+                switch response.result{
                 case .success(let data):
                     guard let responseData = data else {
                         return

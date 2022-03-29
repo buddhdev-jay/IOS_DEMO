@@ -9,7 +9,7 @@ import UIKit
 import Alamofire
 
 class SingleUserViewController: UIViewController {
-
+    
     // MARK: - Outlet
     @IBOutlet weak var emailSingleUser: UILabel!
     @IBOutlet weak var lastNameSingleUser: UILabel!
@@ -50,5 +50,5 @@ class SingleUserViewController: UIViewController {
                 return
             }
         }
-}
+    }
 }
