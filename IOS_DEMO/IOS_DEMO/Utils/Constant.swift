@@ -38,5 +38,7 @@ struct Constants{
     static let genderFemale = "Female"
     static let zeroPointOne = 0.1
     static let onePointZero = 1.0
+    static let collectionviewcell = "collectionviewcell"
+    static let DateFormat = "MM/dd/yyyy"
     
 }
