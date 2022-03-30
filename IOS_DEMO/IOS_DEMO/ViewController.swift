@@ -9,16 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     // MARK: - Outlet
     @IBOutlet weak var btn_gotoautolayout: UIButton!
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var txtView: UITextView!
+    
     // MARK: -  View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
+
 // MARK: - textDelegate Extension
 extension ViewController: TextDelegate {
     func sendText(text : String) {
@@ -43,6 +44,4 @@ extension ViewController {
     @IBAction func goToUIStoryboard(_ sender: Any) {
         performSegue(withIdentifier: Constants.uiStoryboard, sender: self)
     }
-    
 }
-
