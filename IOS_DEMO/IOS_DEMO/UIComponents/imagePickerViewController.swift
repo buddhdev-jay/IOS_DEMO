@@ -17,17 +17,19 @@ class imagePickerViewController: UIViewController {
     
     // MARK: - variables
     let dateFormatter = DateFormatter()
+    
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         dateFormatter.dateFormat = Constants.DateFormat
-        imageView.layer.cornerRadius = 75
+        imageView.layer.cornerRadius = CGFloat(Constants.SEVENTYFIVE)
         self.title = "Image Picker"
     }
 
 }
 
 // MARK: - Outlet Actions
-extension imagePickerViewController{
+extension imagePickerViewController {
     
     @IBAction func dateChanged(_ sender: UIDatePicker) {
         lblDate.text = dateFormatter.string(from: sender.date)
@@ -37,16 +39,21 @@ extension imagePickerViewController{
         let pickimage = UIImagePickerController()
         pickimage.sourceType = .photoLibrary
         pickimage.allowsEditing = true
+        pickimage.delegate = self
         self.present(pickimage,animated: true,completion: nil)
     }
 }
 
 // MARK: - UIImagePickerControllerDelegate
 extension imagePickerViewController:UIImagePickerControllerDelegate{
-    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             guard let image = info[.editedImage] else{return}
             self.imageView.image = image as? UIImage
             dismiss(animated: true, completion: nil)
         }
+}
+
+// MARK: - UINavigationControllerDelegate
+extension imagePickerViewController:UINavigationControllerDelegate{
+    
 }

@@ -16,13 +16,16 @@ class PageControlViewController: UIViewController {
     // MARK: -  View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Page Controller"
     }
+    
 }
 
 // MARK: - Outlet Action
-extension PageControlViewController{
+extension PageControlViewController {
+    
     @IBAction func changePage(_ sender: UIPageControl) {
-        lblPagename.text = "Page \(sender.currentPage + Constants.ONE)"
+        lblPagename.text = "Page \(sender.currentPage + 1)"
         switch sender.currentPage {
         case Constants.ZERO:
             sender.backgroundColor = UIColor.black
@@ -34,5 +37,4 @@ extension PageControlViewController{
             sender.backgroundColor = UIColor.brown
         }
     }
-    
 }

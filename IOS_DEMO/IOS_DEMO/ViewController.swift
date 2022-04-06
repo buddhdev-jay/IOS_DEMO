@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
     // MARK: - Outlet
     @IBOutlet weak var btn_gotoautolayout: UIButton!
     @IBOutlet weak var btn1: UIButton!
@@ -33,7 +34,7 @@ extension ViewController {
     @IBAction func goToAnotherViewcontroller(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: Constants.secondVC) as! SecondViewController
         vc.txtDelegate = self
-        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func goToAutoLayout(_ sender: UIButton) {
