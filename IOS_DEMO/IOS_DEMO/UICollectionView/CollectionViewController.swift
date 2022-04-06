@@ -19,27 +19,24 @@ class CollectionViewController: UIViewController {
     }
 }
 
-// MARK: - UICollectionViewDataSource
-extension CollectionViewController:UICollectionViewDataSource{
-    
+// MARK: - Outlet Action
+extension CollectionViewController:UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return (section == Constants.ZERO) ? Constants.TWENETYFIVE : Constants.FIFTY
+        
+        if section == Constants.ZERO {
+            return Constants.TWENETYFIVE
+        } else  {
+            return Constants.FIFTY
+        }
     }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.CollectionViewCell, for: indexPath) as?  CollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.CollectionViewCell,for: indexPath) as?  CollectionViewCell {
             cell.lblCollectionCell.text = "\(indexPath.row)"
             return cell
         }
         return UICollectionViewCell()
     }
-    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return Constants.TWO
     }
-}
-
-// MARK: - UICollectionViewDelegate
-extension CollectionViewController:UICollectionViewDelegate{
-    
 }

@@ -8,43 +8,69 @@
 import UIKit
 
 class ScrollViewController: UIViewController {
-
+    
     // MARK: - Outlet
     @IBOutlet weak var btnTableView: UITextField!
     @IBOutlet weak var btnSignupScreen: UITextField!
     
+    // MARK: - Variables
+    var coordinator : ScrollVCCoordinator?
+    
     // MARK: -  View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let navController = self.navigationController{
+            coordinator = ScrollVCCoordinator(navController)
+        }
     }
     
 }
-
 // MARK: - Outlet Action
 extension ScrollViewController {
+    
+    @IBAction func onImagePickerClick(_ sender: Any) {
+        if let imagepickervc = self.storyboard?.instantiateViewController(withIdentifier:Constants.imagepickervc ) as? imagePickerViewController {
+            self.navigationController?.pushViewController(imagepickervc, animated: true)
+        }
+        
+    }
+    
     @IBAction func goToPageView(_ sender: UIButton) {
-        performSegue(withIdentifier:Constants.goToPageVC , sender: self)
+        coordinator?.goToPageView()
     }
+    
     @IBAction func goToWebview(_ sender: Any) {
-        performSegue(withIdentifier: Constants.goToWebview, sender: self)
+        if let webviewvc = self.storyboard?.instantiateViewController(withIdentifier: Constants.webviewvc) as? WebviewViewController {
+            self.navigationController?.pushViewController(webviewvc, animated: true)
+        }
     }
+    
     @IBAction func goToPageControl(_ sender: UIButton) {
-        performSegue(withIdentifier: Constants.goToPageControl, sender: self)
+        if let pagecontrolvc = self.storyboard?.instantiateViewController(withIdentifier: Constants.pagecontrolvc) as? PageControlViewController {
+            self.navigationController?.pushViewController(pagecontrolvc, animated: true)
+        }
     }
+    
     @IBAction func goToSegmentControl(_ sender: UIButton) {
-        performSegue(withIdentifier: Constants.goToSegmentControl, sender: self)
+        if let uisegmentedvc = self.storyboard?.instantiateViewController(withIdentifier: Constants.uisegmentedvc) as? UISegmentedViewController {
+            self.navigationController?.pushViewController(uisegmentedvc, animated: true)
+        }
+        
     }
+    
     @IBAction func goToCollection(_ sender: UIButton) {
-        performSegue(withIdentifier: Constants.goToCollectionview, sender: self)
+        if let collectionvc = self.storyboard?.instantiateViewController(withIdentifier: Constants.collectionvc) as?  CollectionViewController {
+            self.navigationController?.pushViewController(collectionvc, animated: true)
+        }
     }
+    
     @IBAction func goToTableView(_ sender: UIButton) {
-        if let tableViewVc = self.storyboard?.instantiateViewController(withIdentifier: Constants.tableViewVc) as? TableViewController{
-        self.present(tableViewVc, animated: true, completion: nil)
-        }
+        let TableViewVc = self.storyboard?.instantiateViewController(withIdentifier:Constants.tableViewVc ) as! TableViewController
+        self.present(TableViewVc, animated: true, completion: nil)
     }
+    
     @IBAction func goToSignUpScreen(_ sender: UIButton) {
-        if let signupScreenVc = self.storyboard?.instantiateViewController(withIdentifier: Constants.signupScreenVc) as? Signup_Screen_ViewController {
-        self.present(signupScreenVc, animated: true, completion: nil)
-        }
+        let SignupScreenVc = self.storyboard?.instantiateViewController(withIdentifier:Constants.signupScreenvc) as! Signup_Screen_ViewController
+        self.present(SignupScreenVc, animated: true, completion: nil)
     }
 }

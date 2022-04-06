@@ -11,12 +11,11 @@ class UISegmentedViewController: UIViewController {
     
     // MARK: - Outlet
     @IBOutlet weak var imageView: UIImageView!
-    // MARK: -  View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Ui Segment Control"
     }
 }
-
 // MARK: - Outlet Action
 extension UISegmentedViewController {
     @IBAction func imageChange(_ sender: UISegmentedControl) {

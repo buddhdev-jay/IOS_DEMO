@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB014CF127DF012000F9B768 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB014CF027DF012000F9B768 /* Constant.swift */; };
 		FB1F92E827D2017E00B8C4EC /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F92E727D2017E00B8C4EC /* CollectionViewController.swift */; };
 		FB1F92EA27D20A4800B8C4EC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F92E927D20A4800B8C4EC /* CollectionViewCell.swift */; };
 		FB1F92EE27D232B800B8C4EC /* UISegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F92ED27D232B800B8C4EC /* UISegmentedViewController.swift */; };
 		FB2B74C227CF6887002AFCB0 /* UI_Component_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2B74C127CF6887002AFCB0 /* UI_Component_Storyboard.storyboard */; };
 		FB2B74C427CF7A96002AFCB0 /* Signup_Screen_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B74C327CF7A96002AFCB0 /* Signup_Screen_ViewController.swift */; };
 		FB2B74C627CF932A002AFCB0 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B74C527CF932A002AFCB0 /* ScrollViewController.swift */; };
-		FB95BCFB27F44DCA00D01E7B /* imagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95BCFA27F44DCA00D01E7B /* imagePickerViewController.swift */; };
+		FB54104327D886C500EB8861 /* imagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB54104227D886C500EB8861 /* imagePickerViewController.swift */; };
+		FB7D637527E094E600D6867A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D637427E094E600D6867A /* Coordinator.swift */; };
+		FB7D637727E0954200D6867A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D637627E0954200D6867A /* AppCoordinator.swift */; };
+		FB7D637927E095E600D6867A /* MainVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D637827E095E600D6867A /* MainVCCoordinator.swift */; };
+		FB7D637B27E0994300D6867A /* ScrollVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D637A27E0994300D6867A /* ScrollVCCoordinator.swift */; };
+		FB7D637D27E09AC700D6867A /* PageVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D637C27E09AC700D6867A /* PageVCCoordinator.swift */; };
 		FB994CB327A27D32006969A2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB994CB227A27D32006969A2 /* SecondViewController.swift */; };
+		FBA1076327DB059800351332 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA1076227DB059800351332 /* Constant.swift */; };
 		FBB3344727D5F77B00EBA1C8 /* PageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3344627D5F77B00EBA1C8 /* PageControlViewController.swift */; };
 		FBB3344927D5FFE300EBA1C8 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3344827D5FFE300EBA1C8 /* PageViewController.swift */; };
 		FBB3344B27D6157D00EBA1C8 /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3344A27D6157D00EBA1C8 /* WebviewViewController.swift */; };
@@ -53,20 +58,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FB014CF027DF012000F9B768 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		FB1F92E727D2017E00B8C4EC /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		FB1F92E927D20A4800B8C4EC /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		FB1F92ED27D232B800B8C4EC /* UISegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedViewController.swift; sourceTree = "<group>"; };
 		FB2B74C127CF6887002AFCB0 /* UI_Component_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UI_Component_Storyboard.storyboard; sourceTree = "<group>"; };
 		FB2B74C327CF7A96002AFCB0 /* Signup_Screen_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup_Screen_ViewController.swift; sourceTree = "<group>"; };
 		FB2B74C527CF932A002AFCB0 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
-		FB95BCF527F44AEA00D01E7B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		FB95BCF627F44AEA00D01E7B /* HomeviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeviewController.swift; sourceTree = "<group>"; };
-		FB95BCF727F44AEA00D01E7B /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
-		FB95BCF827F44AEA00D01E7B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		FB95BCF927F44AEA00D01E7B /* StackviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackviewController.swift; sourceTree = "<group>"; };
-		FB95BCFA27F44DCA00D01E7B /* imagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagePickerViewController.swift; sourceTree = "<group>"; };
+		FB54104227D886C500EB8861 /* imagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagePickerViewController.swift; sourceTree = "<group>"; };
+		FB7D637427E094E600D6867A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		FB7D637627E0954200D6867A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FB7D637827E095E600D6867A /* MainVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCCoordinator.swift; sourceTree = "<group>"; };
+		FB7D637A27E0994300D6867A /* ScrollVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollVCCoordinator.swift; sourceTree = "<group>"; };
+		FB7D637C27E09AC700D6867A /* PageVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVCCoordinator.swift; sourceTree = "<group>"; };
 		FB994CB227A27D32006969A2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FBA1076227DB059800351332 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		FBB3344627D5F77B00EBA1C8 /* PageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlViewController.swift; sourceTree = "<group>"; };
 		FBB3344827D5FFE300EBA1C8 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		FBB3344A27D6157D00EBA1C8 /* WebviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewViewController.swift; sourceTree = "<group>"; };
@@ -115,14 +120,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FB014CF227DF012800F9B768 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				FB014CF027DF012000F9B768 /* Constant.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		FB1F92E427D1E62200B8C4EC /* TableViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +133,6 @@
 		FB1F92E527D1E65100B8C4EC /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				FB95BCFA27F44DCA00D01E7B /* imagePickerViewController.swift */,
 				FB2B74C127CF6887002AFCB0 /* UI_Component_Storyboard.storyboard */,
 				FB2B74C327CF7A96002AFCB0 /* Signup_Screen_ViewController.swift */,
 				FB2B74C527CF932A002AFCB0 /* ScrollViewController.swift */,
@@ -144,6 +140,7 @@
 				FBB3344627D5F77B00EBA1C8 /* PageControlViewController.swift */,
 				FBB3344827D5FFE300EBA1C8 /* PageViewController.swift */,
 				FBB3344A27D6157D00EBA1C8 /* WebviewViewController.swift */,
+				FB54104227D886C500EB8861 /* imagePickerViewController.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -157,16 +154,24 @@
 			path = UICollectionView;
 			sourceTree = "<group>";
 		};
-		FB95BCF427F44AEA00D01E7B /* Tab Bar */ = {
+		FB7D637327E094B100D6867A /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				FB95BCF527F44AEA00D01E7B /* MapViewController.swift */,
-				FB95BCF627F44AEA00D01E7B /* HomeviewController.swift */,
-				FB95BCF727F44AEA00D01E7B /* TabBar.storyboard */,
-				FB95BCF827F44AEA00D01E7B /* TabBarViewController.swift */,
-				FB95BCF927F44AEA00D01E7B /* StackviewController.swift */,
+				FB7D637427E094E600D6867A /* Coordinator.swift */,
+				FB7D637627E0954200D6867A /* AppCoordinator.swift */,
+				FB7D637827E095E600D6867A /* MainVCCoordinator.swift */,
+				FB7D637A27E0994300D6867A /* ScrollVCCoordinator.swift */,
+				FB7D637C27E09AC700D6867A /* PageVCCoordinator.swift */,
 			);
-			path = "Tab Bar";
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FBA1076127DB057A00351332 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FBA1076227DB059800351332 /* Constant.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		FBD33F8C278D44910029EE9A = {
@@ -192,8 +197,8 @@
 		FBD33F97278D44910029EE9A /* IOS_DEMO */ = {
 			isa = PBXGroup;
 			children = (
-				FB95BCF427F44AEA00D01E7B /* Tab Bar */,
-				FB014CF227DF012800F9B768 /* Utils */,
+				FB7D637327E094B100D6867A /* Coordinator */,
+				FBA1076127DB057A00351332 /* Utils */,
 				FB1F92E627D1F0A300B8C4EC /* UICollectionView */,
 				FB1F92E527D1E65100B8C4EC /* UIComponents */,
 				FB1F92E427D1E62200B8C4EC /* TableViewController */,
@@ -361,22 +366,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB95BCFB27F44DCA00D01E7B /* imagePickerViewController.swift in Sources */,
-				FB014CF127DF012000F9B768 /* Constant.swift in Sources */,
 				FBFEBE5027CCE60B004EF9AA /* Signup_form_ViewController.swift in Sources */,
 				FB994CB327A27D32006969A2 /* SecondViewController.swift in Sources */,
 				FB1F92EA27D20A4800B8C4EC /* CollectionViewCell.swift in Sources */,
 				FBB3344727D5F77B00EBA1C8 /* PageControlViewController.swift in Sources */,
 				FBD33F9D278D44910029EE9A /* ViewController.swift in Sources */,
+				FB7D637B27E0994300D6867A /* ScrollVCCoordinator.swift in Sources */,
 				FB2B74C627CF932A002AFCB0 /* ScrollViewController.swift in Sources */,
+				FB7D637527E094E600D6867A /* Coordinator.swift in Sources */,
 				FBB3344927D5FFE300EBA1C8 /* PageViewController.swift in Sources */,
 				FBD33F99278D44910029EE9A /* AppDelegate.swift in Sources */,
 				FB1F92EE27D232B800B8C4EC /* UISegmentedViewController.swift in Sources */,
 				FBDD98DA27D0DF4F00F40E28 /* TableViewCell.swift in Sources */,
+				FB7D637D27E09AC700D6867A /* PageVCCoordinator.swift in Sources */,
 				FBE9556327C8BA5000DBC991 /* Login_signup_ViewController.swift in Sources */,
 				FB2B74C427CF7A96002AFCB0 /* Signup_Screen_ViewController.swift in Sources */,
 				FBDD98D727D0CE7B00F40E28 /* TableViewController.swift in Sources */,
+				FB7D637927E095E600D6867A /* MainVCCoordinator.swift in Sources */,
+				FB7D637727E0954200D6867A /* AppCoordinator.swift in Sources */,
 				FBD33F9B278D44910029EE9A /* SceneDelegate.swift in Sources */,
+				FB54104327D886C500EB8861 /* imagePickerViewController.swift in Sources */,
+				FBA1076327DB059800351332 /* Constant.swift in Sources */,
 				FBB3344B27D6157D00EBA1C8 /* WebviewViewController.swift in Sources */,
 				FB1F92E827D2017E00B8C4EC /* CollectionViewController.swift in Sources */,
 			);
