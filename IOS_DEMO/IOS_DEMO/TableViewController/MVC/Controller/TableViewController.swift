@@ -12,8 +12,8 @@ class TableViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityindicator: UIActivityIndicatorView!
-    // MARK: - Variables 
-    var names = ["JAY","abc","xyz"]
+    // MARK: - Variables
+    
     var sectionOne = Constants.TWO
     var sectionTwo = Constants.ONE
     
@@ -25,7 +25,7 @@ class TableViewController: UIViewController {
         }()
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
         for _ in 1...100 {
-            names += ["JAY","abc","xyz"]
+            Users.names += ["JAY","abc","xyz"]
         }
         self.activityindicator.startAnimating()
         sectionOne = Constants.FIFTY
@@ -68,8 +68,8 @@ extension TableViewController:UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? TableViewCell {
-            cell.tableCelllbl?.text = names[indexPath.row]
-            cell.tableCellImage?.image = UIImage(named: "img_google")
+            cell.tableCelllbl?.text = Users.names[indexPath.row]
+            cell.tableCellImage?.image = UIImage(named: "wave")
             if indexPath.row % 2 == 0{
                 cell.backgroundColor = .gray
             }else

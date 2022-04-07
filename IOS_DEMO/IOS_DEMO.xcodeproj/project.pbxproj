@@ -59,6 +59,12 @@
 		FBDD98DA27D0DF4F00F40E28 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDD98D827D0DF4F00F40E28 /* TableViewCell.swift */; };
 		FBDD98DB27D0DF4F00F40E28 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDD98D927D0DF4F00F40E28 /* TableViewCell.xib */; };
 		FBE9556327C8BA5000DBC991 /* Login_signup_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9556227C8BA5000DBC991 /* Login_signup_ViewController.swift */; };
+		FBF3016E27FEDCFE00F4ED7F /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3016D27FEDCFE00F4ED7F /* Users.swift */; };
+		FBFBCB6B27FEDFB500E4610E /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFBCB6A27FEDFB500E4610E /* RoundedImage.swift */; };
+		FBFBCB6F27FEEE8F00E4610E /* ArchitectureStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFBCB6E27FEEE8F00E4610E /* ArchitectureStoryboard.storyboard */; };
+		FBFBCB7527FEF0A300E4610E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFBCB7427FEF0A300E4610E /* LoginPresenter.swift */; };
+		FBFBCB7727FEF12700E4610E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFBCB7627FEF12700E4610E /* UserModel.swift */; };
+		FBFBCB7B27FEF25500E4610E /* LoginViewControllerMVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFBCB7A27FEF25500E4610E /* LoginViewControllerMVP.swift */; };
 		FBFEBE5027CCE60B004EF9AA /* Signup_form_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFEBE4F27CCE60B004EF9AA /* Signup_form_ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +148,12 @@
 		FBDD98D827D0DF4F00F40E28 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		FBDD98D927D0DF4F00F40E28 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		FBE9556227C8BA5000DBC991 /* Login_signup_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_signup_ViewController.swift; sourceTree = "<group>"; };
+		FBF3016D27FEDCFE00F4ED7F /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		FBFBCB6A27FEDFB500E4610E /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		FBFBCB6E27FEEE8F00E4610E /* ArchitectureStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArchitectureStoryboard.storyboard; sourceTree = "<group>"; };
+		FBFBCB7427FEF0A300E4610E /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		FBFBCB7627FEF12700E4610E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		FBFBCB7A27FEF25500E4610E /* LoginViewControllerMVP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerMVP.swift; sourceTree = "<group>"; };
 		FBFEBE4F27CCE60B004EF9AA /* Signup_form_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup_form_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,8 +227,7 @@
 		FB1F92E427D1E62200B8C4EC /* TableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FBDD98D627D0CE7B00F40E28 /* TableViewController.swift */,
-				FBDD98D827D0DF4F00F40E28 /* TableViewCell.swift */,
+				FBF3016B27FEDC9800F4ED7F /* MVC */,
 				FBDD98D927D0DF4F00F40E28 /* TableViewCell.xib */,
 			);
 			path = TableViewController;
@@ -315,6 +326,7 @@
 		FBD33F97278D44910029EE9A /* IOS_DEMO */ = {
 			isa = PBXGroup;
 			children = (
+				FBFBCB6D27FEEB4900E4610E /* MVP */,
 				FB03DAE027E9E68F00CA3FBD /* WebServices */,
 				FB7D637327E094B100D6867A /* Coordinator */,
 				FB22FBB327DB444C0073EB03 /* NavigationController */,
@@ -333,6 +345,7 @@
 				FBD33FA6278D44920029EE9A /* Info.plist */,
 				FB994CB227A27D32006969A2 /* SecondViewController.swift */,
 				FBFEBE4F27CCE60B004EF9AA /* Signup_form_ViewController.swift */,
+				FBFBCB6E27FEEE8F00E4610E /* ArchitectureStoryboard.storyboard */,
 			);
 			path = IOS_DEMO;
 			sourceTree = "<group>";
@@ -352,6 +365,75 @@
 				FBD33FBB278D44930029EE9A /* IOS_DEMOUITestsLaunchTests.swift */,
 			);
 			path = IOS_DEMOUITests;
+			sourceTree = "<group>";
+		};
+		FBF3016B27FEDC9800F4ED7F /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				FBFBCB6C27FEE43000E4610E /* Controller */,
+				FBFBCB6827FEDF4000E4610E /* View */,
+				FBF3016C27FEDCAA00F4ED7F /* Model */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		FBF3016C27FEDCAA00F4ED7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBF3016D27FEDCFE00F4ED7F /* Users.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FBFBCB6827FEDF4000E4610E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBDD98D827D0DF4F00F40E28 /* TableViewCell.swift */,
+				FBFBCB6A27FEDFB500E4610E /* RoundedImage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FBFBCB6C27FEE43000E4610E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FBDD98D627D0CE7B00F40E28 /* TableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FBFBCB6D27FEEB4900E4610E /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				FBFBCB7327FEF07E00E4610E /* Presenter */,
+				FBFBCB7227FEEF9F00E4610E /* View */,
+				FBFBCB7027FEEF8700E4610E /* Model */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		FBFBCB7027FEEF8700E4610E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBFBCB7627FEF12700E4610E /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FBFBCB7227FEEF9F00E4610E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBFBCB7A27FEF25500E4610E /* LoginViewControllerMVP.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FBFBCB7327FEF07E00E4610E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FBFBCB7427FEF0A300E4610E /* LoginPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,6 +553,7 @@
 				FBBEEC2F27D74ED9005B0586 /* TabBar.storyboard in Resources */,
 				FB03DAE227E9EC6E00CA3FBD /* WebServiceStoryboard.storyboard in Resources */,
 				FBD33FA0278D44910029EE9A /* Main.storyboard in Resources */,
+				FBFBCB6F27FEEE8F00E4610E /* ArchitectureStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +682,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB22FBB927DB49D60073EB03 /* SecondVC.swift in Sources */,
+				FBFBCB6B27FEDFB500E4610E /* RoundedImage.swift in Sources */,
 				FBFEBE5027CCE60B004EF9AA /* Signup_form_ViewController.swift in Sources */,
 				FB994CB327A27D32006969A2 /* SecondViewController.swift in Sources */,
 				FB1F92EA27D20A4800B8C4EC /* CollectionViewCell.swift in Sources */,
@@ -627,10 +711,14 @@
 				FB28F83D27EDC8640046C418 /* UITableviewAPIConstroller.swift in Sources */,
 				FB7D637727E0954200D6867A /* AppCoordinator.swift in Sources */,
 				FBD33F9B278D44910029EE9A /* SceneDelegate.swift in Sources */,
+				FBFBCB7527FEF0A300E4610E /* LoginPresenter.swift in Sources */,
 				FB8EFE4827EC4B8F008377CA /* CollectionApiViewController.swift in Sources */,
+				FBFBCB7B27FEF25500E4610E /* LoginViewControllerMVP.swift in Sources */,
 				FB54104327D886C500EB8861 /* imagePickerViewController.swift in Sources */,
 				FBA1076327DB059800351332 /* Constant.swift in Sources */,
+				FBF3016E27FEDCFE00F4ED7F /* Users.swift in Sources */,
 				FBCA1E6E27F1A5F300D5324E /* SingleUserViewController.swift in Sources */,
+				FBFBCB7727FEF12700E4610E /* UserModel.swift in Sources */,
 				FB8EFE4A27EC6014008377CA /* CollectionViewApiCell.swift in Sources */,
 				FBB3344B27D6157D00EBA1C8 /* WebviewViewController.swift in Sources */,
 				FB90D3AA27DB560B00942406 /* ThirdViewController.swift in Sources */,
