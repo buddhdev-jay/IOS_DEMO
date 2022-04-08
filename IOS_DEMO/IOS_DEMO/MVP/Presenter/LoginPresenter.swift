@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol PresenterView:class{
+protocol PresenterView:class {
     func updateLogin()
     func wrongLogin()
 }
