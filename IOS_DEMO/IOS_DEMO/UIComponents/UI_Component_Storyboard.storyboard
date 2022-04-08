@@ -28,16 +28,6 @@
             </objects>
             <point key="canvasLocation" x="749" y="471"/>
         </scene>
-        <!--ArchitectureStoryboard-->
-        <scene sceneID="Gk1-lB-tL1">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ArchitectureStoryboard" id="d8Q-4p-kD8" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="YVA-b8-thR"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BbW-MR-31Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1109" y="346"/>
-        </scene>
         <!--NavigationStoryboard-->
         <scene sceneID="3ai-bg-0Fr">
             <objects>
@@ -236,7 +226,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Architecture"/>
                                                         <connections>
-                                                            <segue destination="d8Q-4p-kD8" kind="show" id="qwp-gc-e2g"/>
+                                                            <action selector="onClickArchitecturebtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="caK-r2-xdT"/>
                                                         </connections>
                                                     </button>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="GXC-ee-ql7">

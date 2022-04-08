@@ -54,4 +54,10 @@ class ScrollVCCoordinator : Coordinator{
             navController?.pushViewController(addUserVC, animated: true)
     }
     }
+    func goToArchitectureStoryboard(){
+        if let navController = navController {
+            let architectureVc = MVPCoordinator(navController)
+            architectureVc.start()
+        }
+    }
 }

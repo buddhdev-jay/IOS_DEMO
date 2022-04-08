@@ -29,6 +29,9 @@ class ScrollViewController: UIViewController {
         coordinator?.goToListUserCollectionview()
     }
     
+    @IBAction func onClickArchitecturebtn(_ sender: Any) {
+        coordinator?.goToArchitectureStoryboard()
+    }
 }
 // MARK: - Outlet Action
 extension ScrollViewController {

@@ -9,24 +9,23 @@ import UIKit
 
 class LoginViewControllerMVP: UIViewController {
     
-    
+    //Mark : - Outlets
     @IBOutlet weak var userEmail: UITextField!
     @IBOutlet weak var userPassword: UITextField!
     
+    // MARK: - Variables
     lazy var presenter = LoginPresenter(view:self)
+    var coordinator : MVPCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
-    @IBAction func clickedSubmitBtn(_ sender: Any) {
-        presenter.userName = userEmail.text
-        presenter.password = userPassword.text
-        presenter.submitButtonClicked()
-    }
+    
 }
 
+//Mark : - PresenterView
 extension LoginViewControllerMVP : PresenterView {
     
     func updateLogin() {
@@ -41,5 +40,17 @@ extension LoginViewControllerMVP : PresenterView {
                                                     "email and Password is InCorrect", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
         self.present(alertController, animated: true, completion: nil)
+    }
+}
+
+//Mark : - IBActions
+extension LoginViewControllerMVP {
+    @IBAction func clickedSubmitBtn(_ sender: Any) {
+        presenter.userName = userEmail.text
+        presenter.password = userPassword.text
+        presenter.submitButtonClicked()
+    }
+    @IBAction func onClickSignup(_ sender: UIButton) {
+        coordinator?.gotoSignupPage()
     }
 }
