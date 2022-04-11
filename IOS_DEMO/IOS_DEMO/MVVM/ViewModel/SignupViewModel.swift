@@ -23,7 +23,9 @@ class SignupViewModel : NSObject {
             performSignup(email: email, password:password, name: name)
         }
     }
+    
     func performSignup(email: String, password: String, name: String) {
-        
+        let person = PersonModel(name:name,email:email,password:password)
+        onSignupSuccess?()
     }
 }

@@ -8,25 +8,30 @@
 import UIKit
 
 class SignupMVVMViewController: UIViewController {
-
+    
     // MARK: - Variables
     var coordinator : MVVMCoordinator?
+    let viewModel = SignupViewModel()
+    
+    @IBOutlet weak var emailText: UITextField!
+    
+    @IBOutlet weak var nameText: UITextField!
+    @IBOutlet weak var passwordText: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        bindViewModel()
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func bindViewModel(){
+        viewModel.onValidationError = { error in
+            print(error)
+        }
+        viewModel.onSignupSuccess = {
+            self.coordinator?.goToLogin()
+        }
     }
-    */
-
+    @IBAction func onSignupClick(_ sender: UIButton) {
+        viewModel.validate(email: emailText.text ?? " ", password: passwordText.text ?? " " , name: nameText.text ?? " ")
+    }
 }

@@ -15,16 +15,21 @@ class MVVMCoordinator : Coordinator{
         navController = navigationController
     }
     func start() {
-        if let LoginmvpVC = UIStoryboard(name: "ArchitectureStoryboard", bundle: nil).instantiateViewController(withIdentifier: Constants.signupmvvmVc) as? SignupMVVMViewController{
-            navController?.pushViewController(LoginmvpVC, animated: true)
+        if let signupMvvmVC = UIStoryboard(name: "ArchitectureStoryboard", bundle: nil).instantiateViewController(withIdentifier: Constants.signupmvvmVc) as? SignupMVVMViewController{
+            signupMvvmVC.coordinator = self
+            navController?.pushViewController(signupMvvmVC, animated: true)
         }
     }
     
     func finish() {
-        
+       
     }
     
     func finishtoRoot() {
         
+    }
+    
+    func goToLogin() {
+        navController?.popViewController(animated: true)
     }
 }
