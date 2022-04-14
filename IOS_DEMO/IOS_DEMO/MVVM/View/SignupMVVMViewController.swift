@@ -10,7 +10,7 @@ import UIKit
 class SignupMVVMViewController: UIViewController {
     
     // MARK: - Variables
-    var coordinator : MVVMCoordinator?
+   weak var coordinator : MVVMCoordinator?
     let viewModel = SignupViewModel()
     
     @IBOutlet weak var emailText: UITextField!
