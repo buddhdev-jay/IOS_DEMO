@@ -18,7 +18,6 @@ class PageControlViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Page Controller"
     }
-    
 }
 
 // MARK: - Outlet Action

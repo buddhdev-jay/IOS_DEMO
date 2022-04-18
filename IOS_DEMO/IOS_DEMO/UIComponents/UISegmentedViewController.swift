@@ -18,7 +18,6 @@ class UISegmentedViewController: UIViewController {
         self.title = "Ui Segment Control"
     }
 }
-
 // MARK: - Outlet Action
 extension UISegmentedViewController {
     

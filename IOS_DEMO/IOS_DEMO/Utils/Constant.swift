@@ -49,6 +49,7 @@ struct Constants{
     static let pagecontrolvc = "pageControlViewController"
     static let uisegmentedvc = "uISegmentedViewController"
     static let collectionvc = "collectionViewController"
+    static let fourthvc = "FourthViewController"
     static let secondVc = "secondVC"
     static let ThirdVc = "thirdViewController"
     static let scrollVc = "scrollViewController"
@@ -57,6 +58,7 @@ struct Constants{
     static let MainStoryboard = "Main"
     static let tapped = "You Tapped"
     static let footer = "Footer"
+    static let signouttxt = "Signout"
     static let section = "Section"
     
 }
