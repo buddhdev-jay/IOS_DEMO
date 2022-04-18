@@ -11,7 +11,7 @@ class AppCoordinator : Coordinator {
     
     // MARK: - Variables
     var navController: UINavigationController?
-    
+
     init(_ navigationController: UINavigationController){
         navController = navigationController
     }
@@ -31,3 +31,4 @@ class AppCoordinator : Coordinator {
        //To be Implemented LATER
     }
 }
+
