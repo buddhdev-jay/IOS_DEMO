@@ -8,6 +8,7 @@
 import UIKit
 import LocalAuthentication
 
+
 class Signup_Screen_ViewController: UIViewController {
     var timer: Timer?
     // MARK: - Outlet
@@ -34,6 +35,7 @@ extension Signup_Screen_ViewController{
         {
             lblGender.text = "FeMale"
         }
+        
     }
     @IBAction func displayAge(_ sender: Any) {
         lblAgeNumber.text = "\(Int(ageSlider.value))"

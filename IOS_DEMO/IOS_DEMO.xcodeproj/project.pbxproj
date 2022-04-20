@@ -42,6 +42,7 @@
 		FB90D3AA27DB560B00942406 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90D3A927DB560B00942406 /* ThirdViewController.swift */; };
 		FB994CB327A27D32006969A2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB994CB227A27D32006969A2 /* SecondViewController.swift */; };
 		FBA1076327DB059800351332 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA1076227DB059800351332 /* Constant.swift */; };
+		FBA94E5E281031900003FA20 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = FBA94E5D281031900003FA20 /* MyLibrary */; };
 		FBB3344727D5F77B00EBA1C8 /* PageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3344627D5F77B00EBA1C8 /* PageControlViewController.swift */; };
 		FBB3344927D5FFE300EBA1C8 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3344827D5FFE300EBA1C8 /* PageViewController.swift */; };
 		FBB3344B27D6157D00EBA1C8 /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3344A27D6157D00EBA1C8 /* WebviewViewController.swift */; };
@@ -172,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBA94E5E281031900003FA20 /* MyLibrary in Frameworks */,
 				6E7FED464EDC9DC313C50D70 /* Pods_IOS_DEMO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,9 +349,17 @@
 			path = "Tab Bar";
 			sourceTree = "<group>";
 		};
+		FBC1453228103AA90092BE98 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		FBD33F8C278D44910029EE9A = {
 			isa = PBXGroup;
 			children = (
+				FBC1453228103AA90092BE98 /* Packages */,
 				FBD33F97278D44910029EE9A /* IOS_DEMO */,
 				FBD33FAE278D44930029EE9A /* IOS_DEMOTests */,
 				FBD33FB8278D44930029EE9A /* IOS_DEMOUITests */,
@@ -501,6 +511,9 @@
 			dependencies = (
 			);
 			name = IOS_DEMO;
+			packageProductDependencies = (
+				FBA94E5D281031900003FA20 /* MyLibrary */,
+			);
 			productName = IOS_DEMO;
 			productReference = FBD33F95278D44910029EE9A /* IOS_DEMO.app */;
 			productType = "com.apple.product-type.application";
@@ -1140,6 +1153,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FBA94E5D281031900003FA20 /* MyLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FBD33F8D278D44910029EE9A /* Project object */;
 }

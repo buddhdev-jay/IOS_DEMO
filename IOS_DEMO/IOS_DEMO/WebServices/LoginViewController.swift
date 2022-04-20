@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 struct User : Codable {
     let email: String
     let password: String
@@ -24,7 +23,8 @@ class LoginViewController: UIViewController {
     var coordinator : MainVCCoordinator?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //debugPrint(Home().hellowVaraible)
+       // debugPrint(MyLibrary().hellowVaraible)
         // Do any additional setup after loading the view.
     }
     

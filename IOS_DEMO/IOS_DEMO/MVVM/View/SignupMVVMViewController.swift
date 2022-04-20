@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MyLibrary
 
 class SignupMVVMViewController: UIViewController {
     
@@ -21,6 +22,7 @@ class SignupMVVMViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindViewModel()
+        
         // Do any additional setup after loading the view.
     }
     func bindViewModel(){
