@@ -36,9 +36,9 @@ extension AddUserViewController {
         var userObject = UserJobData(name: txtNameFiled.text, job: txtJobFiled.text)
         AF.request(Constants.adduserapi, method: .post, parameters: userObject.requestParams(), encoding: JSONEncoding.default, headers: nil).validate(statusCode: Constants.twoHundred ..< Constants.twoNintynine).responseJSON { AFdata in
             do {
-                print(AFdata)
+                debugPrint(AFdata)
             } catch {
-                print(Constants.errorTryingtoConvertJsontoString)
+                debugPrint(Constants.errorTryingtoConvertJsontoString)
                 return
             }
         }

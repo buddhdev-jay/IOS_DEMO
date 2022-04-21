@@ -8,7 +8,7 @@
 import UIKit
 import LocalAuthentication
 
-class Signup_Screen_ViewController: UIViewController {
+class SignupScreenViewController: UIViewController {
     
     // MARK: - Variables
     var timer: Timer?
@@ -31,7 +31,7 @@ class Signup_Screen_ViewController: UIViewController {
 }
 
 // MARK: - Outlet Action
-extension Signup_Screen_ViewController {
+extension SignupScreenViewController {
     
     @IBAction func displayGender(_ sender: Any) {
         lblGender.text = genderSwitch.isOn ? Constants.genderMale :Constants.genderFemale

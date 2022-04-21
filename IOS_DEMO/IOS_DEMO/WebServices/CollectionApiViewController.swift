@@ -40,7 +40,6 @@ class CollectionApiViewController: UIViewController {
                 guard let data = data else{
                     return
                 }
-                let json = try JSONSerialization.jsonObject(with: data, options: [])
                 guard let people = try? JSONDecoder().decode(UsersList.self, from: data) else{
                     print(Constants.errorinData)
                     return

@@ -397,7 +397,7 @@
         <!--Signup Screen View Controller-->
         <scene sceneID="MMG-So-dGL">
             <objects>
-                <viewController storyboardIdentifier="signup_Screen_ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tWv-0o-fYH" customClass="Signup_Screen_ViewController" customModule="IOS_DEMO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signup_Screen_ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tWv-0o-fYH" customClass="SignupScreenViewController" customModule="IOS_DEMO" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vFJ-Y8-G8b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
