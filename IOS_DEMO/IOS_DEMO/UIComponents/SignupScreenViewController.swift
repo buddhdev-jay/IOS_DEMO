@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import LocalAuthentication
 
-class Signup_Screen_ViewController: UIViewController {
+class SignupScreenViewController: UIViewController {
     
     // MARK: - Variables
     var timer: Timer?
@@ -30,7 +31,7 @@ class Signup_Screen_ViewController: UIViewController {
 }
 
 // MARK: - Outlet Action
-extension Signup_Screen_ViewController {
+extension SignupScreenViewController {
     
     @IBAction func displayGender(_ sender: Any) {
         lblGender.text = genderSwitch.isOn ? Constants.genderMale :Constants.genderFemale
@@ -48,9 +49,18 @@ extension Signup_Screen_ViewController {
         timer = Timer.scheduledTimer(withTimeInterval: Constants.onePointZero, repeats: true, block: { timer in
             let change: Float = Float(Constants.zeroPointOne)
             self.progressView.progress = self.progressView.progress + (change)
-            if self.progressView.progress >= Float(Constants.onePointZero) {
+            if self.progressView.progress >=  Float(Constants.onePointZero) {
                 self.timer?.invalidate()
             }
         })
+        let context:LAContext = LAContext()
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,error: nil) {
+            context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason:Constants.needyourlogin, reply: {(wascorrect,error) in
+                wascorrect ? print(Constants.correct) : print(Constants.incorrect)
+            })
+        }
+        else {
+            print(Constants.notablesuccess)
+        }
     }
 }

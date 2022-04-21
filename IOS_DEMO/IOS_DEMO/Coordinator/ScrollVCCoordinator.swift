@@ -69,12 +69,38 @@ class ScrollVCCoordinator : Coordinator {
     }
     
     func goToTableView(){
-        let TableViewVc = UIStoryboard(name: Constants.UiStoryboard, bundle: nil).instantiateViewController(withIdentifier:Constants.tableViewVc ) as! TableViewController
-            navController?.present(TableViewVc, animated: true, completion: nil)
+        if let TableViewVc = UIStoryboard(name: Constants.UiStoryboard, bundle: nil).instantiateViewController(withIdentifier:Constants.tableViewVc ) as? TableViewController {
+            navController?.present(TableViewVc, animated: true, completion: nil) }
     }
     
     func goToSignUpScreen(){
-        let SignupScreenVc = UIStoryboard(name: Constants.UiStoryboard, bundle: nil).instantiateViewController(withIdentifier:Constants.signupScreenvc) as! Signup_Screen_ViewController
-        navController?.present(SignupScreenVc, animated: true, completion: nil)
+        if let SignupScreenVc = UIStoryboard(name: Constants.UiStoryboard, bundle: nil).instantiateViewController(withIdentifier:Constants.signupScreenvc) as? SignupScreenViewController {
+            navController?.present(SignupScreenVc, animated: true, completion: nil) }
+    }
+    
+    func goToListUserCollectionview(){
+        if let collectionViewVC = UIStoryboard(name: Constants.webServicesStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.collectionApiVc) as? CollectionApiViewController {
+            navController?.pushViewController(collectionViewVC, animated: true)
+        }
+    }
+    
+    func goToListUserTableView(){
+        if let tableViewVC = UIStoryboard(name: Constants.webServicesStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.tableApiVc) as? UITableviewAPIConstroller {
+            tableViewVC.coordinator = self
+            navController?.pushViewController(tableViewVC, animated: true)
+        }
+    }
+    
+    func goToSingleUser(index:Int){
+        if let singleuserVC = UIStoryboard(name: Constants.webServicesStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.singleUserVc) as? SingleUserViewController {
+            singleuserVC.itemIndex = index
+            navController?.pushViewController(singleuserVC, animated: true)
+        }
+    }
+    	
+    func goToCreateUser(){
+        if let addUserVC = UIStoryboard(name: Constants.webServicesStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.addUserVc) as? AddUserViewController {
+            navController?.pushViewController(addUserVC, animated: true)
+        }
     }
 }
