@@ -21,7 +21,7 @@
 		FB28F83D27EDC8640046C418 /* UITableviewAPIConstroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB28F83C27EDC8640046C418 /* UITableviewAPIConstroller.swift */; };
 		FB28F83F27EDC9410046C418 /* ApiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB28F83E27EDC9410046C418 /* ApiTableViewCell.swift */; };
 		FB2B74C227CF6887002AFCB0 /* UI_Component_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2B74C127CF6887002AFCB0 /* UI_Component_Storyboard.storyboard */; };
-		FB2B74C427CF7A96002AFCB0 /* Signup_Screen_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B74C327CF7A96002AFCB0 /* Signup_Screen_ViewController.swift */; };
+		FB2B74C427CF7A96002AFCB0 /* SignupScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B74C327CF7A96002AFCB0 /* SignupScreenViewController.swift */; };
 		FB2B74C627CF932A002AFCB0 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B74C527CF932A002AFCB0 /* ScrollViewController.swift */; };
 		FB54104327D886C500EB8861 /* imagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB54104227D886C500EB8861 /* imagePickerViewController.swift */; };
 		FB7D637527E094E600D6867A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D637427E094E600D6867A /* Coordinator.swift */; };
@@ -101,7 +101,7 @@
 		FB28F83C27EDC8640046C418 /* UITableviewAPIConstroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableviewAPIConstroller.swift; sourceTree = "<group>"; };
 		FB28F83E27EDC9410046C418 /* ApiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTableViewCell.swift; sourceTree = "<group>"; };
 		FB2B74C127CF6887002AFCB0 /* UI_Component_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UI_Component_Storyboard.storyboard; sourceTree = "<group>"; };
-		FB2B74C327CF7A96002AFCB0 /* Signup_Screen_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup_Screen_ViewController.swift; sourceTree = "<group>"; };
+		FB2B74C327CF7A96002AFCB0 /* SignupScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreenViewController.swift; sourceTree = "<group>"; };
 		FB2B74C527CF932A002AFCB0 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		FB54104227D886C500EB8861 /* imagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagePickerViewController.swift; sourceTree = "<group>"; };
 		FB7D637427E094E600D6867A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -229,7 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				FB2B74C127CF6887002AFCB0 /* UI_Component_Storyboard.storyboard */,
-				FB2B74C327CF7A96002AFCB0 /* Signup_Screen_ViewController.swift */,
+				FB2B74C327CF7A96002AFCB0 /* SignupScreenViewController.swift */,
 				FB2B74C527CF932A002AFCB0 /* ScrollViewController.swift */,
 				FB1F92ED27D232B800B8C4EC /* UISegmentedViewController.swift */,
 				FBB3344627D5F77B00EBA1C8 /* PageControlViewController.swift */,
@@ -630,7 +630,7 @@
 				FB8C31D527D9E93800B0EB60 /* HomeviewController.swift in Sources */,
 				FB7D637D27E09AC700D6867A /* PageVCCoordinator.swift in Sources */,
 				FBE9556327C8BA5000DBC991 /* Login_signup_ViewController.swift in Sources */,
-				FB2B74C427CF7A96002AFCB0 /* Signup_Screen_ViewController.swift in Sources */,
+				FB2B74C427CF7A96002AFCB0 /* SignupScreenViewController.swift in Sources */,
 				FBBEEC3327D763EA005B0586 /* MapViewController.swift in Sources */,
 				FBDD98D727D0CE7B00F40E28 /* TableViewController.swift in Sources */,
 				FBCA1E7027F1AB6C00D5324E /* UserData.swift in Sources */,

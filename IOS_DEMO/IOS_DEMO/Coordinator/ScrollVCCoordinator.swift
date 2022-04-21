@@ -74,7 +74,7 @@ class ScrollVCCoordinator : Coordinator {
     }
     
     func goToSignUpScreen(){
-        if let SignupScreenVc = UIStoryboard(name: Constants.UiStoryboard, bundle: nil).instantiateViewController(withIdentifier:Constants.signupScreenvc) as? Signup_Screen_ViewController {
+        if let SignupScreenVc = UIStoryboard(name: Constants.UiStoryboard, bundle: nil).instantiateViewController(withIdentifier:Constants.signupScreenvc) as? SignupScreenViewController {
             navController?.present(SignupScreenVc, animated: true, completion: nil) }
     }
     
