@@ -30,4 +30,10 @@ class MainVCCoordinator: Coordinator{
         //To be Implemented LATER
     }
     
+    func goToMainStoryboard(){
+        if let mainVC = UIStoryboard(name: Constants.MainStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.vc) as? ViewController{
+               navController?.pushViewController(mainVC, animated: true)
+           }
+       }
+    
 }
