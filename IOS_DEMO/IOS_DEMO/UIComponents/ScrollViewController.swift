@@ -65,4 +65,14 @@ extension ScrollViewController {
     @IBAction func onClickListUser(_ sender: UIButton) {
            coordinator?.goToListUserCollectionview()
     }
+    @IBAction func goToAutoLayout(_ sender: Any) {
+        if let autolayoutvc =  UIStoryboard(name: Constants.MainStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.loginSignupVc) as? Login_signup_ViewController {
+            self.navigationController?.pushViewController(autolayoutvc, animated: true)
+        }
+    }
+    @IBAction func goToDataPassingVC(_ sender: UIButton) {
+        if let mainvc =  UIStoryboard(name: Constants.MainStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.Mainvc) as? ViewController {
+            self.navigationController?.pushViewController(mainvc, animated: true)
+        }
+    }
 }

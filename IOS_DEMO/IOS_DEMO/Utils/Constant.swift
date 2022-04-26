@@ -13,6 +13,7 @@ struct Constants{
     static let loginSignupVc = "login_signup_ViewController"
     static let hello = "Hello"
     static let signupFormVc = "signup_form_ViewController"
+    static let signupFormVcTwo = "signupFormViewController"
     static let uiStoryboard = "uistoryboard"
     static let webServicesStoryboard = "WebServiceStoryboard"
     static let Tableviewcell = "TableViewCell"

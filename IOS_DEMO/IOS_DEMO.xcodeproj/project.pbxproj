@@ -12,6 +12,7 @@
 		BF6BCCD0EFC4619AFB31C6D4 /* Pods_IOS_DEMO_IOS_DEMOUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6C9FC8111126927D909A09 /* Pods_IOS_DEMO_IOS_DEMOUITests.framework */; };
 		FB03DAE227E9EC6E00CA3FBD /* WebServiceStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB03DAE127E9EC6E00CA3FBD /* WebServiceStoryboard.storyboard */; };
 		FB03DAE427E9EDFB00CA3FBD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03DAE327E9EDFB00CA3FBD /* LoginViewController.swift */; };
+		FB0F5E382817FC4C00FD974C /* SignupFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F5E372817FC4C00FD974C /* SignupFormViewController.swift */; };
 		FB1F92E827D2017E00B8C4EC /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F92E727D2017E00B8C4EC /* CollectionViewController.swift */; };
 		FB1F92EA27D20A4800B8C4EC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F92E927D20A4800B8C4EC /* CollectionViewCell.swift */; };
 		FB1F92EE27D232B800B8C4EC /* UISegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F92ED27D232B800B8C4EC /* UISegmentedViewController.swift */; };
@@ -92,6 +93,7 @@
 		F814B33197114FAA4BFE892B /* Pods-IOS_DEMOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_DEMOTests.release.xcconfig"; path = "Target Support Files/Pods-IOS_DEMOTests/Pods-IOS_DEMOTests.release.xcconfig"; sourceTree = "<group>"; };
 		FB03DAE127E9EC6E00CA3FBD /* WebServiceStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebServiceStoryboard.storyboard; sourceTree = "<group>"; };
 		FB03DAE327E9EDFB00CA3FBD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FB0F5E372817FC4C00FD974C /* SignupFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormViewController.swift; sourceTree = "<group>"; };
 		FB1F92E727D2017E00B8C4EC /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		FB1F92E927D20A4800B8C4EC /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		FB1F92ED27D232B800B8C4EC /* UISegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedViewController.swift; sourceTree = "<group>"; };
@@ -344,6 +346,7 @@
 				FBD33FA6278D44920029EE9A /* Info.plist */,
 				FB994CB227A27D32006969A2 /* SecondViewController.swift */,
 				FBFEBE4F27CCE60B004EF9AA /* Signup_form_ViewController.swift */,
+				FB0F5E372817FC4C00FD974C /* SignupFormViewController.swift */,
 			);
 			path = IOS_DEMO;
 			sourceTree = "<group>";
@@ -632,6 +635,7 @@
 				FBE9556327C8BA5000DBC991 /* Login_signup_ViewController.swift in Sources */,
 				FB2B74C427CF7A96002AFCB0 /* SignupScreenViewController.swift in Sources */,
 				FBBEEC3327D763EA005B0586 /* MapViewController.swift in Sources */,
+				FB0F5E382817FC4C00FD974C /* SignupFormViewController.swift in Sources */,
 				FBDD98D727D0CE7B00F40E28 /* TableViewController.swift in Sources */,
 				FBCA1E7027F1AB6C00D5324E /* UserData.swift in Sources */,
 				FB86CE5027DF3BDB00AA0FEE /* FourthViewController.swift in Sources */,

@@ -18,8 +18,8 @@ class AppCoordinator : Coordinator {
    
     func start() {
         if let navController = navController {
-            let mainVc = MainVCCoordinator(navController)
-            mainVc.start()
+            let scrollVc = ScrollVCCoordinator(navController)
+            scrollVc.start()
         }
     }
     

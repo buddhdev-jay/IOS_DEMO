@@ -36,12 +36,6 @@ extension ViewController {
         vc.txtDelegate = self
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-    @IBAction func goToAutoLayout(_ sender: UIButton) {
-        let LoginSignupVc = self.storyboard?.instantiateViewController(withIdentifier: Constants.loginSignupVc) as! Login_signup_ViewController
-        self.present(LoginSignupVc, animated: true, completion: nil)
-    }
-    
     @IBAction func goToUIStoryboard(_ sender: Any) {
         performSegue(withIdentifier: Constants.uiStoryboard, sender: self)
     }

@@ -23,10 +23,16 @@ class SignupScreenViewController: UIViewController {
     @IBOutlet weak var genderSwitch: UISwitch!
     @IBOutlet weak var lblAgeNumber: UILabel!
     @IBOutlet weak var ageSlider: UISlider!
+    @IBOutlet weak var userBio: UITextView!
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        userBio.layer.borderWidth = 1.0
+        userBio.layer.borderColor = UIColor.black.cgColor
+        userBio.layer.cornerRadius = 5.0
+        
+        self.hideKeyboardWhenTappedAround()
     }
 }
 
@@ -63,4 +69,16 @@ extension SignupScreenViewController {
             print(Constants.notablesuccess)
         }
     }
+}
+
+extension SignupScreenViewController {
+    func hideKeyboardWhenTappedAround() {
+            let tap = UITapGestureRecognizer(target: self, action: #selector(SignupScreenViewController.dismissKeyboard))
+            tap.cancelsTouchesInView = false
+            view.addGestureRecognizer(tap)
+        }
+        
+        @objc func dismissKeyboard() {
+            view.endEditing(true)
+        }
 }
