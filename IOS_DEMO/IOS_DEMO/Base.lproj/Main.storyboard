@@ -48,6 +48,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Ui Components"/>
                                 <connections>
                                     <action selector="goToUIStoryboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y2O-69-aUg"/>
+                                    <segue destination="uoB-r1-JnN" kind="show" identifier="UI_Component_Storyboard" id="e50-5B-s74"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -67,7 +68,6 @@
                         <outlet property="btn1" destination="xh1-Sw-W4R" id="J23-xM-PNU"/>
                         <outlet property="btn_gotoautolayout" destination="Cn0-lF-nlV" id="D2H-LV-jZA"/>
                         <outlet property="txtView" destination="Gii-0Y-YGZ" id="vZ2-3v-6ts"/>
-                        <segue destination="uoB-r1-JnN" kind="presentation" identifier="uistoryboard" modalPresentationStyle="fullScreen" id="lw4-Jc-abV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -77,7 +77,9 @@
         <!--UI_Component_Storyboard-->
         <scene sceneID="B1n-TT-ja5">
             <objects>
-                <viewControllerPlaceholder storyboardName="UI_Component_Storyboard" id="uoB-r1-JnN" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="UI_Component_Storyboard" id="uoB-r1-JnN" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9yp-ix-04j"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2fV-kl-8de" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="33" y="392"/>
