@@ -25,7 +25,7 @@ class imagePickerViewController: UIViewController {
         imageView.layer.cornerRadius = CGFloat(Constants.SEVENTYFIVE)
         self.title = "Image Picker"
     }
-
+    
 }
 
 // MARK: - Outlet Actions
@@ -42,6 +42,7 @@ extension imagePickerViewController {
         pickimage.delegate = self
         self.present(pickimage,animated: true,completion: nil)
     }
+
 }
 
 // MARK: - UIImagePickerControllerDelegate

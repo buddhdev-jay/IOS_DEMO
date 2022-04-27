@@ -8,24 +8,33 @@
 import UIKit
 
 class SignupFormViewController: UIViewController {
-
+    
     // MARK: - Outlet
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
-    
+    @IBOutlet weak var termsandconstionLabel: UILabel!
     var viewingPassword = true
     
     // MARK: -  View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         let tap = UITapGestureRecognizer(target: self, action: #selector(SignupFormViewController.tappedMe))
-    
         self.hideKeyboardWhenTappedAround()
         nameTextField.delegate = self
         emailTextField.delegate = self
         passwordTextField.delegate = self
-
+        
+        
+    }
+    @IBAction func onClickFacebookbtn(_ sender: UIButton) {
+        alert(customMessage: Constants.signupFacebook)
+    }
+    @IBAction func onClickGooglebtn(_ sender: UIButton) {
+        alert(customMessage:Constants.sigupGoogle )
+    }
+    @IBAction func onClickSignupbtn(_ sender: UIButton) {
+        alert(customMessage: Constants.signupbtn)
     }
 }
 
@@ -60,14 +69,25 @@ extension SignupFormViewController {
 
 // MARK: -  SignupFormViewController
 extension SignupFormViewController {
-   
+    
     func hideKeyboardWhenTappedAround() {
-            let tap = UITapGestureRecognizer(target: self, action: #selector(SignupFormViewController.dismissKeyboard))
-            tap.cancelsTouchesInView = false
-            view.addGestureRecognizer(tap)
-        }
+        let tap = UITapGestureRecognizer(target: self, action: #selector(SignupFormViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
+// MARK: - Alert Function
+extension SignupFormViewController {
+    func alert (customMessage: String){
+        let alert = UIAlertController(title: "UIAlertController", message: customMessage, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
         
-        @objc func dismissKeyboard() {
-            view.endEditing(true)
-        }
+    }
 }

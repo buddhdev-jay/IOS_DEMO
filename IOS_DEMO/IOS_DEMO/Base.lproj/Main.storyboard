@@ -451,16 +451,16 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzq-DE-cYB">
+                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzq-DE-cYB">
                                                         <rect key="frame" x="356" y="5" width="22" height="22"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="fzq-DE-cYB" secondAttribute="height" multiplier="1:1" id="o2Z-vB-FNN"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" image="eye">
-                                                            <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <color key="baseBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </buttonConfiguration>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button" image="eye">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <state key="selected" image="eye_open"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -478,6 +478,9 @@
                                                 <rect key="frame" x="20" y="474" width="388" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
+                                                <connections>
+                                                    <action selector="onClickSignupbtn:" destination="Qsc-S5-HrR" eventType="touchUpInside" id="W4T-fq-Y4N"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Or" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EE0-JJ-yWp">
                                                 <rect key="frame" x="192" y="515" width="44" height="34"/>
@@ -492,17 +495,32 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nM-fI-qos">
-                                                <rect key="frame" x="50" y="569" width="358" height="31"/>
+                                                <rect key="frame" x="20" y="569" width="388" height="31"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Sign Up with Facebook"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Sign Up with Facebook">
+                                                    <color key="baseBackgroundColor" red="0.2452055216" green="0.31923863289999999" blue="0.70888042449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onClickFacebookbtn:" destination="Qsc-S5-HrR" eventType="touchUpInside" id="LNr-FV-Aae"/>
+                                                </connections>
                                             </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="cY3-kx-nty">
+                                                <rect key="frame" x="25" y="569.33333333333337" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="cY3-kx-nty" secondAttribute="height" multiplier="1:1" id="4Zr-X4-rY2"/>
+                                                    <constraint firstAttribute="height" constant="30" id="LU9-EC-HjP"/>
+                                                </constraints>
+                                            </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pth-fd-jZp">
                                                 <rect key="frame" x="50" y="610" width="358" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Sign Up With Google" cornerStyle="fixed">
                                                     <color key="baseForegroundColor" systemColor="linkColor"/>
-                                                    <color key="baseBackgroundColor" systemColor="systemGray6Color"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray4Color"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onClickGooglebtn:" destination="Qsc-S5-HrR" eventType="touchUpInside" id="Qjk-mm-TMs"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHz-wr-m1M">
                                                 <rect key="frame" x="20" y="661" width="388" height="40.666666666666629"/>
@@ -538,12 +556,6 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_facebook" translatesAutoresizingMaskIntoConstraints="NO" id="rcl-TC-agZ">
-                                                <rect key="frame" x="20" y="569" width="30" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="AdE-vO-cMy"/>
-                                                </constraints>
-                                            </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_google" translatesAutoresizingMaskIntoConstraints="NO" id="5xx-wM-3G4">
                                                 <rect key="frame" x="20" y="610" width="30" height="25"/>
                                                 <constraints>
@@ -581,12 +593,11 @@
                                         <constraints>
                                             <constraint firstItem="0el-tK-oHv" firstAttribute="centerX" secondItem="dCD-y3-G9i" secondAttribute="centerX" id="0vj-SQ-uAx"/>
                                             <constraint firstItem="hSU-9h-Kb5" firstAttribute="top" secondItem="AHz-wr-m1M" secondAttribute="bottom" constant="30" id="1F1-QA-jRJ"/>
+                                            <constraint firstItem="cY3-kx-nty" firstAttribute="centerY" secondItem="4nM-fI-qos" secondAttribute="centerY" id="1t0-ax-YAb"/>
                                             <constraint firstAttribute="bottom" secondItem="hSU-9h-Kb5" secondAttribute="bottom" constant="50" id="3UP-wo-Q4B"/>
                                             <constraint firstItem="ZOu-c4-9jq" firstAttribute="leading" secondItem="ftr-Pb-cS8" secondAttribute="leading" id="4nC-Hu-Jn1"/>
                                             <constraint firstItem="3S8-4m-wyU" firstAttribute="trailing" secondItem="ZOu-c4-9jq" secondAttribute="trailing" id="5R6-x3-clk"/>
                                             <constraint firstItem="4nM-fI-qos" firstAttribute="top" secondItem="EE0-JJ-yWp" secondAttribute="bottom" constant="20" id="6Vh-51-0Be"/>
-                                            <constraint firstItem="rcl-TC-agZ" firstAttribute="top" secondItem="EE0-JJ-yWp" secondAttribute="bottom" constant="20" id="6mx-dM-mBM"/>
-                                            <constraint firstItem="rcl-TC-agZ" firstAttribute="leading" secondItem="d41-tC-Pfa" secondAttribute="leading" id="7qB-dT-ihA"/>
                                             <constraint firstItem="AHz-wr-m1M" firstAttribute="leading" secondItem="dCD-y3-G9i" secondAttribute="leading" constant="20" id="985-DT-Ggm"/>
                                             <constraint firstAttribute="trailing" secondItem="hSU-9h-Kb5" secondAttribute="trailing" constant="20" id="9KZ-TU-dO6"/>
                                             <constraint firstItem="EE0-JJ-yWp" firstAttribute="top" secondItem="ZOu-c4-9jq" secondAttribute="bottom" constant="10" id="9jz-T1-a2e"/>
@@ -595,17 +606,16 @@
                                             <constraint firstItem="EE0-JJ-yWp" firstAttribute="centerX" secondItem="dCD-y3-G9i" secondAttribute="centerX" id="Dzb-6u-SEW"/>
                                             <constraint firstItem="hSU-9h-Kb5" firstAttribute="centerX" secondItem="dCD-y3-G9i" secondAttribute="centerX" id="GWE-ua-jyD"/>
                                             <constraint firstItem="d41-tC-Pfa" firstAttribute="leading" secondItem="ZOu-c4-9jq" secondAttribute="leading" id="HMF-xs-s20"/>
+                                            <constraint firstItem="Pth-fd-jZp" firstAttribute="leading" secondItem="ZOu-c4-9jq" secondAttribute="leading" constant="30" id="Idk-zs-B8V"/>
                                             <constraint firstItem="ftr-Pb-cS8" firstAttribute="top" secondItem="hLE-0A-Sij" secondAttribute="bottom" constant="30" id="J1S-ze-a1X"/>
                                             <constraint firstItem="hLE-0A-Sij" firstAttribute="top" secondItem="WGo-JP-Rrh" secondAttribute="bottom" constant="30" id="MPA-Yr-a95"/>
-                                            <constraint firstItem="4nM-fI-qos" firstAttribute="leading" secondItem="ZOu-c4-9jq" secondAttribute="leading" constant="30" id="Ma6-zW-pZR"/>
+                                            <constraint firstItem="4nM-fI-qos" firstAttribute="leading" secondItem="ZOu-c4-9jq" secondAttribute="leading" id="Ma6-zW-pZR"/>
                                             <constraint firstAttribute="trailing" secondItem="AHz-wr-m1M" secondAttribute="trailing" constant="20" id="O9p-gS-WPB"/>
                                             <constraint firstItem="ftr-Pb-cS8" firstAttribute="trailing" secondItem="hLE-0A-Sij" secondAttribute="trailing" id="OoB-wT-pqz"/>
                                             <constraint firstItem="ftr-Pb-cS8" firstAttribute="height" secondItem="hLE-0A-Sij" secondAttribute="height" multiplier="0.94186" id="QFP-pI-651"/>
                                             <constraint firstItem="3S8-4m-wyU" firstAttribute="top" secondItem="ZOu-c4-9jq" secondAttribute="bottom" constant="25" id="RdG-qa-MVw"/>
                                             <constraint firstItem="5xx-wM-3G4" firstAttribute="leading" secondItem="d41-tC-Pfa" secondAttribute="leading" id="SsE-hv-cTg"/>
-                                            <constraint firstItem="rcl-TC-agZ" firstAttribute="trailing" secondItem="4nM-fI-qos" secondAttribute="leading" id="VVG-CO-qLO"/>
                                             <constraint firstItem="d41-tC-Pfa" firstAttribute="top" secondItem="ZOu-c4-9jq" secondAttribute="bottom" constant="25" id="Yvw-Ta-12a"/>
-                                            <constraint firstItem="Pth-fd-jZp" firstAttribute="leading" secondItem="4nM-fI-qos" secondAttribute="leading" id="Yws-CH-shQ"/>
                                             <constraint firstItem="WGo-JP-Rrh" firstAttribute="leading" secondItem="dCD-y3-G9i" secondAttribute="leading" constant="20" id="bcK-bF-9R5"/>
                                             <constraint firstItem="3S8-4m-wyU" firstAttribute="leading" secondItem="EE0-JJ-yWp" secondAttribute="trailing" id="ecy-bs-FUZ"/>
                                             <constraint firstItem="5xx-wM-3G4" firstAttribute="top" secondItem="4nM-fI-qos" secondAttribute="bottom" constant="10" id="gx1-mJ-kW2"/>
@@ -624,6 +634,7 @@
                                             <constraint firstItem="WGo-JP-Rrh" firstAttribute="top" secondItem="0el-tK-oHv" secondAttribute="bottom" constant="20" id="wKO-Tq-ksU"/>
                                             <constraint firstItem="AHz-wr-m1M" firstAttribute="top" secondItem="Pth-fd-jZp" secondAttribute="bottom" constant="20" id="xbr-Ut-UXP"/>
                                             <constraint firstItem="0el-tK-oHv" firstAttribute="width" secondItem="dCD-y3-G9i" secondAttribute="width" multiplier="0.5" id="xtc-Qj-kki"/>
+                                            <constraint firstItem="cY3-kx-nty" firstAttribute="leading" secondItem="4nM-fI-qos" secondAttribute="leading" constant="5" id="yDg-fU-yjl"/>
                                             <constraint firstItem="d41-tC-Pfa" firstAttribute="trailing" secondItem="EE0-JJ-yWp" secondAttribute="leading" id="z1f-39-Agm"/>
                                         </constraints>
                                     </view>
@@ -653,6 +664,7 @@
                         <outlet property="emailTextField" destination="hLE-0A-Sij" id="DNA-c0-JlD"/>
                         <outlet property="nameTextField" destination="WGo-JP-Rrh" id="sjC-30-tGo"/>
                         <outlet property="passwordTextField" destination="Agp-Iu-r7x" id="CUJ-ys-nwg"/>
+                        <outlet property="termsandconstionLabel" destination="AHz-wr-m1M" id="xZO-6N-9Fy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VkZ-7h-04O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -680,6 +692,8 @@
     </scenes>
     <resources>
         <image name="eye" width="30" height="30"/>
+        <image name="eye_open" width="32" height="32"/>
+        <image name="facebook" width="48" height="48"/>
         <image name="img_eye_icon" width="240" height="240"/>
         <image name="img_facebook" width="512" height="512"/>
         <image name="img_google" width="512" height="512"/>
@@ -699,8 +713,8 @@
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

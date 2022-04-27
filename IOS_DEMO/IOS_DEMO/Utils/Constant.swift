@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreText
 
 struct Constants{
     static let ZERO = 0
@@ -97,4 +98,7 @@ struct Constants{
     static let singleUserAPI = "https://reqres.in/api/users/"
     static let apiTableviewCell = "ApiTableViewCell"
     static let signupScreenvctwo = "signupScreenViewControllertwo"
+    static let signupFacebook = "Signup with Facebook pressed"
+    static let sigupGoogle  = "Signup with Google pressed"
+    static let signupbtn = "Signup Button Pressed"
 }

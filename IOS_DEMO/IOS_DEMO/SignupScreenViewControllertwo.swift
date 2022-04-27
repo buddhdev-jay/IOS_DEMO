@@ -59,6 +59,7 @@ extension SignupScreenViewControllertwo {
                 self.timer?.invalidate()
             }
         })
+        alert(customMessage: Constants.signupbtn)
         
     }
     @IBAction func stepperValueChange(_ sender: UIStepper) {
@@ -90,4 +91,15 @@ extension SignupScreenViewControllertwo : UITextFieldDelegate {
         return true
     }
     
+}
+
+// MARK: - Alert Function
+extension SignupScreenViewControllertwo {
+    func alert (customMessage: String){
+        let alert = UIAlertController(title: "UIAlertController", message: customMessage, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+    }
 }
