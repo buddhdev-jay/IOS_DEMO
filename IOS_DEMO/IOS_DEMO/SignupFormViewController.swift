@@ -27,6 +27,9 @@ class SignupFormViewController: UIViewController {
         
         
     }
+    @IBAction func onClickofShowPassword(_ sender: UIButton) {
+        debugPrint("Hello")
+    }
     @IBAction func onClickFacebookbtn(_ sender: UIButton) {
         alert(customMessage: Constants.signupFacebook)
     }
@@ -81,13 +84,3 @@ extension SignupFormViewController {
     }
 }
 
-// MARK: - Alert Function
-extension SignupFormViewController {
-    func alert (customMessage: String){
-        let alert = UIAlertController(title: "UIAlertController", message: customMessage, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
-        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-        
-    }
-}

@@ -525,7 +525,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GRE-dj-MfP">
                                                 <rect key="frame" x="30" y="312.33333333333331" width="330" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -544,7 +544,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q0f-uT-hoP">
-                                                <rect key="frame" x="39" y="374.33333333333331" width="312" height="90.666666666666686"/>
+                                                <rect key="frame" x="30" y="374.33333333333331" width="330" height="90.666666666666686"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <color key="textColor" systemColor="labelColor"/>
@@ -566,7 +566,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2.5" translatesAutoresizingMaskIntoConstraints="NO" id="WAP-cJ-ujm">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="WAP-cJ-ujm">
                                                         <rect key="frame" x="116" y="3" width="166" height="31"/>
                                                         <color key="thumbTintColor" systemColor="systemOrangeColor"/>
                                                         <connections>
@@ -690,7 +690,7 @@
                                             <constraint firstItem="zyZ-5T-YeD" firstAttribute="leading" secondItem="BtG-qG-xg0" secondAttribute="leading" id="gGt-7y-ZTz"/>
                                             <constraint firstItem="vpW-Zc-Szk" firstAttribute="top" secondItem="jJy-du-elb" secondAttribute="bottom" constant="30" id="k1Q-a3-PRM"/>
                                             <constraint firstItem="i7w-WA-OM9" firstAttribute="trailing" secondItem="GRE-dj-MfP" secondAttribute="trailing" constant="-10" id="kjv-Ke-9Wk"/>
-                                            <constraint firstItem="q0f-uT-hoP" firstAttribute="width" secondItem="BtG-qG-xg0" secondAttribute="width" multiplier="0.945455" id="lYO-hQ-lrb"/>
+                                            <constraint firstItem="q0f-uT-hoP" firstAttribute="width" secondItem="BtG-qG-xg0" secondAttribute="width" id="lYO-hQ-lrb"/>
                                             <constraint firstItem="GRE-dj-MfP" firstAttribute="leading" secondItem="BtG-qG-xg0" secondAttribute="leading" id="ms8-KS-flw"/>
                                             <constraint firstItem="JD8-kH-GNp" firstAttribute="top" secondItem="vpW-Zc-Szk" secondAttribute="bottom" constant="50" id="vj3-xi-QhP"/>
                                             <constraint firstItem="vpW-Zc-Szk" firstAttribute="leading" secondItem="jJy-du-elb" secondAttribute="leading" id="wVN-CM-14n"/>
@@ -945,7 +945,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3P2-8U-gnC">
-                                <rect key="frame" x="141.66666666666666" y="604" width="107" height="32"/>
+                                <rect key="frame" x="141.66666666666663" y="604" width="517" height="32"/>
                                 <segments>
                                     <segment title="" image="img_eye_icon"/>
                                     <segment title="google"/>
@@ -955,7 +955,7 @@
                                 </connections>
                             </segmentedControl>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LVZ-Ss-Um5">
-                                <rect key="frame" x="87" y="164" width="216" height="240"/>
+                                <rect key="frame" x="87" y="164" width="626" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="8Vg-WF-3oe"/>
                                     <constraint firstAttribute="width" constant="240" id="dtI-XH-oOZ"/>
