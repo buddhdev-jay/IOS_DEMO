@@ -96,4 +96,5 @@ struct Constants{
     static let errorCallingPost = "Error: error calling POST"
     static let singleUserAPI = "https://reqres.in/api/users/"
     static let apiTableviewCell = "ApiTableViewCell"
+    static let signupScreenvctwo = "signupScreenViewControllertwo"
 }

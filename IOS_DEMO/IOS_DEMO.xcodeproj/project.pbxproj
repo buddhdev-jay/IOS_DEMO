@@ -39,6 +39,7 @@
 		FB90D3AA27DB560B00942406 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90D3A927DB560B00942406 /* ThirdViewController.swift */; };
 		FB994CB327A27D32006969A2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB994CB227A27D32006969A2 /* SecondViewController.swift */; };
 		FBA1076327DB059800351332 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA1076227DB059800351332 /* Constant.swift */; };
+		FBAA55B5281912FB008F0F3F /* SignupScreenViewControllertwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAA55B4281912FB008F0F3F /* SignupScreenViewControllertwo.swift */; };
 		FBB3344727D5F77B00EBA1C8 /* PageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3344627D5F77B00EBA1C8 /* PageControlViewController.swift */; };
 		FBB3344927D5FFE300EBA1C8 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3344827D5FFE300EBA1C8 /* PageViewController.swift */; };
 		FBB3344B27D6157D00EBA1C8 /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3344A27D6157D00EBA1C8 /* WebviewViewController.swift */; };
@@ -120,6 +121,7 @@
 		FB90D3A927DB560B00942406 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		FB994CB227A27D32006969A2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		FBA1076227DB059800351332 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		FBAA55B4281912FB008F0F3F /* SignupScreenViewControllertwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreenViewControllertwo.swift; sourceTree = "<group>"; };
 		FBB3344627D5F77B00EBA1C8 /* PageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlViewController.swift; sourceTree = "<group>"; };
 		FBB3344827D5FFE300EBA1C8 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		FBB3344A27D6157D00EBA1C8 /* WebviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewViewController.swift; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 				FB994CB227A27D32006969A2 /* SecondViewController.swift */,
 				FBFEBE4F27CCE60B004EF9AA /* Signup_form_ViewController.swift */,
 				FB0F5E372817FC4C00FD974C /* SignupFormViewController.swift */,
+				FBAA55B4281912FB008F0F3F /* SignupScreenViewControllertwo.swift */,
 			);
 			path = IOS_DEMO;
 			sourceTree = "<group>";
@@ -653,6 +656,7 @@
 				FB1F92E827D2017E00B8C4EC /* CollectionViewController.swift in Sources */,
 				FB28F83F27EDC9410046C418 /* ApiTableViewCell.swift in Sources */,
 				FB22FBB727DB49970073EB03 /* FirstViewController.swift in Sources */,
+				FBAA55B5281912FB008F0F3F /* SignupScreenViewControllertwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
