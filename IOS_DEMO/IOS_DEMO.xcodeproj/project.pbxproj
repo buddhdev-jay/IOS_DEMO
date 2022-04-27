@@ -62,6 +62,7 @@
 		FBDD98DA27D0DF4F00F40E28 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDD98D827D0DF4F00F40E28 /* TableViewCell.swift */; };
 		FBDD98DB27D0DF4F00F40E28 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDD98D927D0DF4F00F40E28 /* TableViewCell.xib */; };
 		FBE9556327C8BA5000DBC991 /* Login_signup_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9556227C8BA5000DBC991 /* Login_signup_ViewController.swift */; };
+		FBEC5FDC28194C8100FD6053 /* ImageTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC5FDB28194C8100FD6053 /* ImageTextField.swift */; };
 		FBFEBE5027CCE60B004EF9AA /* Signup_form_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFEBE4F27CCE60B004EF9AA /* Signup_form_ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -148,6 +149,7 @@
 		FBDD98D827D0DF4F00F40E28 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		FBDD98D927D0DF4F00F40E28 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		FBE9556227C8BA5000DBC991 /* Login_signup_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_signup_ViewController.swift; sourceTree = "<group>"; };
+		FBEC5FDB28194C8100FD6053 /* ImageTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTextField.swift; sourceTree = "<group>"; };
 		FBFEBE4F27CCE60B004EF9AA /* Signup_form_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup_form_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -330,6 +332,7 @@
 		FBD33F97278D44910029EE9A /* IOS_DEMO */ = {
 			isa = PBXGroup;
 			children = (
+				FBEC5FDA28194C3300FD6053 /* Custom Controls */,
 				FB03DAE027E9E68F00CA3FBD /* WebServices */,
 				FB7D637327E094B100D6867A /* Coordinator */,
 				FB22FBB327DB444C0073EB03 /* NavigationController */,
@@ -369,6 +372,14 @@
 				FBD33FBB278D44930029EE9A /* IOS_DEMOUITestsLaunchTests.swift */,
 			);
 			path = IOS_DEMOUITests;
+			sourceTree = "<group>";
+		};
+		FBEC5FDA28194C3300FD6053 /* Custom Controls */ = {
+			isa = PBXGroup;
+			children = (
+				FBEC5FDB28194C8100FD6053 /* ImageTextField.swift */,
+			);
+			path = "Custom Controls";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -646,6 +657,7 @@
 				FB28F83D27EDC8640046C418 /* UITableviewAPIConstroller.swift in Sources */,
 				FB7D637727E0954200D6867A /* AppCoordinator.swift in Sources */,
 				FBD33F9B278D44910029EE9A /* SceneDelegate.swift in Sources */,
+				FBEC5FDC28194C8100FD6053 /* ImageTextField.swift in Sources */,
 				FB8EFE4827EC4B8F008377CA /* CollectionApiViewController.swift in Sources */,
 				FB54104327D886C500EB8861 /* imagePickerViewController.swift in Sources */,
 				FBA1076327DB059800351332 /* Constant.swift in Sources */,
