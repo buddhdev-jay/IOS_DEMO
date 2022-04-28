@@ -497,6 +497,11 @@
                                                     <constraint firstItem="fzq-DE-cYB" firstAttribute="centerY" secondItem="Agp-Iu-r7x" secondAttribute="centerY" id="fc3-Pw-zuJ"/>
                                                     <constraint firstAttribute="trailing" secondItem="Agp-Iu-r7x" secondAttribute="trailing" id="orW-WD-ucf"/>
                                                 </constraints>
+                                                <variation key="default">
+                                                    <mask key="subviews">
+                                                        <exclude reference="fzq-DE-cYB"/>
+                                                    </mask>
+                                                </variation>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOu-c4-9jq">
                                                 <rect key="frame" x="20" y="474" width="388" height="31"/>
@@ -704,6 +709,9 @@
     <designables>
         <designable name="Agp-Iu-r7x">
             <size key="intrinsicContentSize" width="140.33333333333334" height="27"/>
+        </designable>
+        <designable name="hLE-0A-Sij">
+            <size key="intrinsicContentSize" width="82.666666666666671" height="28.666666666666668"/>
         </designable>
     </designables>
     <resources>
