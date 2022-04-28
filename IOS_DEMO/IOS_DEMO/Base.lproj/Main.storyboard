@@ -403,7 +403,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cbs-rF-7dJ">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbs-rF-7dJ">
                                 <rect key="frame" x="0.0" y="44" width="428" height="848"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCD-y3-G9i">
@@ -441,13 +441,27 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ftr-Pb-cS8">
                                                 <rect key="frame" x="20" y="412.33333333333331" width="388" height="31.666666666666686"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Agp-Iu-r7x">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Agp-Iu-r7x" customClass="ImageTextField" customModule="IOS_DEMO" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="388" height="31.666666666666668"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="img_facebook"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="margin">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="imageheight">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="img_google"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageMargin">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                                <real key="value" value="10"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
@@ -644,7 +658,6 @@
                         <constraints>
                             <constraint firstItem="8Bc-gp-vfc" firstAttribute="trailing" secondItem="Cbs-rF-7dJ" secondAttribute="trailing" id="5JQ-tp-OZM"/>
                             <constraint firstItem="Cbs-rF-7dJ" firstAttribute="leading" secondItem="8Bc-gp-vfc" secondAttribute="leading" id="8AT-fV-KLb"/>
-                            <constraint firstItem="Cbs-rF-7dJ" firstAttribute="width" secondItem="hKx-IT-yoW" secondAttribute="width" id="fkJ-Xy-jOn"/>
                             <constraint firstItem="8Bc-gp-vfc" firstAttribute="bottom" secondItem="Cbs-rF-7dJ" secondAttribute="bottom" id="mc1-DI-2NW"/>
                             <constraint firstItem="Cbs-rF-7dJ" firstAttribute="top" secondItem="8Bc-gp-vfc" secondAttribute="top" id="o1o-pY-kSQ"/>
                         </constraints>
@@ -678,6 +691,11 @@
             <point key="canvasLocation" x="18.840579710144929" y="33.482142857142854"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Agp-Iu-r7x">
+            <size key="intrinsicContentSize" width="140.33333333333334" height="27"/>
+        </designable>
+    </designables>
     <resources>
         <image name="eye" width="30" height="30"/>
         <image name="img_eye_icon" width="240" height="240"/>
