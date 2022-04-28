@@ -22,17 +22,25 @@ class ImageTextField : UITextField {
     }
     
     @IBInspectable var leftPadding: CGFloat = 0 {
-        didSet {}
+        didSet {
+          updateLeftView()
+        }
     }
     @IBInspectable var rightPadding: CGFloat = 0 {
-        didSet {}
+        didSet {
+            updateRightView()
+        }
     }
     @IBInspectable var leftImageMargin: CGFloat = 0 {
-        didSet {}
+        didSet {
+            updateLeftView()
+        }
     }
     @IBInspectable var rightImageMargin: CGFloat = 0
     {
-        didSet {}
+        didSet {
+            updateRightView()
+        }
     }
     @IBInspectable var rightImage: UIImage? {
             didSet {
