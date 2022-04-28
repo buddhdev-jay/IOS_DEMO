@@ -27,6 +27,13 @@ class AddUserViewController: UIViewController {
     @IBOutlet weak var txtJobFiled: UITextField!
     @IBOutlet weak var txtNameFiled: UITextField!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
+        txtJobFiled.delegate = self
+        txtNameFiled.delegate = self
+    }
+    
 }
 
 // MARK: - Outlet Action
@@ -37,10 +44,42 @@ extension AddUserViewController {
         AF.request(Constants.adduserapi, method: .post, parameters: userObject.requestParams(), encoding: JSONEncoding.default, headers: nil).validate(statusCode: Constants.twoHundred ..< Constants.twoNintynine).responseJSON { AFdata in
             do {
                 debugPrint(AFdata)
+                self.alert(customMessage: "User Added")
             } catch {
                 debugPrint(Constants.errorTryingtoConvertJsontoString)
                 return
             }
         }
     }
+}
+
+extension AddUserViewController {
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(SignupFormViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
+// MARK: -  UITextFieldDelegate
+extension AddUserViewController : UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case txtNameFiled :
+            txtNameFiled.resignFirstResponder()
+            txtJobFiled.becomeFirstResponder()
+        case txtJobFiled :
+            txtJobFiled.resignFirstResponder()
+        default:
+            break
+        }
+        return true
+    }
+    
 }

@@ -11,7 +11,7 @@ class TableViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var activityindicator: UIActivityIndicatorView!
+
     
     // MARK: - Variables
     var names = ["JAY","abc","xyz"]
@@ -29,12 +29,12 @@ class TableViewController: UIViewController {
         for _ in 1...100 {
         names += ["JAY","abc","xyz"]
         }
-        self.activityindicator.startAnimating()
+
         sectionOne = Constants.FIFTY
         sectionTwo = Constants.TWENETYFIVE
         self.tableView.reloadData()
         refreshControl.endRefreshing()
-        self.activityindicator.stopAnimating()
+       
     }
     
     // MARK: -  View Lifecycle
@@ -95,7 +95,7 @@ extension TableViewController:UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
-        headerView.backgroundColor = .cyan
+        headerView.backgroundColor = .lightGray
         return headerView
     }
 }

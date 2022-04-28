@@ -23,6 +23,7 @@ extension TableViewCell {
     func configCell(name :String,indexPath: IndexPath){
             tableCelllbl.text = name
             tableCellImage.image = UIImage(named: "img_google")
+            tableCelllbl.textColor = .white
             backgroundColor = (indexPath.row % Constants.TWO == Constants.ZERO) ? .gray : .blue
     }
 }

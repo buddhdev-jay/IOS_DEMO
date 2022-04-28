@@ -194,24 +194,24 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_google" translatesAutoresizingMaskIntoConstraints="NO" id="fPl-0B-1DA">
-                                                            <rect key="frame" x="20" y="29" width="180" height="100"/>
+                                                            <rect key="frame" x="5" y="29" width="180" height="100"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="100" id="4ah-ZZ-1l9"/>
                                                                 <constraint firstAttribute="width" constant="180" id="ZS0-1a-aLR"/>
                                                             </constraints>
                                                         </imageView>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wnh-7B-Nqv">
-                                                            <rect key="frame" x="210" y="10" width="184" height="34"/>
+                                                            <rect key="frame" x="195" y="10" width="199" height="34"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Last Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tZi-7C-WEv">
-                                                            <rect key="frame" x="210" y="54" width="184" height="34"/>
+                                                            <rect key="frame" x="195" y="54" width="199" height="34"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ENc-s9-gha">
-                                                            <rect key="frame" x="210" y="98" width="184" height="34"/>
+                                                            <rect key="frame" x="195" y="98" width="199" height="34"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
@@ -225,7 +225,7 @@
                                                         <constraint firstItem="fPl-0B-1DA" firstAttribute="centerY" secondItem="Q9B-s4-UBj" secondAttribute="centerY" constant="4" id="JvF-il-Egi"/>
                                                         <constraint firstItem="tZi-7C-WEv" firstAttribute="top" secondItem="Wnh-7B-Nqv" secondAttribute="bottom" constant="10" id="Wln-8K-PeZ"/>
                                                         <constraint firstAttribute="trailing" secondItem="tZi-7C-WEv" secondAttribute="trailing" constant="20" id="Z0k-tE-0TB"/>
-                                                        <constraint firstItem="fPl-0B-1DA" firstAttribute="leading" secondItem="Q9B-s4-UBj" secondAttribute="leading" constant="20" id="bf0-m2-rG7"/>
+                                                        <constraint firstItem="fPl-0B-1DA" firstAttribute="leading" secondItem="Q9B-s4-UBj" secondAttribute="leading" constant="5" id="bf0-m2-rG7"/>
                                                         <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ENc-s9-gha" secondAttribute="bottom" constant="10" id="cTk-cO-sKP"/>
                                                         <constraint firstAttribute="trailing" secondItem="ENc-s9-gha" secondAttribute="trailing" constant="20" id="hZt-tM-Jfl"/>
                                                         <constraint firstItem="ENc-s9-gha" firstAttribute="top" secondItem="tZi-7C-WEv" secondAttribute="bottom" constant="10" id="rVs-J7-fOX"/>
@@ -356,23 +356,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJg-dl-eh3">
-                                <rect key="frame" x="41.5" y="144" width="331" height="36"/>
+                                <rect key="frame" x="41.5" y="94" width="331" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GNw-6d-oYF">
-                                <rect key="frame" x="41.5" y="280" width="331" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <rect key="frame" x="41.5" y="180" width="331" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="name"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Job Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uge-R8-G8y">
-                                <rect key="frame" x="41.5" y="374" width="331" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <rect key="frame" x="41.5" y="244" width="331" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="organization-title"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ck2-rL-vFc">
-                                <rect key="frame" x="41.5" y="468" width="331" height="31"/>
+                                <rect key="frame" x="41.5" y="308" width="331" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Submit"/>
                                 <connections>
@@ -384,17 +394,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vJg-dl-eh3" firstAttribute="centerX" secondItem="YQ5-Rr-bjR" secondAttribute="centerX" id="17f-9B-Bir"/>
-                            <constraint firstItem="uge-R8-G8y" firstAttribute="top" secondItem="GNw-6d-oYF" secondAttribute="bottom" constant="60" id="2nq-Xb-6vQ"/>
+                            <constraint firstItem="uge-R8-G8y" firstAttribute="top" secondItem="GNw-6d-oYF" secondAttribute="bottom" constant="30" id="2nq-Xb-6vQ"/>
                             <constraint firstItem="GNw-6d-oYF" firstAttribute="width" secondItem="YQ5-Rr-bjR" secondAttribute="width" multiplier="0.8" id="4sg-GA-w5B"/>
                             <constraint firstItem="GNw-6d-oYF" firstAttribute="centerX" secondItem="YQ5-Rr-bjR" secondAttribute="centerX" id="6c9-GK-i4U"/>
                             <constraint firstItem="vJg-dl-eh3" firstAttribute="width" secondItem="YQ5-Rr-bjR" secondAttribute="width" multiplier="0.8" id="EdI-fd-Uil"/>
                             <constraint firstItem="Ck2-rL-vFc" firstAttribute="centerX" secondItem="YQ5-Rr-bjR" secondAttribute="centerX" id="JJh-yq-bXt"/>
                             <constraint firstItem="Ck2-rL-vFc" firstAttribute="width" secondItem="YQ5-Rr-bjR" secondAttribute="width" multiplier="0.8" id="PUs-ZR-qQ5"/>
                             <constraint firstItem="uge-R8-G8y" firstAttribute="centerX" secondItem="YQ5-Rr-bjR" secondAttribute="centerX" id="WuA-rf-NPC"/>
-                            <constraint firstItem="GNw-6d-oYF" firstAttribute="top" secondItem="vJg-dl-eh3" secondAttribute="bottom" constant="100" id="diw-cf-FEJ"/>
+                            <constraint firstItem="GNw-6d-oYF" firstAttribute="top" secondItem="vJg-dl-eh3" secondAttribute="bottom" constant="50" id="diw-cf-FEJ"/>
                             <constraint firstItem="uge-R8-G8y" firstAttribute="width" secondItem="YQ5-Rr-bjR" secondAttribute="width" multiplier="0.8" id="fLy-jt-YBN"/>
-                            <constraint firstItem="vJg-dl-eh3" firstAttribute="top" secondItem="BdS-pV-S6b" secondAttribute="top" constant="100" id="kB4-CN-7W9"/>
-                            <constraint firstItem="Ck2-rL-vFc" firstAttribute="top" secondItem="uge-R8-G8y" secondAttribute="bottom" constant="60" id="mys-oy-UsS"/>
+                            <constraint firstItem="vJg-dl-eh3" firstAttribute="top" secondItem="BdS-pV-S6b" secondAttribute="top" constant="50" id="kB4-CN-7W9"/>
+                            <constraint firstItem="Ck2-rL-vFc" firstAttribute="top" secondItem="uge-R8-G8y" secondAttribute="bottom" constant="30" id="mys-oy-UsS"/>
                         </constraints>
                     </view>
                     <connections>

@@ -112,7 +112,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="84I-Wg-Wt3" firstAttribute="top" secondItem="DOE-zG-X9Y" secondAttribute="bottom" constant="10" id="6Jd-Rf-zd1"/>
-                            <constraint firstItem="ya4-Uh-eAD" firstAttribute="centerX" secondItem="JdM-kb-eV5" secondAttribute="centerX" id="A1w-qK-H5L"/>
                             <constraint firstItem="Uc8-Xa-uTe" firstAttribute="top" secondItem="ya4-Uh-eAD" secondAttribute="bottom" constant="10" id="ETx-0j-aOY"/>
                             <constraint firstItem="1zu-Dz-TIb" firstAttribute="top" secondItem="Uc8-Xa-uTe" secondAttribute="bottom" constant="10" id="EkF-ov-Hra"/>
                             <constraint firstItem="1zu-Dz-TIb" firstAttribute="width" secondItem="JdM-kb-eV5" secondAttribute="width" multiplier="0.8" id="JnW-EG-eOA"/>

@@ -70,7 +70,7 @@ class ScrollVCCoordinator : Coordinator {
     
     func goToTableView(){
         if let TableViewVc = UIStoryboard(name: Constants.UiStoryboard, bundle: nil).instantiateViewController(withIdentifier:Constants.tableViewVc ) as? TableViewController {
-            navController?.present(TableViewVc, animated: true, completion: nil) }
+            navController?.pushViewController(TableViewVc, animated: true) }
     }
     
     func goToSignUpScreen(){

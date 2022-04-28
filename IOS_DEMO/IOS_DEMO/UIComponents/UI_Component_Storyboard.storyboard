@@ -153,7 +153,7 @@
                                                         <rect key="frame" x="0.0" y="39" width="408" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Tableview">
-                                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                                            <color key="baseBackgroundColor" systemColor="linkColor"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="goToTableView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hnx-Nn-fk4"/>
@@ -750,13 +750,9 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TVA-zI-P4s">
                                 <rect key="frame" x="0.0" y="44" width="428" height="848"/>
-                                <activityIndicatorView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" id="mr9-J2-C4C">
-                                    <rect key="frame" x="0.0" y="0.0" width="428" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                </activityIndicatorView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="eCg-9Q-gYR">
-                                        <rect key="frame" x="0.0" y="88.666666030883789" width="428" height="44"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eCg-9Q-gYR" id="4ma-qI-2z1">
                                             <rect key="frame" x="0.0" y="0.0" width="428" height="44"/>
@@ -766,7 +762,7 @@
                                                     <rect key="frame" x="145" y="17" width="42" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -786,7 +782,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="activityindicator" destination="mr9-J2-C4C" id="lBb-xf-Fu1"/>
                         <outlet property="tableView" destination="TVA-zI-P4s" id="UZ8-Pc-kTT"/>
                     </connections>
                 </viewController>
@@ -819,8 +814,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkf-Vr-WtN">
-                                                    <rect key="frame" x="43" y="53.666666666666657" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkf-Vr-WtN">
+                                                    <rect key="frame" x="64" y="64" width="0.0" height="0.0"/>
                                                     <color key="backgroundColor" systemColor="linkColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -950,7 +945,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="3P2-8U-gnC">
-                                <rect key="frame" x="99.666666666666686" y="604" width="133" height="32"/>
+                                <rect key="frame" x="128.33333333333331" y="604" width="171.33333333333331" height="32"/>
                                 <segments>
                                     <segment title="" image="facebook"/>
                                     <segment title="google"/>
@@ -961,7 +956,7 @@
                                 </connections>
                             </segmentedControl>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LVZ-Ss-Um5">
-                                <rect key="frame" x="86.999999999999986" y="164" width="158.66666666666663" height="240"/>
+                                <rect key="frame" x="87" y="164" width="254" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="8Vg-WF-3oe"/>
                                     <constraint firstAttribute="width" constant="240" id="dtI-XH-oOZ"/>
@@ -1077,9 +1072,6 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
