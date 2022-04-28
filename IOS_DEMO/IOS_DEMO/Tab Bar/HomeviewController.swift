@@ -69,6 +69,7 @@ extension HomeviewController{
     
     @IBAction func stepperValueChange(_ sender: UIStepper) {
         numberofItems = Int(sender.value)
+        alert(customMessage: "Clicked")
         collectionview.reloadData()
     }
 }
