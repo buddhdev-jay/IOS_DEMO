@@ -403,7 +403,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cbs-rF-7dJ">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbs-rF-7dJ">
                                 <rect key="frame" x="0.0" y="44" width="428" height="848"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCD-y3-G9i">
@@ -659,7 +659,6 @@
                         <constraints>
                             <constraint firstItem="8Bc-gp-vfc" firstAttribute="trailing" secondItem="Cbs-rF-7dJ" secondAttribute="trailing" id="5JQ-tp-OZM"/>
                             <constraint firstItem="Cbs-rF-7dJ" firstAttribute="leading" secondItem="8Bc-gp-vfc" secondAttribute="leading" id="8AT-fV-KLb"/>
-                            <constraint firstItem="Cbs-rF-7dJ" firstAttribute="width" secondItem="hKx-IT-yoW" secondAttribute="width" id="fkJ-Xy-jOn"/>
                             <constraint firstItem="8Bc-gp-vfc" firstAttribute="bottom" secondItem="Cbs-rF-7dJ" secondAttribute="bottom" id="mc1-DI-2NW"/>
                             <constraint firstItem="Cbs-rF-7dJ" firstAttribute="top" secondItem="8Bc-gp-vfc" secondAttribute="top" id="o1o-pY-kSQ"/>
                         </constraints>
