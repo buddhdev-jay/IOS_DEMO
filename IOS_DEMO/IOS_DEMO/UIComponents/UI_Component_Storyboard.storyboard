@@ -808,14 +808,14 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" reuseIdentifier="CollectionViewCell" id="MHP-40-d3G" customClass="CollectionViewCell" customModule="IOS_DEMO" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottom" insetsLayoutMarginsFromSafeArea="NO" id="zXo-xQ-g2E">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkf-Vr-WtN">
-                                                    <rect key="frame" x="64" y="64" width="0.0" height="0.0"/>
+                                                    <rect key="frame" x="0.0" y="64" width="0.0" height="0.0"/>
                                                     <color key="backgroundColor" systemColor="linkColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -823,8 +823,9 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="Bkf-Vr-WtN" firstAttribute="leading" secondItem="zXo-xQ-g2E" secondAttribute="leading" id="EoM-iT-SD0"/>
+                                                <constraint firstAttribute="trailing" secondItem="Bkf-Vr-WtN" secondAttribute="trailing" id="Nxu-sP-vVM"/>
                                                 <constraint firstItem="Bkf-Vr-WtN" firstAttribute="centerY" secondItem="zXo-xQ-g2E" secondAttribute="centerY" id="Vzg-lD-IgI"/>
-                                                <constraint firstItem="Bkf-Vr-WtN" firstAttribute="centerX" secondItem="zXo-xQ-g2E" secondAttribute="centerX" id="ioG-UF-YaV"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
@@ -945,7 +946,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="3P2-8U-gnC">
-                                <rect key="frame" x="128.33333333333331" y="604" width="171.33333333333331" height="32"/>
+                                <rect key="frame" x="99.666666666666686" y="604" width="133" height="32"/>
                                 <segments>
                                     <segment title="" image="facebook"/>
                                     <segment title="google"/>
@@ -956,7 +957,7 @@
                                 </connections>
                             </segmentedControl>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LVZ-Ss-Um5">
-                                <rect key="frame" x="87" y="164" width="254" height="240"/>
+                                <rect key="frame" x="86.999999999999986" y="164" width="158.66666666666663" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="8Vg-WF-3oe"/>
                                     <constraint firstAttribute="width" constant="240" id="dtI-XH-oOZ"/>
